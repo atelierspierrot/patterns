@@ -34,7 +34,7 @@ All classes are embedded in the `Patterns\Commons` namespace.
 
 ## Installation & usage
 
-To use this package in your work, you can download it and include the `lib/Patterns/` directory in your
+To use this package in your work, you can download it and include the `src/Patterns/` directory in your
 project, or, if you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
 in your `composer.json`:
 

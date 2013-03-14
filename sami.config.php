@@ -18,12 +18,13 @@ use Symfony\Component\Finder\Finder;
 $iterator = Finder::create()
     ->files()
     ->name('*.php')
-    ->in(__DIR__.'/lib')
+    ->in(__DIR__.'/src')
 ;
 
 $options = array(
     'title'                => 'Patterns',
     'build_dir'            => __DIR__.'/phpdoc',
+    'cache_dir'            => __DIR__.'/../tmp/cache/patterns',
     'default_opened_level' => 2,
 );
 

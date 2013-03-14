@@ -4,7 +4,7 @@
     "description": "A set of PHP classic interfaces or abstract classes patterns.",
     "keywords": [ "php", "patterns", "design patterns" ],
     "homepage": "https://github.com/atelierspierrot/patterns",
-    "version": "0.0.9",
+    "version": "1.0.0",
     "license": "GPL-3.0",
     "authors": [{
             "name": "Pierre Cassat",
@@ -14,5 +14,5 @@
     "minimum-stability": "dev",
     "require": { "php": ">=5.3.0" },
     "require-dev": { "sami/sami": "dev-master" },
-    "autoload": { "psr-0": {  "Patterns": "lib" } }
+    "autoload": { "psr-0": {  "Patterns": "src" } }
 }
