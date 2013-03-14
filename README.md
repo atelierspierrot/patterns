@@ -34,8 +34,24 @@ All classes are embedded in the `Patterns\Commons` namespace.
 
 ## Installation & usage
 
-To use this package in your work, you can download it and include the `src/Patterns/` directory in your
-project, or, if you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
+You can use this package in your work in many ways.
+
+First, you can clone the [GitHub](https://github.com/atelierspierrot/patterns) repository
+and include it "as is" in your poject:
+
+    https://github.com/atelierspierrot/patterns
+
+You can also download an [archive](https://github.com/atelierspierrot/patterns/downloads)
+from Github.
+
+Then, to use the package classes, you just need to register the `Patterns` namespace directory
+using the [SplClassLoader](https://gist.github.com/jwage/221634) or any other custom autoloader:
+
+    require_once '../src/SplClassLoader.php'; // if required, a copy is proposed in the package
+    $classLoader = new SplClassLoader('Patterns', '/path/to/package/src');
+    $classLoader->register();
+
+If you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
 in your `composer.json`:
 
     "require": {
@@ -46,6 +62,9 @@ in your `composer.json`:
         ...
         { "type": "vcs", "url": "https://github.com/atelierspierrot/patterns" }
     ],
+
+Note that, as this package is not yet included as the composer packagist, you need to write
+the repository URL as above.
 
 
 ## Development
