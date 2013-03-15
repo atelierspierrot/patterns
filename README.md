@@ -47,7 +47,7 @@ from Github.
 Then, to use the package classes, you just need to register the `Patterns` namespace directory
 using the [SplClassLoader](https://gist.github.com/jwage/221634) or any other custom autoloader:
 
-    require_once '../src/SplClassLoader.php'; // if required, a copy is proposed in the package
+    require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
     $classLoader = new SplClassLoader('Patterns', '/path/to/package/src');
     $classLoader->register();
 
@@ -57,14 +57,7 @@ in your `composer.json`:
     "require": {
         ...
         "atelierspierrot/patterns": "dev-master"
-    },
-    "repositories": [
-        ...
-        { "type": "vcs", "url": "https://github.com/atelierspierrot/patterns" }
-    ],
-
-Note that, as this package is not yet included as the composer packagist, you need to write
-the repository URL as above.
+    }
 
 
 ## Development
@@ -76,6 +69,8 @@ To install all PHP packages for development, just run:
 A documentation can be generated with [Sami](https://github.com/fabpot/Sami) running:
 
     ~$ php vendor/sami/sami/sami.php render sami.config.php
+
+The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/patterns/>.
 
 
 ## Author & License
