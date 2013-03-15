@@ -1,7 +1,4 @@
-# .gitignore
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
-
-# Hack
+# Hack to allow keeping an empty directory
 !.gitkeep
 
 # OS & software files
@@ -12,8 +9,17 @@ Thumbs.db
 ehthumbs.db
 Icon
 
-# Specifics
+# Les Ateliers specifics:
+
+# the composer lock file
 composer.lock
+
+# the documentation, that is NOT under version-control
+phpdoc/*
+
+# the external packages installed by Composer
 vendor/*
+
+# for development ...
 tmp/*
 dev/*
