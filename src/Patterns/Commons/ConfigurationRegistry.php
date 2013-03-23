@@ -13,12 +13,11 @@ namespace Patterns\Commons;
 class ConfigurationRegistry
 {
 
-    protected $registry = array();
-    protected $default_scope;
+    protected $registry;
 
-    public function __construct($default_scope = null)
+    public function __construct()
     {
-        $this->default_scope = $default_scope;
+        $this->registry = array();
     }
 
     /**
@@ -26,7 +25,7 @@ class ConfigurationRegistry
      *
      * @param string $name The index of the configuration value to get, with a depth using notation `index:name`
      * @param misc $value The value to set for $name
-     * @param string $scope The scope to use in the configuration registry, `default_scope` will be used by default
+     * @param string $scope The scope to use in the configuration registry
      * @return self Returns `$this` for method chaining
      */
     public function set($name, $value, $scope = null)
@@ -46,7 +45,7 @@ class ConfigurationRegistry
      *
      * @param string $name The index of the configuration value to get, with a depth using notation `index:name`
      * @param misc $default The default value to return if so
-     * @param string $scope The scope to use in the configuration registry, `default_scope` will be used by default
+     * @param string $scope The scope to use in the configuration registry
      * @return misc The value retrieved in the registry or the default value otherwise
      */
     public function get($name, $default = null, $scope = null)
@@ -64,15 +63,11 @@ class ConfigurationRegistry
      * Set an array of options
      *
      * @param array $options The array of values to set for the configuration
-     * @param string $scope The scope to use in the configuration registry, `default_scope` will be used by default
+     * @param string $scope The scope to use in the configuration registry
      * @return self Returns `$this` for method chaining
      */
     public function setConfigs(array $options, $scope = null)
     {
-        if (is_null($scope) && !is_null($this->default_scope)) {
-            $scope = $this->default_scope;
-        }
-
         if (!is_null($scope)) {
             $this->registry[$scope] = $options;
         } else {
@@ -87,15 +82,11 @@ class ConfigurationRegistry
      *
      * @param string $name The index of the configuration value
      * @param misc $value The value to set for the configuration entry
-     * @param string $scope The scope to use in the configuration registry, `default_scope` will be used by default
+     * @param string $scope The scope to use in the configuration registry
      * @return self Returns `$this` for method chaining
      */
     public function setConfig($name, $value, $scope = null)
     {
-        if (is_null($scope) && !is_null($this->default_scope)) {
-            $scope = $this->default_scope;
-        }
-
         if (!is_null($scope)) {
             if (!isset($this->registry[$scope])) {
                 $this->registry[$scope] = array();
@@ -123,10 +114,6 @@ class ConfigurationRegistry
      */
     public function getConfigs($default = null, $scope = null)
     {
-        if (is_null($scope) && !is_null($this->default_scope)) {
-            $scope = $this->default_scope;
-        }
-
         if (!is_null($scope)) {
             return isset($this->registry[$scope]) ? $this->registry[$scope] : $default;
         }
@@ -138,10 +125,6 @@ class ConfigurationRegistry
      */
     public function getConfig($name, $default = null, $scope = null)
     {
-        if (is_null($scope) && !is_null($this->default_scope)) {
-            $scope = $this->default_scope;
-        }
-
         if (!is_null($scope)) {
             return isset($this->registry[$scope][$name]) ? $this->registry[$scope][$name] : $default;
         }
