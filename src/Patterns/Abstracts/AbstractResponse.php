@@ -9,11 +9,9 @@
 
 namespace Patterns\Abstracts;
 
-use Patterns\Interfaces\ResponseInterface;
-
 /**
  */
-abstract class AbstractResponse implements ResponseInterface
+abstract class AbstractResponse
 {
 
 // ------------------
