@@ -9,12 +9,10 @@
 
 namespace Patterns\Abstracts;
 
-use Patterns\Interfaces\ViewInterface;
-
 /**
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-abstract class AbstractView implements ViewInterface
+abstract class AbstractView
 {
 
 // ------------------
