@@ -10,32 +10,32 @@
 namespace Patterns\Interfaces;
 
 /**
- * A simple interface to manage a set of options
+ * A simple interface to manage a set of options statically
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-interface OptionableInterface
+interface StaticOptionableInterface
 {
 
     /**
      * Set an array of options
      */
-    public function setOptions(array $options);
+    public static function setOptions(array $options);
 
     /**
      * Set the value of a specific option
      */
-    public function setOption($name, $value);
+    public static function setOption($name, $value);
 
     /**
      * Get the array of options
      */
-    public function getOptions();
+    public static function getOptions();
 
     /**
      * Get the value of a specific option
      */
-    public function getOption($name, $default = null);
+    public static function getOption($name, $default = null);
 
 }
 
