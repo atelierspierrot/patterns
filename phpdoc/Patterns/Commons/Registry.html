@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Patterns\Commons\Registry | Patterns</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Patterns</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Patterns/Commons.html">Patterns\Commons</a>\Registry</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Registry</strong></p>
+
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_dump">dump</a>()
+                    <p>Get current registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_dumpStack">dumpStack</a>(string $index = null, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)
+                    <p>Get a full stack from registry stacks</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___set">__set</a>(string $var = null, <abbr title="Patterns\Commons\misc">misc</abbr> $val = null)
+                    <p>Set an entry in the instance registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___get">__get</a>(string $var = null)
+                    <p>Get an entry from the instance registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setEntry">setEntry</a>(string $var = null, <abbr title="Patterns\Commons\misc">misc</abbr> $val = null, string $section = false)
+                    <p>Set an entry in the instance registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_addEntry">addEntry</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $val = null, string $section = false)
+                    <p>Add an entry in a section of the instance registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getEntry">getEntry</a>(string $var = null, string $section = false, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)
+                    <p>Get an entry from the instance registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isEntry">isEntry</a>(string $var = null, string $section = false)
+                    <p>Check if an entry exists in registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getKey">getKey</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $val = null, string $var = null, string $section = false)
+                    <p>Search a key in registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_saveStack">saveStack</a>(string $index = null, bool $and_clean = false)
+                    <p>Save a stack of entries in registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isStack">isStack</a>(string $index = null)
+                    <p>Check if a stack exists in registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_loadStack">loadStack</a>(string $index = null)
+                    <p>Load a stack in registry (actual registry is overwrites)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getStackEntry">getStackEntry</a>(string $var = null, string $section = false, string $stack = null, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)
+                    <p>Get a stack entry of the registry stacks</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getStackKey">getStackKey</a>(string $val = null, string $section = false, string $stack = null, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)
+                    <p>Get the key of a stack entry of the registry stacks</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_dump">
+        <div class="location">at line 31</div>
+        <code>            public            
+    <strong>dump</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get current registry</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_dumpStack">
+        <div class="location">at line 43</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>dumpStack</strong>(string $index = null, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get a full stack from registry stacks</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td>The stack index</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if it is not in registry (default is NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>The requested stack entry if so</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___set">
+        <div class="location">at line 58</div>
+        <code>            public            
+    <strong>__set</strong>(string $var = null, <abbr title="Patterns\Commons\misc">misc</abbr> $val = null)</code>
+    </h3>
+    <div class="details">
+        <p>Set an entry in the instance registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to set</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$val</td>
+                <td>The variable value to set</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::setEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method___get">
+        <div class="location">at line 69</div>
+        <code>            public            
+    <strong>__get</strong>(string $var = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get an entry from the instance registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to get</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::getEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_setEntry">
+        <div class="location">at line 82</div>
+        <code>            public            <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>setEntry</strong>(string $var = null, <abbr title="Patterns\Commons\misc">misc</abbr> $val = null, string $section = false)</code>
+    </h3>
+    <div class="details">
+        <p>Set an entry in the instance registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to set</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$val</td>
+                <td>The variable value to set</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry (default is FALSE)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addEntry">
+        <div class="location">at line 103</div>
+        <code>            public            <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>addEntry</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $val = null, string $section = false)</code>
+    </h3>
+    <div class="details">
+        <p>Add an entry in a section of the instance registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$val</td>
+                <td>The variable value to set</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getEntry">
+        <div class="location">at line 121</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>getEntry</strong>(string $var = null, string $section = false, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get an entry from the instance registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to get</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry (default is FALSE)</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if it is not in registry (default is NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>The value found or $default</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isEntry">
+        <div class="location">at line 139</div>
+        <code>            public            bool
+    <strong>isEntry</strong>(string $var = null, string $section = false)</code>
+    </h3>
+    <div class="details">
+        <p>Check if an entry exists in registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to check</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry (default is FALSE)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if the entry exists, FALSE otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getKey">
+        <div class="location">at line 156</div>
+        <code>            public            string
+    <strong>getKey</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $val = null, string $var = null, string $section = false)</code>
+    </h3>
+    <div class="details">
+        <p>Search a key in registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$val</td>
+                <td>The variable value to find</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to search in (in case of array)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry (default is FALSE)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The key found in the registry</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_saveStack">
+        <div class="location">at line 178</div>
+        <code>            public            <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>saveStack</strong>(string $index = null, bool $and_clean = false)</code>
+    </h3>
+    <div class="details">
+        <p>Save a stack of entries in registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td>The stack index</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$and_clean</td>
+                <td>Clean the actual registry after recorded the stack (default is FALSE)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isStack">
+        <div class="location">at line 191</div>
+        <code>            public            bool
+    <strong>isStack</strong>(string $index = null)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a stack exists in registry</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td>The stack index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>TRUE if the stack exists, FALSE otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_loadStack">
+        <div class="location">at line 202</div>
+        <code>            public            <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>loadStack</strong>(string $index = null)</code>
+    </h3>
+    <div class="details">
+        <p>Load a stack in registry (actual registry is overwrites)</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td>The stack index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getStackEntry">
+        <div class="location">at line 217</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>getStackEntry</strong>(string $var = null, string $section = false, string $stack = null, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get a stack entry of the registry stacks</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$var</td>
+                <td>The variable name to search</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry (default is FALSE)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$stack</td>
+                <td>The stack name to search in</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if it is not in registry (default is NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>The value found or $default</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getStackKey">
+        <div class="location">at line 239</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>getStackKey</strong>(string $val = null, string $section = false, string $stack = null, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get the key of a stack entry of the registry stacks</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$val</td>
+                <td>The variable value to search</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td>A section name in the registry (default is FALSE)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$stack</td>
+                <td>The stack name to search in</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if it is not in registry (default is NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>The key found or $default</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
