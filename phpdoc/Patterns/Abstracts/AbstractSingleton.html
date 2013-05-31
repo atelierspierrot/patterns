@@ -26,22 +26,24 @@
 
             <div class="description">
             <p>A singleton abstract class</p>
-            <p>No abstract method is defined but the best practice is to define an `init()` method in<br />
- the child class as it will be called after instance creation. Arguments passed to the<br />
- `getInstance` and `getInstanceByClassname` methods will be transmitted to the `__construct`<br />
- or `init` method.<br />
-<br />
- The complete stack trace for an instance creation is:<br />
-<br />
- - if the constructor is public (*bad practice*):<br />
-<br />
-       $class-&gt;__construct( arguments )<br />
-       $class-&gt;init()<br />
-<br />
- - if the constructor is not public (*good practice*):<br />
-<br />
-       $class = new classname<br />
-       $class-&gt;init( arguments )</p>
+            <p>No abstract method is defined but the best practice is to define an <code>init()</code> method in
+ the child class as it will be called after instance creation. Arguments passed to the
+ <code>getInstance</code> and <code>getInstanceByClassname</code> methods will be transmitted to the <code>__construct</code>
+ or <code>init</code> method.</p>
+
+<p>The complete stack trace for an instance creation is:</p>
+
+<ul>
+<li><p>if the constructor is public (<em>bad practice</em>):</p>
+
+<p>$class->__construct( arguments )
+   $class->init()</p></li>
+<li><p>if the constructor is not public (<em>good practice</em>):</p>
+
+<p>$class = new classname
+   $class->init( arguments )</p></li>
+</ul>
+</p>
         </div>
     
     
@@ -91,7 +93,8 @@
     </h3>
     <div class="details">
         <p>Static object getter: creation of an instance of the current calling class</p>
-        <p></p>
+        <p>
+</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -115,7 +118,8 @@
     </h3>
     <div class="details">
         <p>Static object getter: creation of an instance from the class name passed in first argument</p>
-        <p></p>
+        <p>
+</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -123,7 +127,8 @@
                     <tr>
                 <td></td>
                 <td>$classname</td>
-                <td></td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -149,7 +154,8 @@
     </h3>
     <div class="details">
         <p>Object cloning is avoid</p>
-        <p></p>
+        <p>
+</p>
         <div class="tags">
             
             
