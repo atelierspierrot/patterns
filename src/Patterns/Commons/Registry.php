@@ -10,23 +10,35 @@
 namespace Patterns\Commons;
 
 /**
+ * A classic registry manager
+ * 
+ * This class handles a set of registries (array of `key=>value` pairs) distinguishing
+ * current working registry from old ones or others. Old ones or others are stored in 
+ * a stack of registries and can be loaded as the current one (replacing it).
+ * 
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
 class Registry 
 {
 
 	/**
-	 * The registry itself : a complex array
+	 * @var array The registry itself : a complex array
 	 */
 	private $registry = array();
 
 	/**
-	 * The registry stacks : a complex array
+	 * @var array The registry stacks : a complex array
 	 */
 	protected $registry_stacks = array();
 
+// ----------------------------
+// Registry management
+// ----------------------------
+
 	/**
 	 * Get current registry
+	 * 
+	 * @return array
 	 */
 	public function dump()
 	{
@@ -34,25 +46,15 @@ class Registry
 	}
 
 	/**
-	 * Get a full stack from registry stacks
-	 *
-	 * @param string $index The stack index
-	 * @param misc $default The default value to return if it is not in registry (default is NULL)
-	 * @return misc The requested stack entry if so
-	 */
-	public function dumpStack($index = null, $default = null)
-	{
-		if (array_key_exists($index, $this->registry_stacks)) {
-			return $this->registry_stacks[$index];
-		}
-		return $default;
-	}
-
-	/**
-	 * Set an entry in the instance registry
+	 * Set an entry in the instance registry (magic setter)
+	 * 
+	 * This method is "magic" and will be called by PHP when an object's property
+	 * is defined like `$obj->prop = value` ; concerned property will be automatically
+	 * added to the registry.
 	 *
 	 * @param string $var The variable name to set
 	 * @param misc $val The variable value to set
+	 * @return void
 	 * @see self::setEntry()
 	 */
 	public function __set($var = null, $val = null)
@@ -61,9 +63,14 @@ class Registry
 	}
 
 	/**
-	 * Get an entry from the instance registry
+	 * Get an entry from the instance registry (magic getter)
+	 *
+	 * This method is "magic" and will be called by PHP when an object's property
+	 * is accessed like `$obj->prop` ; concerned property will be returned if it
+	 * exists in the registry.
 	 *
 	 * @param string $var The variable name to get
+	 * @return misc
 	 * @see self::getEntry()
 	 */
 	public function __get($var = null)
@@ -77,7 +84,7 @@ class Registry
 	 * @param string $var The variable name to set
 	 * @param misc $val The variable value to set
 	 * @param string $section A section name in the registry (default is FALSE)
-	 * @return self $this for method chaining
+	 * @return self Returns `$this` for method chaining
 	 */
 	public function setEntry($var = null, $val = null, $section = false)
 	{
@@ -98,7 +105,7 @@ class Registry
 	 *
 	 * @param misc $val The variable value to set
 	 * @param string $section A section name in the registry
-	 * @return self $this for method chaining
+	 * @return self Returns `$this` for method chaining
 	 */
 	public function addEntry($val = null, $section = false)
 	{
@@ -134,7 +141,7 @@ class Registry
 	 *
 	 * @param string $var The variable name to check
 	 * @param string $section A section name in the registry (default is FALSE)
-	 * @return bool TRUE if the entry exists, FALSE otherwise
+	 * @return bool
 	 */
 	public function isEntry($var = null, $section = false)
 	{
@@ -151,7 +158,7 @@ class Registry
 	 * @param misc $val The variable value to find
 	 * @param string $var The variable name to search in (in case of array)
 	 * @param string $section A section name in the registry (default is FALSE)
-	 * @return string The key found in the registry
+	 * @return string|null The key found in the registry
 	 */
 	public function getKey($val = null, $var = null, $section = false)
 	{
@@ -168,12 +175,31 @@ class Registry
 		}
 	}
 
+// ----------------------------
+// Stacks management
+// ----------------------------
+
+	/**
+	 * Get a full stack from registry stacks
+	 *
+	 * @param string $index The stack index
+	 * @param misc $default The default value to return if it is not in registry (default is NULL)
+	 * @return misc The requested stack entry if so
+	 */
+	public function dumpStack($index = null, $default = null)
+	{
+		if (array_key_exists($index, $this->registry_stacks)) {
+			return $this->registry_stacks[$index];
+		}
+		return $default;
+	}
+
 	/**
 	 * Save a stack of entries in registry
 	 *
 	 * @param string $index The stack index
 	 * @param bool $and_clean Clean the actual registry after recorded the stack (default is FALSE)
-	 * @return self $this for method chaining
+	 * @return self Returns `$this` for method chaining
 	 */
 	public function saveStack($index = null, $and_clean = false)
 	{
@@ -186,7 +212,7 @@ class Registry
 	 * Check if a stack exists in registry
 	 *
 	 * @param string $index The stack index
-	 * @return bool TRUE if the stack exists, FALSE otherwise
+	 * @return bool
 	 */
 	public function isStack($index = null)
 	{
@@ -197,7 +223,7 @@ class Registry
 	 * Load a stack in registry (actual registry is overwrites)
 	 *
 	 * @param string $index The stack index
-	 * @return self $this for method chaining
+	 * @return self Returns `$this` for method chaining
 	 */
 	public function loadStack($index = null)
 	{
