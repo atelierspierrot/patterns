@@ -12,6 +12,32 @@ namespace Patterns\Abstracts;
 use \RuntimeException;
 
 /**
+ * Magic properties accessors
+ * 
+ * This abstract class defines commons magic methods to directly access (set, unset, check or get)
+ * object properties. For more information about these PHP magic methods, please see in the PHP
+ * manual :
+ * <http://www.php.net/manual/en/language.oop5.overloading.php#language.oop5.overloading.members>.
+ * 
+ * The four magic methods are:
+ * 
+ * -   `__set`, called when you write `$obj->property = value`
+ * -   `__get`, called when you write `$obj->property`
+ * -   `__isset`, called when you write `isset($obj->property)` or `empty($obj->property)`
+ * -   `__unset`, called when you write `unset($obj->property)`
+ * 
+ * For each of these methods, the property invoked MUST exist in the object, which means it must
+ * be declared in its definition or already set before the magic method call. If the property can't
+ * be found, a `RuntimeException` will be thrown.
+ * 
+ * The class will first try to execute a method called like the accessor for the property (i.e.
+ * method `getProperty` for the `__get` call of the variable `property`). This way, you can define
+ * a method for accessing one of an object properties with a specific work on it, or let the class
+ * use the default accessor feature.
+ * 
+ * NOTE - This class is abstract but doesn't declare any abstract method which should be described
+ * in the child class ; you can use it easily by extending it.
+ *  
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
 abstract class AbstractAccessible

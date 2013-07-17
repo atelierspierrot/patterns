@@ -12,11 +12,21 @@ namespace Patterns\Abstracts;
 use Patterns\Interfaces\OptionableInterface;
 
 /**
- * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
+ * A simple object options manager
+ * 
+ * This class is a helper to create an object that may handle a set of options.
+ * The options can be defined globally or individually, overrided during the
+ * object life-cycle and accessed easily. The `get` accessor allows to define
+ * a default value returned if no other value is found.
+ * 
+ * @author     	Piero Wbmstr <piero.wbmstr@gmail.com>
  */
 abstract class AbstractOptionable implements OptionableInterface
 {
 
+	/**
+	 * @var array
+	 */
     protected $options = array();
 
     /**
