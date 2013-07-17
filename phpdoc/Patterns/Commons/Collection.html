@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Patterns\Commons\Collection | Patterns</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Patterns</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Patterns/Commons.html">Patterns\Commons</a>\Collection</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>Collection</strong>        implements
+        <a href="../../Patterns/Interfaces/CollectionInterface.html"><abbr title="Patterns\Interfaces\CollectionInterface">CollectionInterface</abbr></a></p>
+
+            <div class="description">
+            <p>Collection manager : allows to set, get, loop and seek in an array collection</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(array $content = array())
+                    <p>Construction of a collection</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setCollection">setCollection</a>(array $content)
+                    <p>Set the collection content</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getCollection">getCollection</a>()
+                    <p>Get the collection content</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_rewind">rewind</a>()
+                    <p>Put the index value at the beginning of the collection array</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_reset">reset</a>()
+                    <p>Put the index value at 0 This must be an alias of \Iterator::rewind()</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_end">end</a>()
+                    <p>Put the index value at the last index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_next">next</a>()
+                    <p>Increase the current index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_prev">prev</a>()
+                    <p>Decrease the current index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_valid">valid</a>()
+                    <p>Check if current value is set</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_current">current</a>()
+                    <p>Gets the value of the collection at current index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_pos">pos</a>()
+                    <p>Get the current index This must be an alias of \Iterator::current()</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_key">key</a>()
+                    <p>Gets the current index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_offsetSet">offsetSet</a>($offset, $value)
+                    <p>Set a collection entry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_offsetExists">offsetExists</a>($offset)
+                    <p>Check if a collection entry exists</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_offsetUnset">offsetUnset</a>($offset)
+                    <p>Unset a collection entry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_offsetGet">offsetGet</a>($offset)
+                    <p>Get a collection entry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_push">push</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)
+                    <p>Pushes a new value at the end of the collection, with no specific index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_count">count</a>()
+                    <p>Counts the number of entries in the collection</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_shift">shift</a>()
+                    <p>Deletes a value at the beginning of the collection</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_pop">pop</a>()
+                    <p>Deletes a value at the end of the collection</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_unshift">unshift</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)
+                    <p>Pushes a new value at the beginning of the collection, with no specific index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_each">each</a>()
+                    <p>Returns the current key=>value pair and put increase the index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_in_array">in_array</a>($value)
+                    <p>Search a value in the current array and returns true if so</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_key_exists">key_exists</a>($index)
+                    <p>Search if an entry exists with this key</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_values">values</a>()
+                    <p>Returns an array with all values of the original array</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_keys">keys</a>()
+                    <p>Returns an array with all keys of the original array</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getEntry">getEntry</a>(int|string $index, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)
+                    <p>Gets a collection entry value by its index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setEntry">setEntry</a>(int|string|null $index = null, <abbr title="Patterns\Commons\misc">misc</abbr> $value)
+                    <p>Sets a collection entry value by its index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addEntry">addEntry</a>($index = null, $value)
+                    <p>Add a collection entry value (alias of "setEntry()")</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_issetEntry">issetEntry</a>(int|string $index)
+                    <p>Check if a collection entry exists by its index</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_unsetEntry">unsetEntry</a>(int|string $index)
+                    <p>Deletes a collection entry by its index</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 37</div>
+        <code>            public            
+    <strong>__construct</strong>(array $content = array())</code>
+    </h3>
+    <div class="details">
+        <p>Construction of a collection</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$content</td>
+                <td>The array of the collection content (optional)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setCollection">
+        <div class="location">at line 48</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>setCollection</strong>(array $content)</code>
+    </h3>
+    <div class="details">
+        <p>Set the collection content</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$content</td>
+                <td>The array of the collection content</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getCollection">
+        <div class="location">at line 59</div>
+        <code>            public            array
+    <strong>getCollection</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the collection content</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>The whole collection content at this moment</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_rewind">
+        <div class="location">at line 73</div>
+        <code>final            public            void
+    <strong>rewind</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Put the index value at the beginning of the collection array</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_reset">
+        <div class="location">at line 82</div>
+        <code>final            public            
+    <strong>reset</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Put the index value at 0 This must be an alias of \Iterator::rewind()</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_end">
+        <div class="location">at line 90</div>
+        <code>final            public            
+    <strong>end</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Put the index value at the last index</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_next">
+        <div class="location">at line 101</div>
+        <code>final            public            void
+    <strong>next</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Increase the current index</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_prev">
+        <div class="location">at line 112</div>
+        <code>final            public            void
+    <strong>prev</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Decrease the current index</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_valid">
+        <div class="location">at line 123</div>
+        <code>final            public            bool
+    <strong>valid</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Check if current value is set</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>True if a collection value is set for the current index</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_current">
+        <div class="location">at line 133</div>
+        <code>final            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>current</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the value of the collection at current index</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>Current value in the collection</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_pos">
+        <div class="location">at line 141</div>
+        <code>final            public            
+    <strong>pos</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the current index This must be an alias of \Iterator::current()</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_key">
+        <div class="location">at line 151</div>
+        <code>final            public            int
+    <strong>key</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Gets the current index</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>The current index</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetSet">
+        <div class="location">at line 165</div>
+        <code>final            public            
+    <strong>offsetSet</strong>($offset, $value)</code>
+    </h3>
+    <div class="details">
+        <p>Set a collection entry</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::setEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_offsetExists">
+        <div class="location">at line 175</div>
+        <code>final            public            
+    <strong>offsetExists</strong>($offset)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a collection entry exists</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::issetEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_offsetUnset">
+        <div class="location">at line 185</div>
+        <code>final            public            
+    <strong>offsetUnset</strong>($offset)</code>
+    </h3>
+    <div class="details">
+        <p>Unset a collection entry</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::unsetEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_offsetGet">
+        <div class="location">at line 195</div>
+        <code>final            public            
+    <strong>offsetGet</strong>($offset)</code>
+    </h3>
+    <div class="details">
+        <p>Get a collection entry</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::getEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_push">
+        <div class="location">at line 210</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>push</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)</code>
+    </h3>
+    <div class="details">
+        <p>Pushes a new value at the end of the collection, with no specific index</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$value</td>
+                <td>The new value to add in the collection</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_count">
+        <div class="location">at line 221</div>
+        <code>            public            int
+    <strong>count</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Counts the number of entries in the collection</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>The number of collection entries</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_shift">
+        <div class="location">at line 231</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>shift</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Deletes a value at the beginning of the collection</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_pop">
+        <div class="location">at line 242</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>pop</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Deletes a value at the end of the collection</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_unshift">
+        <div class="location">at line 254</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>unshift</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)</code>
+    </h3>
+    <div class="details">
+        <p>Pushes a new value at the beginning of the collection, with no specific index</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$value</td>
+                <td>The new value to add in the collection</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_each">
+        <div class="location">at line 265</div>
+        <code>            public            array
+    <strong>each</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns the current key=>value pair and put increase the index</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>The result of the "each()" PHP standard method on collection</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_in_array">
+        <div class="location">at line 277</div>
+        <code>            public            bool
+    <strong>in_array</strong>($value)</code>
+    </h3>
+    <div class="details">
+        <p>Search a value in the current array and returns true if so</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>The result of the test</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_key_exists">
+        <div class="location">at line 287</div>
+        <code>            public            bool
+    <strong>key_exists</strong>($index)</code>
+    </h3>
+    <div class="details">
+        <p>Search if an entry exists with this key</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$index</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>The result of the test</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_values">
+        <div class="location">at line 297</div>
+        <code>            public            array
+    <strong>values</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns an array with all values of the original array</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of the collection values</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_keys">
+        <div class="location">at line 307</div>
+        <code>            public            array
+    <strong>keys</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns an array with all keys of the original array</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>An array of the collection keys</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getEntry">
+        <div class="location">at line 323</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>getEntry</strong>(int|string $index, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)</code>
+    </h3>
+    <div class="details">
+        <p>Gets a collection entry value by its index</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int|string</td>
+                <td>$index</td>
+                <td>The index of the entry to get</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value returned if the original entry is not seted (default is NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>The found value for the searched index, $default if nothing has been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setEntry">
+        <div class="location">at line 338</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>setEntry</strong>(int|string|null $index = null, <abbr title="Patterns\Commons\misc">misc</abbr> $value)</code>
+    </h3>
+    <div class="details">
+        <p>Sets a collection entry value by its index</p>
+        <p>If the index is null, the value will be pushed at the end of the collection.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int|string|null</td>
+                <td>$index</td>
+                <td>The index of the entry to set</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$value</td>
+                <td>The value to set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::push()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_addEntry">
+        <div class="location">at line 352</div>
+        <code>            public            
+    <strong>addEntry</strong>($index = null, $value)</code>
+    </h3>
+    <div class="details">
+        <p>Add a collection entry value (alias of "setEntry()")</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$index</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::setEntry()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_issetEntry">
+        <div class="location">at line 363</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>issetEntry</strong>(int|string $index)</code>
+    </h3>
+    <div class="details">
+        <p>Check if a collection entry exists by its index</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int|string</td>
+                <td>$index</td>
+                <td>The index of the entry to check</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_unsetEntry">
+        <div class="location">at line 374</div>
+        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>unsetEntry</strong>(int|string $index)</code>
+    </h3>
+    <div class="details">
+        <p>Deletes a collection entry by its index</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>int|string</td>
+                <td>$index</td>
+                <td>The index of the entry to delete</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>$this for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

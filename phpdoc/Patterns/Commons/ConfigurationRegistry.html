@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Patterns\Commons\ConfigurationRegistry | Patterns</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Patterns</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Patterns/Commons.html">Patterns\Commons</a>\ConfigurationRegistry</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>ConfigurationRegistry</strong></p>
+
+            <div class="description">
+            <p>A manager for a configuration registry as an array with a depth of 2  This class handles a simple and classic registry of values (stored in an array as <code>key=&gt;value</code> pairs) except that it accepts and manages the first depth keys of the array like a <code>scope</code> and permits to access values within scopes directly.</p>
+            <p>The rule here is that when you used to call <code>$obj-&gt;get(property)</code> you can now call
+<code>$obj-&gt;get(scope:property)</code> ; this is very useful for configuration entries, that
+are often stored in complex arrays identified by a simple key.</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>()
+                    <p>Construction : initialization of the registry on an empty array</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_set">set</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)
+                    <p>Set the value of a specific option with depth</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)
+                    <p>Get the value of a specific option with depth</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setConfigs">setConfigs</a>(array $options, string $scope = null)
+                    <p>Set an array of options</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_setConfig">setConfig</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)
+                    <p>Set the value of a specific option (no scope notation allowed here)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_addConfig">addConfig</a>($name, $value, $scope = null)
+                    <p>Alias of the <code>setConfig</code> method</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array|<abbr title="Patterns\Commons\misc">misc</abbr>|null
+                </td>
+                <td class="last">
+                    <a href="#method_getConfigs">getConfigs</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)
+                    <p>Get the array of options (from a specific scope if so)</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getConfig">getConfig</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)
+                    <p>Get the value of a specific option (no scope notation allowed here)</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 36</div>
+        <code>            public            
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Construction : initialization of the registry on an empty array</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_set">
+        <div class="location">at line 50</div>
+        <code>            public            <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+    <strong>set</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Set the value of a specific option with depth</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$value</td>
+                <td>The value to set for $name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry if it is not defined in the <code>$name</code> parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
+            <td>Returns <code>$this</code> for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 71</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>get</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get the value of a specific option with depth</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if so (<code>null</code> by default)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry if it is not defined in the <code>$name</code> parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>The value retrieved in the registry or the default value otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setConfigs">
+        <div class="location">at line 90</div>
+        <code>            public            <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+    <strong>setConfigs</strong>(array $options, string $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Set an array of options</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>The array of values to set for the configuration entry</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry (optional)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
+            <td>Returns <code>$this</code> for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setConfig">
+        <div class="location">at line 110</div>
+        <code>            public            <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+    <strong>setConfig</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Set the value of a specific option (no scope notation allowed here)</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The index of the configuration value</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$value</td>
+                <td>The value to set for the configuration entry</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry (optional)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
+            <td>Returns <code>$this</code> for method chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addConfig">
+        <div class="location">at line 129</div>
+        <code>            public            
+    <strong>addConfig</strong>($name, $value, $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Alias of the <code>setConfig</code> method</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scope</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>self::setConfig()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_getConfigs">
+        <div class="location">at line 142</div>
+        <code>            public            array|<abbr title="Patterns\Commons\misc">misc</abbr>|null
+    <strong>getConfigs</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get the array of options (from a specific scope if so)</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if so (<code>null</code> by default)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry (optional)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array|<abbr title="Patterns\Commons\misc">misc</abbr>|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConfig">
+        <div class="location">at line 159</div>
+        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+    <strong>getConfig</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)</code>
+    </h3>
+    <div class="details">
+        <p>Get the value of a specific option (no scope notation allowed here)</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The index of the configuration value to get</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>$default</td>
+                <td>The default value to return if so (<code>null</code> by default)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>The scope to use in the configuration registry (optional)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
