@@ -41,13 +41,6 @@ interface IteratorInterface extends \SeekableIterator
 	 */
     public function prev();
 
-	/**
-	 * Define the current index
-	 *
-	 * @param int|string $index
-	 */
-    public function seek($index);
-
 }
 
 // Endfile
