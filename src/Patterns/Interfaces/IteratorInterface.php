@@ -16,7 +16,7 @@ namespace Patterns\Interfaces;
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-interface IteratorInterface extends \Iterator
+interface IteratorInterface extends \SeekableIterator
 {
 
 	/**
@@ -40,6 +40,13 @@ interface IteratorInterface extends \Iterator
 	 * Decrease the current index
 	 */
     public function prev();
+
+	/**
+	 * Define the current index
+	 *
+	 * @param int|string $index
+	 */
+    public function seek($index);
 
 }
 
