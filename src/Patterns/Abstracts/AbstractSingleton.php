@@ -56,8 +56,11 @@ abstract class AbstractSingleton
      * This method will receive the arguments passed to the `getInstance` method while
      * creating a new instance ; you can use it to define a special constructor with
      * required arguments.
+     *
+     * Note that the `init()` method must be callable by this mother class: you MUST define
+     * it as `public` or `protected`.
      */
-    protected function init(){}
+//    protected function init(){}
 
     /**
      * Static object getter: creation of an instance of the current calling class
@@ -107,10 +110,20 @@ abstract class AbstractSingleton
         $reflection_obj = new ReflectionClass($classname);
         if ($reflection_obj->getMethod('__construct')->isPublic()) {
             self::$_instances[ $classname ] = call_user_func_array(array($reflection_obj, 'newInstance'), $arguments);
-            self::$_instances[ $classname ]->init();
+            if (
+                method_exists(self::$_instances[ $classname ], 'init') &&
+                is_callable(array(self::$_instances[ $classname ], 'init'))
+            ) {
+                self::$_instances[ $classname ]->init();
+            }
         } else {
             self::$_instances[ $classname ] = new $classname;
-            call_user_func_array(array(self::$_instances[ $classname ], 'init'), $arguments);
+            if (
+                method_exists(self::$_instances[ $classname ], 'init') &&
+                is_callable(array(self::$_instances[ $classname ], 'init'))
+            ) {
+                call_user_func_array(array(self::$_instances[ $classname ], 'init'), $arguments);
+            }
         }
     }
 
