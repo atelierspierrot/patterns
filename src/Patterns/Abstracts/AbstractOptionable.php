@@ -9,7 +9,7 @@
 
 namespace Patterns\Abstracts;
 
-use Patterns\Interfaces\OptionableInterface;
+use \Patterns\Interfaces\OptionableInterface;
 
 /**
  * A simple object options manager

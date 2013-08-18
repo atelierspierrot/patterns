@@ -9,7 +9,7 @@
 
 namespace Patterns\Interfaces;
 
-use Patterns\Commons\Collection;
+use \Patterns\Commons\Collection;
 
 /**
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>

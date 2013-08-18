@@ -9,7 +9,7 @@
 
 namespace Patterns\Abstracts;
 
-use Patterns\Interfaces\StaticCreatorInterface;
+use \Patterns\Interfaces\StaticCreatorInterface;
 
 /**
  * This class allows to create objects that can be statically created "on-the-fly" to allow
