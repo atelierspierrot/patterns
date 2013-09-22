@@ -153,6 +153,20 @@ class Collection implements CollectionInterface
         return $this->_index;
     }
 
+	/**
+	 * Define the current index
+	 *
+	 * @param int|string $index
+	 * @return self
+	 */
+    final public function seek($index)
+    {
+        if ($this->offsetExists($index)) {
+            $this->_index = $index;
+        }
+        return $this;
+    }
+
 // ------------------------
 // ArrayAccess interface : to use the collection object as an array
 // ------------------------

@@ -16,7 +16,7 @@ namespace Patterns\Interfaces;
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-interface IteratorInterface extends \Iterator
+interface IteratorInterface extends \SeekableIterator
 {
 
 	/**
