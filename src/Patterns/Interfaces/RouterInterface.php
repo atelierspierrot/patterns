@@ -45,11 +45,12 @@ interface RouterInterface
      * Build a new route URL
      *
      * @param misc $route_infos The informations about the route to analyze
+     * @param string $base_uri The URI to add the new route to
      * @param string $hash A hash tag to add to the generated URL
 	 * @param string $separator The argument/value separator (default is escaped ampersand : '&amp;')
      * @return string The application valid URL for the route
      */
-    public function generateUrl($route_infos, $hash = null, $separator = '&amp;');
+    public function generateUrl($route_infos, $base_uri = null, $hash = null, $separator = '&amp;');
 
     /**
      * Distribute the current URL to the corresponding route
