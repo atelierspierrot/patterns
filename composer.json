@@ -1,10 +1,9 @@
 {
     "name": "atelierspierrot/patterns",
-    "type": "framework",
+    "type": "library",
     "description": "A set of PHP classic interfaces or abstract classes patterns.",
     "keywords": [ "php", "patterns", "design patterns" ],
-    "homepage": "https://github.com/atelierspierrot/patterns",
-    "version": "1.0.5-dev",
+    "homepage": "http://github.com/atelierspierrot/patterns",
     "license": "GPL-3.0",
     "authors": [{
         "name": "Les Ateliers Pierrot & contributors",
@@ -20,5 +19,10 @@
         "sami/sami": "dev-master",
         "phpmd/phpmd" : "1.4.*"
     },
-    "autoload": { "psr-0": {  "Patterns": "src" } }
+    "autoload": { "psr-0": {  "Patterns": "src" } },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
