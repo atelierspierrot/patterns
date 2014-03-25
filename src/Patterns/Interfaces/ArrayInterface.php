@@ -9,12 +9,15 @@
 
 namespace Patterns\Interfaces;
 
+use \ArrayAccess;
+
 /**
  * Array interface
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-interface ArrayInterface extends \ArrayAccess
+interface ArrayInterface
+    extends ArrayAccess
 {
 
 	/**
