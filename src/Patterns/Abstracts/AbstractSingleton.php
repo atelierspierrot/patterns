@@ -9,7 +9,8 @@
 
 namespace Patterns\Abstracts;
 
-use \ReflectionClass, \Exception;
+use \ReflectionClass;
+use \Exception;
 
 /**
  * A singleton abstract class

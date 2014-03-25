@@ -16,7 +16,8 @@ use \Patterns\Interfaces\CollectionInterface;
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-class Collection implements CollectionInterface
+class Collection
+    implements CollectionInterface
 {
 
 	/**

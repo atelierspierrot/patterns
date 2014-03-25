@@ -17,7 +17,8 @@ use \Patterns\Interfaces\IteratorInterface;
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-interface CollectionInterface extends IteratorInterface, ArrayInterface
+interface CollectionInterface
+    implements IteratorInterface, ArrayInterface
 {
 
 	/**

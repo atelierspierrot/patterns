@@ -9,6 +9,8 @@
 
 namespace Patterns\Interfaces;
 
+use \SeekableIterator;
+
 /**
  * Iterator interface
  *
@@ -16,7 +18,8 @@ namespace Patterns\Interfaces;
  *
  * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-interface IteratorInterface extends \SeekableIterator
+interface IteratorInterface
+    extends SeekableIterator
 {
 
 	/**
