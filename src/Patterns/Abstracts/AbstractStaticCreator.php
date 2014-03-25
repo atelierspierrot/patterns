@@ -23,7 +23,8 @@ use \Patterns\Interfaces\StaticCreatorInterface;
  *
  * @author      Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-abstract class AbstractStaticCreator implements StaticCreatorInterface
+abstract class AbstractStaticCreator
+    implements StaticCreatorInterface
 {
 
     /**

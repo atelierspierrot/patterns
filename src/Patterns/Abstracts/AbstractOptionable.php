@@ -21,7 +21,8 @@ use \Patterns\Interfaces\OptionableInterface;
  * 
  * @author     	Piero Wbmstr <piero.wbmstr@gmail.com>
  */
-abstract class AbstractOptionable implements OptionableInterface
+abstract class AbstractOptionable
+    implements OptionableInterface
 {
 
 	/**
