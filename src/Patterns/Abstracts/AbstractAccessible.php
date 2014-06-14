@@ -1,10 +1,10 @@
 <?php
 /**
  * PHP patterns
- * Copyleft (c) 2013 Pierre Cassat and contributors
+ * Copyleft (c) 2013-2014 Pierre Cassat and contributors
  * <www.ateliers-pierrot.fr> - <contact@ateliers-pierrot.fr>
  * License GPL-3.0 <http://www.opensource.org/licenses/gpl-3.0.html>
- * Sources <https://github.com/atelierspierrot/patterns>
+ * Sources <http://github.com/atelierspierrot/patterns>
  */
 
 namespace Patterns\Abstracts;
@@ -38,7 +38,7 @@ use \RuntimeException;
  * NOTE - This class is abstract but doesn't declare any abstract method which should be described
  * in the child class ; you can use it easily by extending it.
  *  
- * @author 		Piero Wbmstr <piero.wbmstr@gmail.com>
+ * @author 		Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractAccessible
 {
