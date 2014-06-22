@@ -12,7 +12,7 @@ namespace Patterns\Interfaces;
 /**
  * A simple interface to manage a set of options statically
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface StaticOptionableInterface
 {

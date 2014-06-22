@@ -12,14 +12,34 @@ namespace Patterns\Interfaces;
 /**
  * An interface for a basic CRUD model
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface CrudInterface
 {
 
+    /**
+     * @param   array $data
+     * @return  bool
+     */
     public function create($data);
+
+    /**
+     * @param   int $id
+     * @return  mixed
+     */
     public function read($id);
+
+    /**
+     * @param   int     $id
+     * @param   array   $data
+     * @return  bool
+     */
     public function update($id, $data);
+
+    /**
+     * @param   int $id
+     * @return  bool
+     */
     public function delete($id);
 
 }

@@ -10,13 +10,28 @@
 namespace Patterns\Interfaces;
 
 /**
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface RepositoryInterface
 {
 
+    /**
+     * @return array
+     */
     public function getAll();
+
+    /**
+     * @param   string  $prop_name
+     * @param   mixed   $value
+     * @return  mixed
+     */
     public function getOneBy($prop_name, $value);
+
+    /**
+     * @param   string  $prop_name
+     * @param   mixed   $value
+     * @return  bool
+     */
     public function exists($prop_name, $value);
 
 }

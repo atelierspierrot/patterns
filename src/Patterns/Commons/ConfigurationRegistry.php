@@ -20,19 +20,19 @@ namespace Patterns\Commons;
  * `$obj->get(scope:property)` ; this is very useful for configuration entries, that
  * are often stored in complex arrays identified by a simple key.
  * 
- * @author     	Piero Wbmstr <me@e-piwi.fr>
+ * @author    Piero Wbmstr <me@e-piwi.fr>
  */
 class ConfigurationRegistry
 {
 
-	/**
-	 * @var array
-	 */
+    /**
+     * @var array
+     */
     protected $registry;
 
-	/**
-	 * Construction : initialization of the registry on an empty array
-	 */
+    /**
+     * Construction : initialization of the registry on an empty array
+     */
     public function __construct()
     {
         $this->registry = array();
@@ -41,11 +41,10 @@ class ConfigurationRegistry
     /**
      * Set the value of a specific option with depth
      *
-     * @param string $name The index of the configuration value to get, with a scope using notation `index:name`
-     * @param misc $value The value to set for $name
-     * @param string $scope The scope to use in the configuration registry if it is not defined in the `$name` parameter
-     * 
-     * @return self Returns `$this` for method chaining
+     * @param   string  $name   The index of the configuration value to get, with a scope using notation `index:name`
+     * @param   mixed   $value  The value to set for $name
+     * @param   string  $scope  The scope to use in the configuration registry if it is not defined in the `$name` parameter
+     * @return  self
      */
     public function set($name, $value, $scope = null)
     {
@@ -62,11 +61,10 @@ class ConfigurationRegistry
     /**
      * Get the value of a specific option with depth
      *
-     * @param string $name The index of the configuration value to get, with a scope using notation `index:name`
-     * @param misc $default The default value to return if so (`null` by default)
-     * @param string $scope The scope to use in the configuration registry if it is not defined in the `$name` parameter
-     * 
-     * @return misc The value retrieved in the registry or the default value otherwise
+     * @param   string  $name       The index of the configuration value to get, with a scope using notation `index:name`
+     * @param   mixed   $default    The default value to return if so (`null` by default)
+     * @param   string  $scope      The scope to use in the configuration registry if it is not defined in the `$name` parameter
+     * @return  mixed   The value retrieved in the registry or the default value otherwise
      */
     public function get($name, $default = null, $scope = null)
     {
@@ -82,10 +80,9 @@ class ConfigurationRegistry
     /**
      * Set an array of options
      *
-     * @param array $options The array of values to set for the configuration entry
-     * @param string $scope The scope to use in the configuration registry (optional)
-     * 
-     * @return self Returns `$this` for method chaining
+     * @param   array   $options    The array of values to set for the configuration entry
+     * @param   string  $scope      The scope to use in the configuration registry (optional)
+     * @return  self
      */
     public function setConfigs(array $options, $scope = null)
     {
@@ -101,11 +98,10 @@ class ConfigurationRegistry
     /**
      * Set the value of a specific option (no scope notation allowed here)
      *
-     * @param string $name The index of the configuration value
-     * @param misc $value The value to set for the configuration entry
-     * @param string $scope The scope to use in the configuration registry (optional)
-     * 
-     * @return self Returns `$this` for method chaining
+     * @param   string  $name   The index of the configuration value
+     * @param   mixed   $value  The value to set for the configuration entry
+     * @param   string  $scope  The scope to use in the configuration registry (optional)
+     * @return  self
      */
     public function setConfig($name, $value, $scope = null)
     {
@@ -134,10 +130,9 @@ class ConfigurationRegistry
     /**
      * Get the array of options (from a specific scope if so)
      * 
-     * @param misc $default The default value to return if so (`null` by default)
-     * @param string $scope The scope to use in the configuration registry (optional)
-     * 
-     * @return array|misc|null
+     * @param   mixed   $default    The default value to return if so (`null` by default)
+     * @param   string  $scope      The scope to use in the configuration registry (optional)
+     * @return  array|mixed|null
      */
     public function getConfigs($default = null, $scope = null)
     {
@@ -150,11 +145,10 @@ class ConfigurationRegistry
     /**
      * Get the value of a specific option (no scope notation allowed here)
      *
-     * @param string $name The index of the configuration value to get
-     * @param misc $default The default value to return if so (`null` by default)
-     * @param string $scope The scope to use in the configuration registry (optional)
-     * 
-     * @return misc
+     * @param   string  $name       The index of the configuration value to get
+     * @param   mixed   $default    The default value to return if so (`null` by default)
+     * @param   string  $scope      The scope to use in the configuration registry (optional)
+     * @return  mixed
      */
     public function getConfig($name, $default = null, $scope = null)
     {

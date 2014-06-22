@@ -10,9 +10,11 @@
 namespace Patterns\Interfaces;
 
 /**
+ * This work is BETA (not fully tested)
+ *
  * A simple user interface
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface UserInterface
 {

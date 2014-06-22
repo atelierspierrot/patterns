@@ -77,9 +77,9 @@ The latest version of this documentation is available online at <http://docs.ate
 
 >    Patterns
 
->    https://github.com/atelierspierrot/patterns
+>    http://github.com/atelierspierrot/patterns
 
->    Copyleft 2013, Pierre Cassat and contributors
+>    Copyleft 2013-2014, Pierre Cassat and contributors
 
 >    Licensed under the GPL Version 3 license.
 

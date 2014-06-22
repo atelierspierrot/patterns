@@ -15,54 +15,54 @@ use \Patterns\Interfaces\IteratorInterface;
 /**
  * Collection interface
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface CollectionInterface
     extends IteratorInterface, ArrayInterface
 {
 
-	/**
-	 * Set the collection content
-	 *
-	 * @param array $content The array of the collection content
-	 */
+    /**
+     * Set the collection content
+     *
+     * @param   array   $collection     The array of the collection content
+     */
     public function setCollection(array $collection);
 
-	/**
-	 * Get the collection content
-	 */
+    /**
+     * Get the collection content
+     */
     public function getCollection();
 
-	/**
-	 * Gets a collection entry value by its index
-	 *
-	 * @param int|string $index The index of the entry to get
-	 * @param misc $default The default value returned if the original entry is not seted (default is NULL)
-	 */
+    /**
+     * Gets a collection entry value by its index
+     *
+     * @param   int|string  $index      The index of the entry to get
+     * @param   mixed       $default    The default value returned if the original entry is not set (default is NULL)
+     */
     public function getEntry($index, $default = null);
 
-	/**
-	 * Sets a collection entry value by its index
-	 *
-	 * If the index is null, the value will be pushed at the end of the collection.
-	 *
-	 * @param int|string|null $index The index of the entry to set
-	 * @param misc $value The value to set
-	 */
+    /**
+     * Sets a collection entry value by its index
+     *
+     * If the index is null, the value will be pushed at the end of the collection.
+     *
+     * @param   int|string|null $index  The index of the entry to set
+     * @param   mixed           $value  The value to set
+     */
     public function setEntry($index = null, $value);
 
-	/**
-	 * Check if a collection entry exists by its index
-	 *
-	 * @param int|string $index The index of the entry to check
-	 */
+    /**
+     * Check if a collection entry exists by its index
+     *
+     * @param   int|string  $index  The index of the entry to check
+     */
     public function issetEntry($index);
 
-	/**
-	 * Deletes a collection entry by its index
-	 *
-	 * @param int|string $index The index of the entry to delete
-	 */
+    /**
+     * Deletes a collection entry by its index
+     *
+     * @param   int|string  $index  The index of the entry to delete
+     */
     public function unsetEntry($index);
 
 }

@@ -10,7 +10,7 @@
 namespace Patterns\Abstracts;
 
 /**
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractView
 {
@@ -22,13 +22,13 @@ abstract class AbstractView
     /**
      * The name of the view file to parse
      */
-    protected $view=null;
+    protected $view = null;
 
     /**
      * Set the view name to parse
      *
-     * @param str $path The name of the view to load
-     * @return self Returns `$this` for method chaining
+     * @param   string  $path   The name of the view to load
+     * @return  self
      */
     public function setView($path)
     {
@@ -39,7 +39,7 @@ abstract class AbstractView
     /**
      * Get the view name
      *
-     * @return str The name of the view file to load
+     * @return  string   The name of the view file to load
      */
     public function getView()
     {
@@ -51,15 +51,15 @@ abstract class AbstractView
 // ------------------------------
 
     /**
-	 * The final rendering of the view
+     * The final rendering of the view
      */
-    protected $output='';
+    protected $output = '';
 
     /**
      * Set the output content
      *
-     * @param str $str The output of a view parsing
-     * @return self Returns `$this` for method chaining
+     * @param   string  $str    The output of a view parsing
+     * @return  self
      */
     public function setOutput($str)
     {
@@ -70,8 +70,8 @@ abstract class AbstractView
     /**
      * Append the output content to the existing content
      *
-     * @param str $str The output of a view parsing
-     * @return self Returns `$this` for method chaining
+     * @param   string    $content  The output of a view parsing
+     * @return  self
      */
     public function appendOutput($content)
     {
@@ -82,8 +82,8 @@ abstract class AbstractView
     /**
      * Prepend the output content to the existing content
      *
-     * @param str $str The output of a view parsing
-     * @return self Returns `$this` for method chaining
+     * @param   string  $content    The output of a view parsing
+     * @return  self
      */
     public function prependOutput($content)
     {
@@ -94,7 +94,7 @@ abstract class AbstractView
     /**
      * Get the current view rendering output
      *
-     * @return str The rendering of the view
+     * @return  string  The rendering of the view
      */
     public function getOutput()
     {
@@ -113,7 +113,7 @@ abstract class AbstractView
     /**
      * Reset the parameters for the current view on an empty array
      *
-     * @return self Returns `$this` for method chaining
+     * @return  self
      */
     public function resetParams()
     {
@@ -124,8 +124,8 @@ abstract class AbstractView
     /**
      * Set an array of the parameters for the current view
      *
-     * @param array $params The array of parameters
-     * @return self Returns `$this` for method chaining
+     * @param   array   $params     The array of parameters
+     * @return  self
      */
     public function setParams(array $params)
     {
@@ -136,9 +136,9 @@ abstract class AbstractView
     /**
      * Add an entry of parameters for the current view
      *
-     * @param str $name The name of the parameter
-     * @param misc $val The value to set for the parameter
-     * @return self Returns `$this` for method chaining
+     * @param   string  $name   The name of the parameter
+     * @param   mixed   $val    The value to set for the parameter
+     * @return  self
      */
     public function addParam($name, $val)
     {
@@ -149,8 +149,8 @@ abstract class AbstractView
     /**
      * Get the parameters for the current view
      *
-     * @param bool $alone Get the stack of parameters without the default params (default is `false`)
-     * @return array The array of parameters
+     * @param   bool    $alone  Get the stack of parameters without the default params (default is `false`)
+     * @return  array   The array of parameters
      */
     public function getParams($alone = false)
     {
@@ -164,9 +164,9 @@ abstract class AbstractView
     /**
      * Get a value of the parameters for the current view
      *
-     * @parameter string $name The name of the parameter to get
-     * @parameter misc $default The default value returns if no parameter is defined for `$name`
-     * @return misc The parameter value if found, `$default` otherwise
+     * @param   string  $name       The name of the parameter to get
+     * @param   mixed   $default    The default value returns if no parameter is defined for `$name`
+     * @return  mixed   The parameter value if found, `$default` otherwise
      */
     public function getParam($name, $default = null)
     {
@@ -180,24 +180,24 @@ abstract class AbstractView
     /**
      * Building of a view content including a view file passing it parameters
      *
-     * @param string $view The view filename (which must exist)
-     * @param array $params An array of the parameters passed for the view parsing
-     * @return string Returns the view file content rendering
+     * @param   string  $view_file  The view filename (which must exist)
+     * @param   array   $params     An array of the parameters passed for the view parsing
+     * @return  string  Returns the view file content rendering
      */
     abstract public function render($view_file, array $params = array());
 
     /**
      * Get the default parameters for all views
      *
-     * @return array The array of default parameters
+     * @return  array   The array of default parameters
      */
     abstract public function getDefaultViewParams();
 
     /**
      * Search a view file in the current file system
      *
-     * @parameter string $name The file path to search
-     * @return string The path of the file found
+     * @param   string  $name   The file path to search
+     * @return  string  The path of the file found
      */
     abstract public function getTemplate($name);
 
