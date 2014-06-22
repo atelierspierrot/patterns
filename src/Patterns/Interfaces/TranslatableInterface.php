@@ -10,9 +10,11 @@
 namespace Patterns\Interfaces;
 
 /**
+ * This work is BETA (not fully tested)
+ *
  * A simple interface for translation objects
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface TranslatableInterface
 {

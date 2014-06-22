@@ -12,7 +12,7 @@ namespace Patterns\Interfaces;
 /**
  * Interface for classic request handling
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface RequestInterface
 {

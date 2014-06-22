@@ -21,7 +21,7 @@ use \Patterns\Interfaces\StaticCreatorInterface;
  * This logic is implemented thru a required `init()` method in children class that will be called
  * on static creation (in non-static env) and by constructor.
  *
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractStaticCreator
     implements StaticCreatorInterface

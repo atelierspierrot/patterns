@@ -16,7 +16,7 @@ namespace Patterns\Interfaces;
  *     $obj = ObjectStaticCreator::create( arguments )
  *         ->method();
  *
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author   Piero Wbmstr <me@e-piwi.fr>
  */
 interface StaticCreatorInterface
 {

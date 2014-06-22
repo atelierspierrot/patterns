@@ -12,28 +12,35 @@ namespace Patterns\Interfaces;
 /**
  * A simple interface to manage a set of options
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface OptionableInterface
 {
 
     /**
      * Set an array of options
+     * @param   array   $options
      */
     public function setOptions(array $options);
 
     /**
      * Set the value of a specific option
+     * @param   string  $name
+     * @param   mixed   $value
      */
     public function setOption($name, $value);
 
     /**
      * Get the array of options
+     * @return  array
      */
     public function getOptions();
 
     /**
      * Get the value of a specific option
+     * @param   string  $name
+     * @param   mixed   $default
+     * @return  mixed
      */
     public function getOption($name, $default = null);
 
