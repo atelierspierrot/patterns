@@ -12,12 +12,24 @@ namespace Patterns\Interfaces;
 /**
  * A simple interface to manage a debuggable object
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface DebuggableInterface
 {
+
+    /**
+     * @param   mixed    $debug
+     */
     public static function setDebug($debug);
+
+    /**
+     * @return mixed
+     */
     public static function getDebug();
+
+    /**
+     * @return  bool
+     */
     public static function isDebug();
 }
 

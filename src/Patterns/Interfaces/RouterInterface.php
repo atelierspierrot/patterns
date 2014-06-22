@@ -12,7 +12,7 @@ namespace Patterns\Interfaces;
 use \Patterns\Commons\Collection;
 
 /**
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface RouterInterface
 {
@@ -20,7 +20,7 @@ interface RouterInterface
     /**
      * Set the routes collection
      *
-     * @param obj $collection A `Patterns\Commons\Collection` object
+     * @param \Patterns\Commons\Collection  $collection     A collection object
      */
     public function setRoutes(Collection $collection);
 
@@ -44,18 +44,18 @@ interface RouterInterface
     /**
      * Build a new route URL
      *
-     * @param misc $route_infos The informations about the route to analyze
-     * @param string $base_uri The URI to add the new route to
-     * @param string $hash A hash tag to add to the generated URL
-	 * @param string $separator The argument/value separator (default is escaped ampersand : '&amp;')
-     * @return string The application valid URL for the route
+     * @param   mixed   $route_infos    The information about the route to analyze
+     * @param   string  $base_uri       The URI to add the new route to
+     * @param   string  $hash           A hash tag to add to the generated URL
+     * @param   string  $separator      The argument/value separator (default is escaped ampersand : '&amp;')
+     * @return  string  The application valid URL for the route
      */
     public function generateUrl($route_infos, $base_uri = null, $hash = null, $separator = '&amp;');
 
     /**
      * Distribute the current URL to the corresponding route
      *
-     * @param misc $pathinfo The path information to distribute
+     * @param mixed $pathinfo The path information to distribute
      */
     public function matchUrl($pathinfo);
 
@@ -67,16 +67,16 @@ interface RouterInterface
     /**
      * Forward the application to a new route (no HTTP redirect)
      *
-     * @param misc $pathinfo The path information to forward to
-     * @param string $hash A hash tag to add to the generated URL
+     * @param   mixed   $pathinfo   The path information to forward to
+     * @param   string  $hash       A hash tag to add to the generated URL
      */
     public function forward($pathinfo, $hash = null);
 
     /**
      * Make a redirection to a new route (HTTP redirect)
      *
-     * @param misc $pathinfo The path information to redirect to
-     * @param string $hash A hash tag to add to the generated URL
+     * @param   mixed   $pathinfo   The path information to redirect to
+     * @param   string  $hash       A hash tag to add to the generated URL
      */
     public function redirect($pathinfo, $hash = null);
 

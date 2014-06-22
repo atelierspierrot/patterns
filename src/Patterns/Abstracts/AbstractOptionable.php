@@ -19,22 +19,22 @@ use \Patterns\Interfaces\OptionableInterface;
  * object life-cycle and accessed easily. The `get` accessor allows to define
  * a default value returned if no other value is found.
  * 
- * @author     	Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractOptionable
     implements OptionableInterface
 {
 
-	/**
-	 * @var array
-	 */
+    /**
+     * @var array
+     */
     protected $options = array();
 
     /**
      * Set an array of options
      *
-     * @param array $options A table of options to define, key=>value pairs
-     * @return self Returns `$this` for method chaining
+     * @param   array   $options    A table of options to define, key=>value pairs
+     * @return  self
      */
     public function setOptions(array $options)
     {
@@ -45,9 +45,9 @@ abstract class AbstractOptionable
     /**
      * Set the value of a specific option
      *
-     * @param string $name The index of the option to define
-     * @param misc $value The option value to define
-     * @return self Returns `$this` for method chaining
+     * @param   string  $name   The index of the option to define
+     * @param   mixed   $value  The option value to define
+     * @return  self
      */
     public function setOption($name, $value)
     {
@@ -58,7 +58,7 @@ abstract class AbstractOptionable
     /**
      * Get the array of options
      *
-     * @return array The current options array
+     * @return  array   The current options array
      */
     public function getOptions()
     {
@@ -68,9 +68,9 @@ abstract class AbstractOptionable
     /**
      * Get the value of a specific option
      *
-     * @param string $name The index of the option to get
-     * @param misc $default The default value to return if the option is not defined
-     * @return array The current option's value if defined, `$default` otherwise
+     * @param   string  $name       The index of the option to get
+     * @param   mixed   $default    The default value to return if the option is not defined
+     * @return  array   The current option's value if defined, `$default` otherwise
      */
     public function getOption($name, $default = null)
     {

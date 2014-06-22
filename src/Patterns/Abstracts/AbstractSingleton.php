@@ -32,7 +32,7 @@ use \Exception;
  *       $class = new classname
  *       $class->init( arguments )
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractSingleton 
 {
@@ -66,9 +66,9 @@ abstract class AbstractSingleton
     /**
      * Static object getter: creation of an instance of the current calling class
      *
-     * @param any You can define as many parameters as wanted, they will be passed to
-     *            the `__construct` or `init` methods
-     * @return object This may return an instance of an object
+     * @param   any     You can define as many parameters as wanted, they will be passed to
+     *                  the `__construct` or `init` methods
+     * @return  object  This may return an instance of an object
      */
     public static function &getInstance() 
     {
@@ -83,10 +83,10 @@ abstract class AbstractSingleton
     /**
      * Static object getter: creation of an instance from the class name passed in first argument
      *
-     * @param string $classname The classname to create object from
-     * @param any You can define as many parameters as wanted, they will be passed to
-     *            the `__construct` or `init` methods
-     * @return object This may return an instance of an object
+     * @param   string  $classname  The classname to create object from
+     * @param   any     You can define as many parameters as wanted, they will be passed to
+     *                  the `__construct` or `init` methods
+     * @return  object  This may return an instance of an object
      */
     public static function &getInstanceByClassname($classname) 
     {
@@ -102,9 +102,9 @@ abstract class AbstractSingleton
     /**
      * Real object instances creation
      *
-     * @param string $classname The classname to create object from
-     * @param array $arguments The arguments to pass to the `__construct` or `init` method
-     * @return void
+     * @param   string  $classname  The classname to create object from
+     * @param   array   $arguments  The arguments to pass to the `__construct` or `init` method
+     * @return  void
      */
     private static function createInstance($classname, array $arguments = array())
     {
@@ -131,7 +131,7 @@ abstract class AbstractSingleton
     /**
      * Object cloning is avoid
      *
-     * @throws Exception Trying to clone a Singleton object will throw an Excpetion
+     * @throws  \Exception   Trying to clone a Singleton object will throw an Exception
      */
     public function __clone()
     {

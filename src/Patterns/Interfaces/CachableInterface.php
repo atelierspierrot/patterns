@@ -46,7 +46,7 @@ interface CachableInterface
      *
      * This must return the exact same content passed at the `setCache()` method.
      *
-     * @return misc
+     * @return mixed
      */
     function getCache();
 
@@ -56,8 +56,7 @@ interface CachableInterface
      * This must store the content in association with the item key ; the method could
      * return a boolean indicates if the caching process succeeded.
      *
-     * @param misc $content
-     *
+     * @param mixed $content
      * @return bool
      */
     function setCache($content);

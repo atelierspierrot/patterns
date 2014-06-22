@@ -10,7 +10,9 @@
 namespace Patterns\Interfaces;
 
 /**
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * This work is BETA (not fully tested)
+ *
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface WebPageInterface
 {

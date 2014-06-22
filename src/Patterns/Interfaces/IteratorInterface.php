@@ -16,32 +16,32 @@ use \SeekableIterator;
  *
  * This interface is just set for homogeneity in iterations and array walking.
  *
- * @author 		Piero Wbmstr <me@e-piwi.fr>
+ * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface IteratorInterface
     extends SeekableIterator
 {
 
-	/**
-	 * Put the index value at 0
-	 * This must be an alias of \Iterator::rewind()
-	 */
+    /**
+     * Put the index value at 0
+     * This must be an alias of \Iterator::rewind()
+     */
     public function reset();
 
-	/**
-	 * Put the index value at the last index
-	 */
+    /**
+     * Put the index value at the last index
+     */
     public function end();
 
-	/**
-	 * Get the current index
-	 * This must be an alias of \Iterator::current()
-	 */
+    /**
+     * Get the current index
+     * This must be an alias of \Iterator::current()
+     */
     public function pos();
 
-	/**
-	 * Decrease the current index
-	 */
+    /**
+     * Decrease the current index
+     */
     public function prev();
 
 }
