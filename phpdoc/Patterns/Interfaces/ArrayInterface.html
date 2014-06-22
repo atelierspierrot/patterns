@@ -63,7 +63,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_unshift">unshift</a>(<abbr title="Patterns\Interfaces\misc">misc</abbr> $value)
+                    <a href="#method_unshift">unshift</a>(mixed $value)
                     <p>Pushes a new value at the beginning of the collection, with no specific index</p>
                 </td>
                 <td></td>
@@ -73,14 +73,14 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_push">push</a>(<abbr title="Patterns\Interfaces\misc">misc</abbr> $value)
+                    <a href="#method_push">push</a>(mixed $value)
                     <p>Pushes a new value at the end of the collection, with no specific index</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    int
                 </td>
                 <td class="last">
                     <a href="#method_count">count</a>()
@@ -100,27 +100,27 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    bool
                 </td>
                 <td class="last">
-                    <a href="#method_in_array">in_array</a>($value)
+                    <a href="#method_in_array">in_array</a>(mixed $value)
                     <p>Search a value in the current array and returns true if so</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    bool
                 </td>
                 <td class="last">
-                    <a href="#method_key_exists">key_exists</a>($index)
+                    <a href="#method_key_exists">key_exists</a>(mixed $index)
                     <p>Search if an entry exists with this key</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    array
                 </td>
                 <td class="last">
                     <a href="#method_values">values</a>()
@@ -130,7 +130,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    array
                 </td>
                 <td class="last">
                     <a href="#method_keys">keys</a>()
@@ -178,7 +178,7 @@
                 <h3 id="method_unshift">
         <div class="location">at line 37</div>
         <code>            public            
-    <strong>unshift</strong>(<abbr title="Patterns\Interfaces\misc">misc</abbr> $value)</code>
+    <strong>unshift</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Pushes a new value at the beginning of the collection, with no specific index</p>
@@ -189,7 +189,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Interfaces\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The new value to add in the collection</td>
             </tr>
@@ -204,7 +204,7 @@
                 <h3 id="method_push">
         <div class="location">at line 43</div>
         <code>            public            
-    <strong>push</strong>(<abbr title="Patterns\Interfaces\misc">misc</abbr> $value)</code>
+    <strong>push</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Pushes a new value at the end of the collection, with no specific index</p>
@@ -215,7 +215,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Interfaces\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The new value to add in the collection</td>
             </tr>
@@ -228,8 +228,8 @@
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 48</div>
-        <code>            public            
+        <div class="location">at line 49</div>
+        <code>            public            int
     <strong>count</strong>()</code>
     </h3>
     <div class="details">
@@ -238,13 +238,23 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 53</div>
+        <div class="location">at line 54</div>
         <code>            public            
     <strong>each</strong>()</code>
     </h3>
@@ -260,9 +270,9 @@
     </div>
 
                 <h3 id="method_in_array">
-        <div class="location">at line 58</div>
-        <code>            public            
-    <strong>in_array</strong>($value)</code>
+        <div class="location">at line 61</div>
+        <code>            public            bool
+    <strong>in_array</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Search a value in the current array and returns true if so</p>
@@ -273,23 +283,32 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
-                <td>
-</td>
+                <td>The value to test</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_key_exists">
-        <div class="location">at line 63</div>
-        <code>            public            
-    <strong>key_exists</strong>($index)</code>
+        <div class="location">at line 68</div>
+        <code>            public            bool
+    <strong>key_exists</strong>(mixed $index)</code>
     </h3>
     <div class="details">
         <p>Search if an entry exists with this key</p>
@@ -300,22 +319,31 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$index</td>
-                <td>
-</td>
+                <td>The index to test</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_values">
-        <div class="location">at line 68</div>
-        <code>            public            
+        <div class="location">at line 74</div>
+        <code>            public            array
     <strong>values</strong>()</code>
     </h3>
     <div class="details">
@@ -324,14 +352,24 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_keys">
-        <div class="location">at line 73</div>
-        <code>            public            
+        <div class="location">at line 80</div>
+        <code>            public            array
     <strong>keys</strong>()</code>
     </h3>
     <div class="details">
@@ -340,6 +378,16 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>

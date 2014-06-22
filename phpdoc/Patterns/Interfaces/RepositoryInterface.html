@@ -34,7 +34,7 @@
             <table>
                     <tr>
                 <td class="type">
-                    
+                    array
                 </td>
                 <td class="last">
                     <a href="#method_getAll">getAll</a>()
@@ -45,10 +45,10 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_getOneBy">getOneBy</a>($prop_name, $value)
+                    <a href="#method_getOneBy">getOneBy</a>(string $prop_name, mixed $value)
                     <p>
 </p>
                 </td>
@@ -56,10 +56,10 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    bool
                 </td>
                 <td class="last">
-                    <a href="#method_exists">exists</a>($prop_name, $value)
+                    <a href="#method_exists">exists</a>(string $prop_name, mixed $value)
                     <p>
 </p>
                 </td>
@@ -71,8 +71,8 @@
         <h2>Details</h2>
 
                         <h3 id="method_getAll">
-        <div class="location">at line 18</div>
-        <code>            public            
+        <div class="location">at line 21</div>
+        <code>            public            array
     <strong>getAll</strong>()</code>
     </h3>
     <div class="details">
@@ -82,15 +82,25 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_getOneBy">
-        <div class="location">at line 19</div>
-        <code>            public            
-    <strong>getOneBy</strong>($prop_name, $value)</code>
+        <div class="location">at line 28</div>
+        <code>            public            mixed
+    <strong>getOneBy</strong>(string $prop_name, mixed $value)</code>
     </h3>
     <div class="details">
         <p>
@@ -102,13 +112,13 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$prop_name</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>
 </td>
@@ -116,15 +126,25 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_exists">
-        <div class="location">at line 20</div>
-        <code>            public            
-    <strong>exists</strong>($prop_name, $value)</code>
+        <div class="location">at line 35</div>
+        <code>            public            bool
+    <strong>exists</strong>(string $prop_name, mixed $value)</code>
     </h3>
     <div class="details">
         <p>
@@ -136,13 +156,13 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$prop_name</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>
 </td>
@@ -150,6 +170,16 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>

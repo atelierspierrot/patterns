@@ -37,14 +37,14 @@
                     <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_setView">setView</a>(<abbr title="Patterns\Abstracts\str">str</abbr> $path)
+                    <a href="#method_setView">setView</a>(string $path)
                     <p>Set the view name to parse</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Abstracts\str">str</abbr>
+                    string
                 </td>
                 <td class="last">
                     <a href="#method_getView">getView</a>()
@@ -57,7 +57,7 @@
                     <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_setOutput">setOutput</a>(<abbr title="Patterns\Abstracts\str">str</abbr> $str)
+                    <a href="#method_setOutput">setOutput</a>(string $str)
                     <p>Set the output content</p>
                 </td>
                 <td></td>
@@ -67,7 +67,7 @@
                     <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_appendOutput">appendOutput</a>($content)
+                    <a href="#method_appendOutput">appendOutput</a>(string $content)
                     <p>Append the output content to the existing content</p>
                 </td>
                 <td></td>
@@ -77,14 +77,14 @@
                     <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_prependOutput">prependOutput</a>($content)
+                    <a href="#method_prependOutput">prependOutput</a>(string $content)
                     <p>Prepend the output content to the existing content</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Abstracts\str">str</abbr>
+                    string
                 </td>
                 <td class="last">
                     <a href="#method_getOutput">getOutput</a>()
@@ -117,7 +117,7 @@
                     <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_addParam">addParam</a>(<abbr title="Patterns\Abstracts\str">str</abbr> $name, <abbr title="Patterns\Abstracts\misc">misc</abbr> $val)
+                    <a href="#method_addParam">addParam</a>(string $name, mixed $val)
                     <p>Add an entry of parameters for the current view</p>
                 </td>
                 <td></td>
@@ -134,10 +134,10 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Abstracts\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_getParam">getParam</a>($name, $default = null)
+                    <a href="#method_getParam">getParam</a>(string $name, mixed $default = null)
                     <p>Get a value of the parameters for the current view</p>
                 </td>
                 <td></td>
@@ -147,7 +147,7 @@
                     string
                 </td>
                 <td class="last">
-                    <a href="#method_render">render</a>($view_file, array $params = array())
+                    <a href="#method_render">render</a>(string $view_file, array $params = array())
                     <p>Building of a view content including a view file passing it parameters</p>
                 </td>
                 <td></td>
@@ -167,7 +167,7 @@
                     string
                 </td>
                 <td class="last">
-                    <a href="#method_getTemplate">getTemplate</a>($name)
+                    <a href="#method_getTemplate">getTemplate</a>(string $name)
                     <p>Search a view file in the current file system</p>
                 </td>
                 <td></td>
@@ -180,7 +180,7 @@
                         <h3 id="method_setView">
         <div class="location">at line 33</div>
         <code>            public            <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
-    <strong>setView</strong>(<abbr title="Patterns\Abstracts\str">str</abbr> $path)</code>
+    <strong>setView</strong>(string $path)</code>
     </h3>
     <div class="details">
         <p>Set the view name to parse</p>
@@ -191,7 +191,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Abstracts\str">str</abbr></td>
+                <td>string</td>
                 <td>$path</td>
                 <td>The name of the view to load</td>
             </tr>
@@ -203,7 +203,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -214,7 +215,7 @@
 
                 <h3 id="method_getView">
         <div class="location">at line 44</div>
-        <code>            public            <abbr title="Patterns\Abstracts\str">str</abbr>
+        <code>            public            string
     <strong>getView</strong>()</code>
     </h3>
     <div class="details">
@@ -227,7 +228,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Abstracts\str">str</abbr></td>
+            <td>string</td>
             <td>The name of the view file to load</td>
         </tr>
     </table>
@@ -240,7 +241,7 @@
                 <h3 id="method_setOutput">
         <div class="location">at line 64</div>
         <code>            public            <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
-    <strong>setOutput</strong>(<abbr title="Patterns\Abstracts\str">str</abbr> $str)</code>
+    <strong>setOutput</strong>(string $str)</code>
     </h3>
     <div class="details">
         <p>Set the output content</p>
@@ -251,7 +252,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Abstracts\str">str</abbr></td>
+                <td>string</td>
                 <td>$str</td>
                 <td>The output of a view parsing</td>
             </tr>
@@ -263,7 +264,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -275,7 +277,7 @@
                 <h3 id="method_appendOutput">
         <div class="location">at line 76</div>
         <code>            public            <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
-    <strong>appendOutput</strong>($content)</code>
+    <strong>appendOutput</strong>(string $content)</code>
     </h3>
     <div class="details">
         <p>Append the output content to the existing content</p>
@@ -286,10 +288,9 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$content</td>
-                <td>
-</td>
+                <td>The output of a view parsing</td>
             </tr>
             </table>
 
@@ -299,7 +300,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -311,7 +313,7 @@
                 <h3 id="method_prependOutput">
         <div class="location">at line 88</div>
         <code>            public            <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
-    <strong>prependOutput</strong>($content)</code>
+    <strong>prependOutput</strong>(string $content)</code>
     </h3>
     <div class="details">
         <p>Prepend the output content to the existing content</p>
@@ -322,10 +324,9 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$content</td>
-                <td>
-</td>
+                <td>The output of a view parsing</td>
             </tr>
             </table>
 
@@ -335,7 +336,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -346,7 +348,7 @@
 
                 <h3 id="method_getOutput">
         <div class="location">at line 99</div>
-        <code>            public            <abbr title="Patterns\Abstracts\str">str</abbr>
+        <code>            public            string
     <strong>getOutput</strong>()</code>
     </h3>
     <div class="details">
@@ -359,7 +361,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Abstracts\str">str</abbr></td>
+            <td>string</td>
             <td>The rendering of the view</td>
         </tr>
     </table>
@@ -385,7 +387,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -420,7 +423,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -432,7 +436,7 @@
                 <h3 id="method_addParam">
         <div class="location">at line 143</div>
         <code>            public            <a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a>
-    <strong>addParam</strong>(<abbr title="Patterns\Abstracts\str">str</abbr> $name, <abbr title="Patterns\Abstracts\misc">misc</abbr> $val)</code>
+    <strong>addParam</strong>(string $name, mixed $val)</code>
     </h3>
     <div class="details">
         <p>Add an entry of parameters for the current view</p>
@@ -443,12 +447,12 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Abstracts\str">str</abbr></td>
+                <td>string</td>
                 <td>$name</td>
                 <td>The name of the parameter</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Abstracts\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$val</td>
                 <td>The value to set for the parameter</td>
             </tr>
@@ -460,7 +464,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -506,8 +511,8 @@
 
                 <h3 id="method_getParam">
         <div class="location">at line 171</div>
-        <code>            public            <abbr title="Patterns\Abstracts\misc">misc</abbr>
-    <strong>getParam</strong>($name, $default = null)</code>
+        <code>            public            mixed
+    <strong>getParam</strong>(string $name, mixed $default = null)</code>
     </h3>
     <div class="details">
         <p>Get a value of the parameters for the current view</p>
@@ -518,16 +523,14 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
-                <td>
-</td>
+                <td>The name of the parameter to get</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$default</td>
-                <td>
-</td>
+                <td>The default value returns if no parameter is defined for <code>$name</code></td>
             </tr>
             </table>
 
@@ -536,7 +539,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Abstracts\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>The parameter value if found, <code>$default</code> otherwise</td>
         </tr>
     </table>
@@ -549,7 +552,7 @@
                 <h3 id="method_render">
         <div class="location">at line 187</div>
         <code>    abstract        public            string
-    <strong>render</strong>($view_file, array $params = array())</code>
+    <strong>render</strong>(string $view_file, array $params = array())</code>
     </h3>
     <div class="details">
         <p>Building of a view content including a view file passing it parameters</p>
@@ -560,16 +563,14 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$view_file</td>
-                <td>
-</td>
+                <td>The view filename (which must exist)</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$params</td>
-                <td>
-</td>
+                <td>An array of the parameters passed for the view parsing</td>
             </tr>
             </table>
 
@@ -616,7 +617,7 @@
                 <h3 id="method_getTemplate">
         <div class="location">at line 202</div>
         <code>    abstract        public            string
-    <strong>getTemplate</strong>($name)</code>
+    <strong>getTemplate</strong>(string $name)</code>
     </h3>
     <div class="details">
         <p>Search a view file in the current file system</p>
@@ -627,10 +628,9 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$name</td>
-                <td>
-</td>
+                <td>The file path to search</td>
             </tr>
             </table>
 

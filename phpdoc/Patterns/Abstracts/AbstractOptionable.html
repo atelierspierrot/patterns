@@ -54,7 +54,7 @@ a default value returned if no other value is found.</p>
                     <a href="../../Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">AbstractOptionable</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_setOption">setOption</a>(string $name, <abbr title="Patterns\Abstracts\misc">misc</abbr> $value)
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
                     <p>Set the value of a specific option</p>
                 </td>
                 <td></td>
@@ -74,7 +74,7 @@ a default value returned if no other value is found.</p>
                     array
                 </td>
                 <td class="last">
-                    <a href="#method_getOption">getOption</a>(string $name, <abbr title="Patterns\Abstracts\misc">misc</abbr> $default = null)
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $default = null)
                     <p>Get the value of a specific option</p>
                 </td>
                 <td></td>
@@ -110,7 +110,8 @@ a default value returned if no other value is found.</p>
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">AbstractOptionable</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -122,7 +123,7 @@ a default value returned if no other value is found.</p>
                 <h3 id="method_setOption">
         <div class="location">at line 52</div>
         <code>            public            <a href="../../Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">AbstractOptionable</abbr></a>
-    <strong>setOption</strong>(string $name, <abbr title="Patterns\Abstracts\misc">misc</abbr> $value)</code>
+    <strong>setOption</strong>(string $name, mixed $value)</code>
     </h3>
     <div class="details">
         <p>Set the value of a specific option</p>
@@ -138,7 +139,7 @@ a default value returned if no other value is found.</p>
                 <td>The index of the option to define</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Abstracts\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The option value to define</td>
             </tr>
@@ -150,7 +151,8 @@ a default value returned if no other value is found.</p>
                     <table>
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">AbstractOptionable</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -187,7 +189,7 @@ a default value returned if no other value is found.</p>
                 <h3 id="method_getOption">
         <div class="location">at line 75</div>
         <code>            public            array
-    <strong>getOption</strong>(string $name, <abbr title="Patterns\Abstracts\misc">misc</abbr> $default = null)</code>
+    <strong>getOption</strong>(string $name, mixed $default = null)</code>
     </h3>
     <div class="details">
         <p>Get the value of a specific option</p>
@@ -203,7 +205,7 @@ a default value returned if no other value is found.</p>
                 <td>The index of the option to get</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Abstracts\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$default</td>
                 <td>The default value to return if the option is not defined</td>
             </tr>

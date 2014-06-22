@@ -80,7 +80,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
                     <a href="#method_reset">reset</a>()
@@ -90,7 +90,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    void
                 </td>
                 <td class="last">
                     <a href="#method_end">end</a>()
@@ -130,7 +130,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
                     <a href="#method_current">current</a>()
@@ -140,7 +140,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    mixed
                 </td>
                 <td class="last">
                     <a href="#method_pos">pos</a>()
@@ -213,7 +213,7 @@
                     <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_push">push</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)
+                    <a href="#method_push">push</a>(mixed $value)
                     <p>Pushes a new value at the end of the collection, with no specific index</p>
                 </td>
                 <td></td>
@@ -253,7 +253,7 @@
                     <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_unshift">unshift</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)
+                    <a href="#method_unshift">unshift</a>(mixed $value)
                     <p>Pushes a new value at the beginning of the collection, with no specific index</p>
                 </td>
                 <td></td>
@@ -273,7 +273,7 @@
                     bool
                 </td>
                 <td class="last">
-                    <a href="#method_in_array">in_array</a>($value)
+                    <a href="#method_in_array">in_array</a>(mixed $value)
                     <p>Search a value in the current array and returns true if so</p>
                 </td>
                 <td></td>
@@ -283,7 +283,7 @@
                     bool
                 </td>
                 <td class="last">
-                    <a href="#method_key_exists">key_exists</a>($index)
+                    <a href="#method_key_exists">key_exists</a>(mixed $index)
                     <p>Search if an entry exists with this key</p>
                 </td>
                 <td></td>
@@ -310,10 +310,10 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_getEntry">getEntry</a>(int|string $index, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)
+                    <a href="#method_getEntry">getEntry</a>(int|string $index, mixed $default = null)
                     <p>Gets a collection entry value by its index</p>
                 </td>
                 <td></td>
@@ -323,7 +323,7 @@
                     <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_setEntry">setEntry</a>(int|string|null $index = null, <abbr title="Patterns\Commons\misc">misc</abbr> $value)
+                    <a href="#method_setEntry">setEntry</a>(int|string|null $index = null, mixed $value)
                     <p>Sets a collection entry value by its index</p>
                 </td>
                 <td></td>
@@ -340,7 +340,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    bool
                 </td>
                 <td class="last">
                     <a href="#method_issetEntry">issetEntry</a>(int|string $index)
@@ -415,7 +415,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -476,8 +477,8 @@
     </div>
 
                 <h3 id="method_reset">
-        <div class="location">at line 83</div>
-        <code>final            public            
+        <div class="location">at line 85</div>
+        <code>final            public            void
     <strong>reset</strong>()</code>
     </h3>
     <div class="details">
@@ -486,14 +487,24 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_end">
-        <div class="location">at line 91</div>
-        <code>final            public            
+        <div class="location">at line 95</div>
+        <code>final            public            void
     <strong>end</strong>()</code>
     </h3>
     <div class="details">
@@ -502,13 +513,23 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_next">
-        <div class="location">at line 102</div>
+        <div class="location">at line 106</div>
         <code>final            public            void
     <strong>next</strong>()</code>
     </h3>
@@ -534,7 +555,7 @@
     </div>
 
                 <h3 id="method_prev">
-        <div class="location">at line 113</div>
+        <div class="location">at line 117</div>
         <code>final            public            void
     <strong>prev</strong>()</code>
     </h3>
@@ -560,7 +581,7 @@
     </div>
 
                 <h3 id="method_valid">
-        <div class="location">at line 124</div>
+        <div class="location">at line 128</div>
         <code>final            public            bool
     <strong>valid</strong>()</code>
     </h3>
@@ -585,8 +606,8 @@
     </div>
 
                 <h3 id="method_current">
-        <div class="location">at line 134</div>
-        <code>final            public            <abbr title="Patterns\Commons\misc">misc</abbr>
+        <div class="location">at line 138</div>
+        <code>final            public            mixed
     <strong>current</strong>()</code>
     </h3>
     <div class="details">
@@ -599,7 +620,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>Current value in the collection</td>
         </tr>
     </table>
@@ -610,8 +631,8 @@
     </div>
 
                 <h3 id="method_pos">
-        <div class="location">at line 142</div>
-        <code>final            public            
+        <div class="location">at line 148</div>
+        <code>final            public            mixed
     <strong>pos</strong>()</code>
     </h3>
     <div class="details">
@@ -620,13 +641,22 @@
 </p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The current value</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_key">
-        <div class="location">at line 152</div>
+        <div class="location">at line 158</div>
         <code>final            public            int
     <strong>key</strong>()</code>
     </h3>
@@ -651,7 +681,7 @@
     </div>
 
                 <h3 id="method_seek">
-        <div class="location">at line 163</div>
+        <div class="location">at line 169</div>
         <code>final            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
     <strong>seek</strong>(int|string $index)</code>
     </h3>
@@ -688,7 +718,7 @@
     </div>
 
                 <h3 id="method_offsetSet">
-        <div class="location">at line 180</div>
+        <div class="location">at line 186</div>
         <code>final            public            
     <strong>offsetSet</strong>($offset, $value)</code>
     </h3>
@@ -730,7 +760,7 @@
     </div>
 
                 <h3 id="method_offsetExists">
-        <div class="location">at line 190</div>
+        <div class="location">at line 196</div>
         <code>final            public            
     <strong>offsetExists</strong>($offset)</code>
     </h3>
@@ -766,7 +796,7 @@
     </div>
 
                 <h3 id="method_offsetUnset">
-        <div class="location">at line 200</div>
+        <div class="location">at line 206</div>
         <code>final            public            
     <strong>offsetUnset</strong>($offset)</code>
     </h3>
@@ -802,7 +832,7 @@
     </div>
 
                 <h3 id="method_offsetGet">
-        <div class="location">at line 210</div>
+        <div class="location">at line 216</div>
         <code>final            public            
     <strong>offsetGet</strong>($offset)</code>
     </h3>
@@ -838,9 +868,9 @@
     </div>
 
                 <h3 id="method_push">
-        <div class="location">at line 225</div>
+        <div class="location">at line 231</div>
         <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>push</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)</code>
+    <strong>push</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Pushes a new value at the end of the collection, with no specific index</p>
@@ -851,7 +881,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The new value to add in the collection</td>
             </tr>
@@ -863,7 +893,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -873,7 +904,7 @@
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 236</div>
+        <div class="location">at line 242</div>
         <code>            public            int
     <strong>count</strong>()</code>
     </h3>
@@ -898,7 +929,7 @@
     </div>
 
                 <h3 id="method_shift">
-        <div class="location">at line 246</div>
+        <div class="location">at line 252</div>
         <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
     <strong>shift</strong>()</code>
     </h3>
@@ -913,7 +944,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -923,7 +955,7 @@
     </div>
 
                 <h3 id="method_pop">
-        <div class="location">at line 257</div>
+        <div class="location">at line 263</div>
         <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
     <strong>pop</strong>()</code>
     </h3>
@@ -938,7 +970,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -948,9 +981,9 @@
     </div>
 
                 <h3 id="method_unshift">
-        <div class="location">at line 269</div>
+        <div class="location">at line 275</div>
         <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>unshift</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $value)</code>
+    <strong>unshift</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Pushes a new value at the beginning of the collection, with no specific index</p>
@@ -961,7 +994,7 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The new value to add in the collection</td>
             </tr>
@@ -973,7 +1006,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -983,7 +1017,7 @@
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 280</div>
+        <div class="location">at line 286</div>
         <code>            public            array
     <strong>each</strong>()</code>
     </h3>
@@ -1008,9 +1042,9 @@
     </div>
 
                 <h3 id="method_in_array">
-        <div class="location">at line 292</div>
+        <div class="location">at line 299</div>
         <code>            public            bool
-    <strong>in_array</strong>($value)</code>
+    <strong>in_array</strong>(mixed $value)</code>
     </h3>
     <div class="details">
         <p>Search a value in the current array and returns true if so</p>
@@ -1021,10 +1055,9 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
-                <td>
-</td>
+                <td>The value to test</td>
             </tr>
             </table>
 
@@ -1044,9 +1077,9 @@
     </div>
 
                 <h3 id="method_key_exists">
-        <div class="location">at line 302</div>
+        <div class="location">at line 310</div>
         <code>            public            bool
-    <strong>key_exists</strong>($index)</code>
+    <strong>key_exists</strong>(mixed $index)</code>
     </h3>
     <div class="details">
         <p>Search if an entry exists with this key</p>
@@ -1057,10 +1090,9 @@
 
                     <table>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$index</td>
-                <td>
-</td>
+                <td>The index to test</td>
             </tr>
             </table>
 
@@ -1080,7 +1112,7 @@
     </div>
 
                 <h3 id="method_values">
-        <div class="location">at line 312</div>
+        <div class="location">at line 320</div>
         <code>            public            array
     <strong>values</strong>()</code>
     </h3>
@@ -1105,7 +1137,7 @@
     </div>
 
                 <h3 id="method_keys">
-        <div class="location">at line 322</div>
+        <div class="location">at line 330</div>
         <code>            public            array
     <strong>keys</strong>()</code>
     </h3>
@@ -1130,9 +1162,9 @@
     </div>
 
                 <h3 id="method_getEntry">
-        <div class="location">at line 338</div>
-        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
-    <strong>getEntry</strong>(int|string $index, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null)</code>
+        <div class="location">at line 346</div>
+        <code>            public            mixed
+    <strong>getEntry</strong>(int|string $index, mixed $default = null)</code>
     </h3>
     <div class="details">
         <p>Gets a collection entry value by its index</p>
@@ -1148,9 +1180,9 @@
                 <td>The index of the entry to get</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$default</td>
-                <td>The default value returned if the original entry is not seted (default is NULL)</td>
+                <td>The default value returned if the original entry is not set (default is NULL)</td>
             </tr>
             </table>
 
@@ -1159,7 +1191,7 @@
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>The found value for the searched index, $default if nothing has been found</td>
         </tr>
     </table>
@@ -1170,9 +1202,9 @@
     </div>
 
                 <h3 id="method_setEntry">
-        <div class="location">at line 353</div>
+        <div class="location">at line 361</div>
         <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>setEntry</strong>(int|string|null $index = null, <abbr title="Patterns\Commons\misc">misc</abbr> $value)</code>
+    <strong>setEntry</strong>(int|string|null $index = null, mixed $value)</code>
     </h3>
     <div class="details">
         <p>Sets a collection entry value by its index</p>
@@ -1187,7 +1219,7 @@
                 <td>The index of the entry to set</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The value to set</td>
             </tr>
@@ -1199,7 +1231,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -1218,7 +1251,7 @@
     </div>
 
                 <h3 id="method_addEntry">
-        <div class="location">at line 367</div>
+        <div class="location">at line 375</div>
         <code>            public            
     <strong>addEntry</strong>($index = null, $value)</code>
     </h3>
@@ -1260,8 +1293,8 @@
     </div>
 
                 <h3 id="method_issetEntry">
-        <div class="location">at line 378</div>
-        <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+        <div class="location">at line 386</div>
+        <code>            public            bool
     <strong>issetEntry</strong>(int|string $index)</code>
     </h3>
     <div class="details">
@@ -1284,8 +1317,9 @@
 
                     <table>
         <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>bool</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -1295,7 +1329,7 @@
     </div>
 
                 <h3 id="method_unsetEntry">
-        <div class="location">at line 389</div>
+        <div class="location">at line 397</div>
         <code>            public            <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
     <strong>unsetEntry</strong>(int|string $index)</code>
     </h3>
@@ -1320,7 +1354,8 @@
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>$this for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 

@@ -53,17 +53,17 @@ are often stored in complex arrays identified by a simple key.</p>
                     <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_set">set</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)
+                    <a href="#method_set">set</a>(string $name, mixed $value, string $scope = null)
                     <p>Set the value of a specific option with depth</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_get">get</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)
+                    <a href="#method_get">get</a>(string $name, mixed $default = null, string $scope = null)
                     <p>Get the value of a specific option with depth</p>
                 </td>
                 <td></td>
@@ -83,7 +83,7 @@ are often stored in complex arrays identified by a simple key.</p>
                     <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_setConfig">setConfig</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)
+                    <a href="#method_setConfig">setConfig</a>(string $name, mixed $value, string $scope = null)
                     <p>Set the value of a specific option (no scope notation allowed here)</p>
                 </td>
                 <td></td>
@@ -100,20 +100,20 @@ are often stored in complex arrays identified by a simple key.</p>
             </tr>
                     <tr>
                 <td class="type">
-                    array|<abbr title="Patterns\Commons\misc">misc</abbr>|null
+                    array|mixed|null
                 </td>
                 <td class="last">
-                    <a href="#method_getConfigs">getConfigs</a>(<abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)
+                    <a href="#method_getConfigs">getConfigs</a>(mixed $default = null, string $scope = null)
                     <p>Get the array of options (from a specific scope if so)</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Patterns\Commons\misc">misc</abbr>
+                    mixed
                 </td>
                 <td class="last">
-                    <a href="#method_getConfig">getConfig</a>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)
+                    <a href="#method_getConfig">getConfig</a>(string $name, mixed $default = null, string $scope = null)
                     <p>Get the value of a specific option (no scope notation allowed here)</p>
                 </td>
                 <td></td>
@@ -140,9 +140,9 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_set">
-        <div class="location">at line 50</div>
+        <div class="location">at line 49</div>
         <code>            public            <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
-    <strong>set</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)</code>
+    <strong>set</strong>(string $name, mixed $value, string $scope = null)</code>
     </h3>
     <div class="details">
         <p>Set the value of a specific option with depth</p>
@@ -158,7 +158,7 @@ are often stored in complex arrays identified by a simple key.</p>
                 <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The value to set for $name</td>
             </tr>
@@ -175,7 +175,8 @@ are often stored in complex arrays identified by a simple key.</p>
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -185,9 +186,9 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_get">
-        <div class="location">at line 71</div>
-        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
-    <strong>get</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)</code>
+        <div class="location">at line 69</div>
+        <code>            public            mixed
+    <strong>get</strong>(string $name, mixed $default = null, string $scope = null)</code>
     </h3>
     <div class="details">
         <p>Get the value of a specific option with depth</p>
@@ -203,7 +204,7 @@ are often stored in complex arrays identified by a simple key.</p>
                 <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$default</td>
                 <td>The default value to return if so (<code>null</code> by default)</td>
             </tr>
@@ -219,7 +220,7 @@ are often stored in complex arrays identified by a simple key.</p>
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>The value retrieved in the registry or the default value otherwise</td>
         </tr>
     </table>
@@ -230,7 +231,7 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_setConfigs">
-        <div class="location">at line 90</div>
+        <div class="location">at line 87</div>
         <code>            public            <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
     <strong>setConfigs</strong>(array $options, string $scope = null)</code>
     </h3>
@@ -260,7 +261,8 @@ are often stored in complex arrays identified by a simple key.</p>
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -270,9 +272,9 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_setConfig">
-        <div class="location">at line 110</div>
+        <div class="location">at line 106</div>
         <code>            public            <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
-    <strong>setConfig</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $value, string $scope = null)</code>
+    <strong>setConfig</strong>(string $name, mixed $value, string $scope = null)</code>
     </h3>
     <div class="details">
         <p>Set the value of a specific option (no scope notation allowed here)</p>
@@ -288,7 +290,7 @@ are often stored in complex arrays identified by a simple key.</p>
                 <td>The index of the configuration value</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$value</td>
                 <td>The value to set for the configuration entry</td>
             </tr>
@@ -305,7 +307,8 @@ are often stored in complex arrays identified by a simple key.</p>
                     <table>
         <tr>
             <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
-            <td>Returns <code>$this</code> for method chaining</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -315,7 +318,7 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_addConfig">
-        <div class="location">at line 129</div>
+        <div class="location">at line 125</div>
         <code>            public            
     <strong>addConfig</strong>($name, $value, $scope = null)</code>
     </h3>
@@ -363,9 +366,9 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_getConfigs">
-        <div class="location">at line 142</div>
-        <code>            public            array|<abbr title="Patterns\Commons\misc">misc</abbr>|null
-    <strong>getConfigs</strong>(<abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)</code>
+        <div class="location">at line 137</div>
+        <code>            public            array|mixed|null
+    <strong>getConfigs</strong>(mixed $default = null, string $scope = null)</code>
     </h3>
     <div class="details">
         <p>Get the array of options (from a specific scope if so)</p>
@@ -376,7 +379,7 @@ are often stored in complex arrays identified by a simple key.</p>
 
                     <table>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$default</td>
                 <td>The default value to return if so (<code>null</code> by default)</td>
             </tr>
@@ -392,7 +395,7 @@ are often stored in complex arrays identified by a simple key.</p>
 
                     <table>
         <tr>
-            <td>array|<abbr title="Patterns\Commons\misc">misc</abbr>|null</td>
+            <td>array|mixed|null</td>
             <td>
 </td>
         </tr>
@@ -404,9 +407,9 @@ are often stored in complex arrays identified by a simple key.</p>
     </div>
 
                 <h3 id="method_getConfig">
-        <div class="location">at line 159</div>
-        <code>            public            <abbr title="Patterns\Commons\misc">misc</abbr>
-    <strong>getConfig</strong>(string $name, <abbr title="Patterns\Commons\misc">misc</abbr> $default = null, string $scope = null)</code>
+        <div class="location">at line 153</div>
+        <code>            public            mixed
+    <strong>getConfig</strong>(string $name, mixed $default = null, string $scope = null)</code>
     </h3>
     <div class="details">
         <p>Get the value of a specific option (no scope notation allowed here)</p>
@@ -422,7 +425,7 @@ are often stored in complex arrays identified by a simple key.</p>
                 <td>The index of the configuration value to get</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+                <td>mixed</td>
                 <td>$default</td>
                 <td>The default value to return if so (<code>null</code> by default)</td>
             </tr>
@@ -438,7 +441,7 @@ are often stored in complex arrays identified by a simple key.</p>
 
                     <table>
         <tr>
-            <td><abbr title="Patterns\Commons\misc">misc</abbr></td>
+            <td>mixed</td>
             <td>
 </td>
         </tr>
