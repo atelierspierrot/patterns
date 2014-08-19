@@ -7,26 +7,16 @@
  * Sources <http://github.com/atelierspierrot/patterns>
  */
 
-namespace Patterns\Abstracts;
-
-use \Patterns\Interfaces\OptionableInterface;
+namespace Patterns\Traits;
 
 /**
- * A simple object options manager
- * 
- * This class is a helper to create an object that may handle a set of options.
- * The options can be defined globally or individually, overrided during the
- * object life-cycle and accessed easily. The `get` accessor allows to define
- * a default value returned if no other value is found.
- *
- * This class as an exact copy as a trait at `\Patterns\Traits\Optionable`.
+ * This trait is the exact copy of the `\Patterns\Abstracts\AbstractOptionable` class.
  * It MUST be updated with it each time.
  *
- * @see     \Patterns\Traits\Optionable
+ * @see     \Patterns\Abstracts\AbstractOptionable
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
-abstract class AbstractOptionable
-    implements OptionableInterface
+trait Optionable
 {
 
     /**
