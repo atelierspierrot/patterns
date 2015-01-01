@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>Patterns\Abstracts\AbstractSingleton | </title>
-                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../../classes.html">Classes</a></li>
-                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                        <li><a href="../../interfaces.html">Interfaces</a></li>
-            <li><a href="../../traits.html">Traits</a></li>
-            <li><a href="../../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Patterns\Abstracts\AbstractSingleton | Patterns</title>
 
-        <div id="title"></div>
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
 
-            <div class="type">Class</div>
-    <h1><a href="../../Patterns/Abstracts.html">Patterns\Abstracts</a>\AbstractSingleton</h1>
+    <body id="class" data-name="class:Patterns_Abstracts_AbstractSingleton" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>abstract     class
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Patterns</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Patterns.html">Patterns</a></li>
+                                        <li><a href="../../Patterns/Abstracts.html">Abstracts</a></li>
+    
+                <li>AbstractSingleton</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>AbstractSingleton</h1>
+    </div>
+
+    <p>abstract     class
     <strong>AbstractSingleton</strong></p>
 
             <div class="description">
-            <p>A singleton abstract class</p>
-            <p>No abstract method is defined but the best practice is to define an <code>init()</code> method in
+            <p>A singleton abstract class</p>            <p>No abstract method is defined but the best practice is to define an <code>init()</code> method in
 the child class as it will be called after instance creation. Arguments passed to the
 <code>getInstance</code> and <code>getInstanceByClassname</code> methods will be transmitted to the <code>__construct</code>
 or <code>init</code> method.</p>
@@ -45,63 +93,61 @@ or <code>init</code> method.</p>
 <p>$class = new classname
   $class->init( arguments )</p></li>
 </ul>
-</p>
-        </div>
+</p>        </div>
+    
     
     
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;object
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getInstance">getInstance</a>()
-                    <p>Static object getter: creation of an instance of the current calling class</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Static object getter: creation of an instance of the current calling class</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;object
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getInstanceByClassname">getInstanceByClassname</a>($classname)
-                    <p>Static object getter: creation of an instance from the class name passed in first argument</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>Static object getter: creation of an instance from the class name passed in first argument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method___clone">__clone</a>()
-                    <p>Object cloning is avoid</p>
-                </td>
-                <td></td>
-            </tr>
-            </table>
+                                            <p>Object cloning is avoid</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method_getInstance">
-        <div class="location">at line 73</div>
-        <code>        static    public            object
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">at line 86</div>
+        <code>        static            object
     <strong>getInstance</strong>()</code>
     </h3>
     <div class="details">
-        <p>Static object getter: creation of an instance of the current calling class</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Static object getter: creation of an instance of the current calling class</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>object</td>
             <td>This may return an instance of an object</td>
@@ -113,19 +159,20 @@ or <code>init</code> method.</p>
                     </div>
     </div>
 
-                <h3 id="method_getInstanceByClassname">
-        <div class="location">at line 91</div>
-        <code>        static    public            object
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstanceByClassname">
+        <div class="location">at line 104</div>
+        <code>        static            object
     <strong>getInstanceByClassname</strong>($classname)</code>
     </h3>
     <div class="details">
-        <p>Static object getter: creation of an instance from the class name passed in first argument</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Static object getter: creation of an instance from the class name passed in first argument</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td></td>
                 <td>$classname</td>
@@ -137,7 +184,7 @@ or <code>init</code> method.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>object</td>
             <td>This may return an instance of an object</td>
@@ -149,21 +196,22 @@ or <code>init</code> method.</p>
                     </div>
     </div>
 
-                <h3 id="method___clone">
-        <div class="location">at line 136</div>
-        <code>            public            
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at line 149</div>
+        <code>                    
     <strong>__clone</strong>()</code>
     </h3>
     <div class="details">
-        <p>Object cloning is avoid</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Object cloning is avoid</p>                                </div>
+                <div class="tags">
             
             
                             <h4>Exceptions</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
                 <td>Trying to clone a Singleton object will throw an Exception</td>
@@ -174,10 +222,17 @@ or <code>init</code> method.</p>
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>

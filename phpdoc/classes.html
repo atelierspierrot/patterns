@@ -1,243 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>Classes | </title>
-                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-                            </head>
-        <body id="overview">
-            <div class="header">
-        <ul>
-            <li><a href="classes.html">Classes</a></li>
-                            <li><a href="namespaces.html">Namespaces</a></li>
-                        <li><a href="interfaces.html">Interfaces</a></li>
-            <li><a href="traits.html">Traits</a></li>
-            <li><a href="doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>All Classes | Patterns</title>
 
-        <div id="title"></div>
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+    
+    
+    </head>
 
-            <h1>Classes</h1>
+    <body id="classes" data-name="" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <table>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Abstracts/AbstractAccessible.html" target="main"><abbr title="Patterns\Abstracts\AbstractAccessible">Patterns\Abstracts\AbstractAccessible</abbr></a>
-                                    </td>
-                <td>
-                    Magic properties accessors  This abstract class defines commons magic methods to directly access (set, unset, check or get) object properties.
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Abstracts/AbstractOptionable.html" target="main"><abbr title="Patterns\Abstracts\AbstractOptionable">Patterns\Abstracts\AbstractOptionable</abbr></a>
-                                    </td>
-                <td>
-                    A simple object options manager  This class is a helper to create an object that may handle a set of options.
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Abstracts/AbstractResponse.html" target="main"><abbr title="Patterns\Abstracts\AbstractResponse">Patterns\Abstracts\AbstractResponse</abbr></a>
-                                    </td>
-                <td>
-                    Global HTML response class  This class defines a very simple HTML response pattern with a content and a set of headers.
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Abstracts/AbstractSingleton.html" target="main"><abbr title="Patterns\Abstracts\AbstractSingleton">Patterns\Abstracts\AbstractSingleton</abbr></a>
-                                    </td>
-                <td>
-                    A singleton abstract class
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Abstracts/AbstractStaticCreator.html" target="main"><abbr title="Patterns\Abstracts\AbstractStaticCreator">Patterns\Abstracts\AbstractStaticCreator</abbr></a>
-                                    </td>
-                <td>
-                    This class allows to create objects that can be statically created "on-the-fly" to allow method chaining constructing them like:
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Abstracts/AbstractView.html" target="main"><abbr title="Patterns\Abstracts\AbstractView">Patterns\Abstracts\AbstractView</abbr></a>
-                                    </td>
-                <td>
-                    
 
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Commons/Collection.html" target="main"><abbr title="Patterns\Commons\Collection">Patterns\Commons\Collection</abbr></a>
-                                    </td>
-                <td>
-                    Collection manager : allows to set, get, loop and seek in an array collection
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Commons/ConfigurationRegistry.html" target="main"><abbr title="Patterns\Commons\ConfigurationRegistry">Patterns\Commons\ConfigurationRegistry</abbr></a>
-                                    </td>
-                <td>
-                    A manager for a configuration registry as an array with a depth of 2  This class handles a simple and classic registry of values (stored in an array as <code>key=&gt;value</code> pairs) except that it accepts and manages the first depth keys of the array like a <code>scope</code> and permits to access values within scopes directly.
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                        <a href="Patterns/Commons/Registry.html" target="main"><abbr title="Patterns\Commons\Registry">Patterns\Commons\Registry</abbr></a>
-                                    </td>
-                <td>
-                    A classic registry manager  This class handles a set of registries (array of <code>key=&gt;value</code> pairs) distinguishing current working registry from old ones or others.
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/ArrayInterface.html" target="main"><abbr title="Patterns\Interfaces\ArrayInterface">Patterns\Interfaces\ArrayInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    Array interface
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/CachableInterface.html" target="main"><abbr title="Patterns\Interfaces\CachableInterface">Patterns\Interfaces\CachableInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    Manage a cachable item object
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/CollectionInterface.html" target="main"><abbr title="Patterns\Interfaces\CollectionInterface">Patterns\Interfaces\CollectionInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    Collection interface
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/CrudInterface.html" target="main"><abbr title="Patterns\Interfaces\CrudInterface">Patterns\Interfaces\CrudInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    An interface for a basic CRUD model
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/DebuggableInterface.html" target="main"><abbr title="Patterns\Interfaces\DebuggableInterface">Patterns\Interfaces\DebuggableInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    A simple interface to manage a debuggable object
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/IteratorInterface.html" target="main"><abbr title="Patterns\Interfaces\IteratorInterface">Patterns\Interfaces\IteratorInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    Iterator interface
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/OptionableInterface.html" target="main"><abbr title="Patterns\Interfaces\OptionableInterface">Patterns\Interfaces\OptionableInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    A simple interface to manage a set of options
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/RepositoryInterface.html" target="main"><abbr title="Patterns\Interfaces\RepositoryInterface">Patterns\Interfaces\RepositoryInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    
+                <div id="api-tree"></div>
 
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/RequestInterface.html" target="main"><abbr title="Patterns\Interfaces\RequestInterface">Patterns\Interfaces\RequestInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    Interface for classic request handling
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/ResponseInterface.html" target="main"><abbr title="Patterns\Interfaces\ResponseInterface">Patterns\Interfaces\ResponseInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    Interface for classic response handling
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/RouterInterface.html" target="main"><abbr title="Patterns\Interfaces\RouterInterface">Patterns\Interfaces\RouterInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    
-
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/StaticCreatorInterface.html" target="main"><abbr title="Patterns\Interfaces\StaticCreatorInterface">Patterns\Interfaces\StaticCreatorInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    This interface allows to create objects that can be statically created "on-the-fly" to allow method chaining constructing them like:
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/StaticOptionableInterface.html" target="main"><abbr title="Patterns\Interfaces\StaticOptionableInterface">Patterns\Interfaces\StaticOptionableInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    A simple interface to manage a set of options statically
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/TranslatableInterface.html" target="main"><abbr title="Patterns\Interfaces\TranslatableInterface">Patterns\Interfaces\TranslatableInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    This work is BETA (not fully tested)
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/UserInterface.html" target="main"><abbr title="Patterns\Interfaces\UserInterface">Patterns\Interfaces\UserInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    This work is BETA (not fully tested)
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/ViewInterface.html" target="main"><abbr title="Patterns\Interfaces\ViewInterface">Patterns\Interfaces\ViewInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    This work is BETA (not fully tested)
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                    <em>                    <a href="Patterns/Interfaces/WebPageInterface.html" target="main"><abbr title="Patterns\Interfaces\WebPageInterface">Patterns\Interfaces\WebPageInterface</abbr></a>
-                    </em>                </td>
-                <td>
-                    This work is BETA (not fully tested)
-                </td>
-            </tr>
-            </table>
         </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Patterns</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div id="page-content">
+                    <div class="page-header">
+        <h1>Classes</h1>
+    </div>
+
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Abstracts/AbstractAccessible.html"><abbr title="Patterns\Abstracts\AbstractAccessible">Patterns\Abstracts\AbstractAccessible</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    Magic properties accessors
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">Patterns\Abstracts\AbstractOptionable</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    A simple object options manager
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">Patterns\Abstracts\AbstractResponse</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    Global HTML response class
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Abstracts/AbstractSingleton.html"><abbr title="Patterns\Abstracts\AbstractSingleton">Patterns\Abstracts\AbstractSingleton</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    A singleton abstract class
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Abstracts/AbstractStaticCreator.html"><abbr title="Patterns\Abstracts\AbstractStaticCreator">Patterns\Abstracts\AbstractStaticCreator</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    This class allows to create objects that can be statically created "on-the-fly" to allow
+method chaining constructing them like:
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">Patterns\Abstracts\AbstractView</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Patterns\Commons\Collection</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    Collection manager : allows to set, get, loop and seek in an array collection
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">Patterns\Commons\ConfigurationRegistry</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    A manager for a configuration registry as an array with a depth of 2
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Patterns\Commons\Registry</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    A classic registry manager
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/ArrayInterface.html"><abbr title="Patterns\Interfaces\ArrayInterface">Patterns\Interfaces\ArrayInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    Array interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/CachableInterface.html"><abbr title="Patterns\Interfaces\CachableInterface">Patterns\Interfaces\CachableInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    Manage a cachable item object
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/CollectionInterface.html"><abbr title="Patterns\Interfaces\CollectionInterface">Patterns\Interfaces\CollectionInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    Collection interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/CrudInterface.html"><abbr title="Patterns\Interfaces\CrudInterface">Patterns\Interfaces\CrudInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    An interface for a basic CRUD model
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/DebuggableInterface.html"><abbr title="Patterns\Interfaces\DebuggableInterface">Patterns\Interfaces\DebuggableInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    A simple interface to manage a debuggable object
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/IteratorInterface.html"><abbr title="Patterns\Interfaces\IteratorInterface">Patterns\Interfaces\IteratorInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    Iterator interface
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/OptionableInterface.html"><abbr title="Patterns\Interfaces\OptionableInterface">Patterns\Interfaces\OptionableInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    A simple interface to manage a set of options
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/RepositoryInterface.html"><abbr title="Patterns\Interfaces\RepositoryInterface">Patterns\Interfaces\RepositoryInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/RequestInterface.html"><abbr title="Patterns\Interfaces\RequestInterface">Patterns\Interfaces\RequestInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    Interface for classic request handling
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/ResponseInterface.html"><abbr title="Patterns\Interfaces\ResponseInterface">Patterns\Interfaces\ResponseInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    Interface for classic response handling
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/RouterInterface.html"><abbr title="Patterns\Interfaces\RouterInterface">Patterns\Interfaces\RouterInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/StaticCreatorInterface.html"><abbr title="Patterns\Interfaces\StaticCreatorInterface">Patterns\Interfaces\StaticCreatorInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    This interface allows to create objects that can be statically created "on-the-fly" to allow
+method chaining constructing them like:
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/StaticOptionableInterface.html"><abbr title="Patterns\Interfaces\StaticOptionableInterface">Patterns\Interfaces\StaticOptionableInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    A simple interface to manage a set of options statically
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/TranslatableInterface.html"><abbr title="Patterns\Interfaces\TranslatableInterface">Patterns\Interfaces\TranslatableInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    This work is BETA (not fully tested)
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/UserInterface.html"><abbr title="Patterns\Interfaces\UserInterface">Patterns\Interfaces\UserInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    This work is BETA (not fully tested)
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/ViewInterface.html"><abbr title="Patterns\Interfaces\ViewInterface">Patterns\Interfaces\ViewInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    This work is BETA (not fully tested)
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Patterns/Interfaces/WebPageInterface.html"><abbr title="Patterns\Interfaces\WebPageInterface">Patterns\Interfaces\WebPageInterface</abbr></a></em>
+                                    </div>
+                <div class="col-md-6">
+                    This work is BETA (not fully tested)
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Patterns\Traits\Optionable</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    This trait is the exact copy of the <code>\Patterns\Abstracts\AbstractOptionable</code> class.
+                </div>
+            </div>
+            </div>
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>

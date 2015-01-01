@@ -1,190 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>Patterns\Abstracts\AbstractResponse | </title>
-                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../../classes.html">Classes</a></li>
-                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                        <li><a href="../../interfaces.html">Interfaces</a></li>
-            <li><a href="../../traits.html">Traits</a></li>
-            <li><a href="../../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Patterns\Abstracts\AbstractResponse | Patterns</title>
 
-        <div id="title"></div>
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
 
-            <div class="type">Class</div>
-    <h1><a href="../../Patterns/Abstracts.html">Patterns\Abstracts</a>\AbstractResponse</h1>
+    <body id="class" data-name="class:Patterns_Abstracts_AbstractResponse" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>abstract     class
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Patterns</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Patterns.html">Patterns</a></li>
+                                        <li><a href="../../Patterns/Abstracts.html">Abstracts</a></li>
+    
+                <li>AbstractResponse</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>AbstractResponse</h1>
+    </div>
+
+    <p>abstract     class
     <strong>AbstractResponse</strong></p>
 
             <div class="description">
-            <p>Global HTML response class  This class defines a very simple HTML response pattern with a content and a set of headers.</p>
-            <p>Its abstract methods force the children classes
+            <p>Global HTML response class</p>            <p>This class defines a very simple HTML response pattern with a content
+and a set of headers. Its abstract methods force the children classes
 to define how to render the response, force the client device to download
-or display a raw file content and make a redirection to a new URL.</p>
-        </div>
+or display a raw file content and make a redirection to a new URL.</p>        </div>
+    
     
     
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_setBody">setBody</a>(string $body)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getBody">getBody</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_setHeaders">setHeaders</a>(array $params)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_addHeader">addHeader</a>(string $name, string $value = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getHeaders">getHeaders</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string|null
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getHeader">getHeader</a>(string $name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_hasHeader">hasHeader</a>(string $name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_renderHeaders">renderHeaders</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_redirect">redirect</a>(string $url, bool $permanent = false)
-                    <p>This method must process a header redirection to the new URL</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>This method must process a header redirection to the new URL</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_send">send</a>(string $content = null, string $type = null)
-                    <p>This method must render the response in <code>$type</code> content-type if defined</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>This method must render the response in <code>$type</code> content-type if defined</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_download">download</a>(string $file = null, string $type = null, string $file_name = null)
-                    <p>This method must process a browser file download in <code>$type</code> content-type if defined</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+                                            <p>This method must process a browser file download in <code>$type</code> content-type if defined</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
-                </td>
-                <td class="last">
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_flush">flush</a>(string $file_content = null, string $type = null)
-                    <p>This method must render a raw file content in <code>$type</code> content-type if defined</p>
-                </td>
-                <td></td>
-            </tr>
-            </table>
+                                            <p>This method must render a raw file content in <code>$type</code> content-type if defined</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method_setBody">
-        <div class="location">at line 38</div>
-        <code>            public            <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setBody">
+        <div class="location">at line 51</div>
+        <code>                    <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
     <strong>setBody</strong>(string $body)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$body</td>
@@ -196,7 +231,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a></td>
             <td>
@@ -209,21 +244,19 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_getBody">
-        <div class="location">at line 47</div>
-        <code>            public            string
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBody">
+        <div class="location">at line 60</div>
+        <code>                    string
     <strong>getBody</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string</td>
             <td>
@@ -236,20 +269,18 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_setHeaders">
-        <div class="location">at line 65</div>
-        <code>            public            <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHeaders">
+        <div class="location">at line 78</div>
+        <code>                    <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
     <strong>setHeaders</strong>(array $params)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>array</td>
                 <td>$params</td>
@@ -261,7 +292,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a></td>
             <td>
@@ -274,20 +305,18 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_addHeader">
-        <div class="location">at line 76</div>
-        <code>            public            <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHeader">
+        <div class="location">at line 89</div>
+        <code>                    <a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a>
     <strong>addHeader</strong>(string $name, string $value = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$name</td>
@@ -305,7 +334,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td><a href="../../Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a></td>
             <td>
@@ -318,21 +347,19 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_getHeaders">
-        <div class="location">at line 85</div>
-        <code>            public            array
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">at line 98</div>
+        <code>                    array
     <strong>getHeaders</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>array</td>
             <td>
@@ -345,20 +372,18 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_getHeader">
-        <div class="location">at line 94</div>
-        <code>            public            string|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeader">
+        <div class="location">at line 107</div>
+        <code>                    string|null
     <strong>getHeader</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$name</td>
@@ -370,7 +395,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>string|null</td>
             <td>
@@ -383,20 +408,18 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_hasHeader">
-        <div class="location">at line 105</div>
-        <code>            public            bool
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHeader">
+        <div class="location">at line 118</div>
+        <code>                    bool
     <strong>hasHeader</strong>(string $name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$name</td>
@@ -408,7 +431,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>bool</td>
             <td>
@@ -421,21 +444,19 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_renderHeaders">
-        <div class="location">at line 113</div>
-        <code>            public            void
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderHeaders">
+        <div class="location">at line 126</div>
+        <code>                    void
     <strong>renderHeaders</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -448,19 +469,20 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_redirect">
-        <div class="location">at line 132</div>
-        <code>    abstract        public            void
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at line 145</div>
+        <code>    abstract                void
     <strong>redirect</strong>(string $url, bool $permanent = false)</code>
     </h3>
     <div class="details">
-        <p>This method must process a header redirection to the new URL</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>This method must process a header redirection to the new URL</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$url</td>
@@ -478,7 +500,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -491,19 +513,20 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_send">
-        <div class="location">at line 141</div>
-        <code>    abstract        public            void
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at line 154</div>
+        <code>    abstract                void
     <strong>send</strong>(string $content = null, string $type = null)</code>
     </h3>
     <div class="details">
-        <p>This method must render the response in <code>$type</code> content-type if defined</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>This method must render the response in <code>$type</code> content-type if defined</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$content</td>
@@ -521,7 +544,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -534,19 +557,20 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_download">
-        <div class="location">at line 151</div>
-        <code>    abstract        public            void
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_download">
+        <div class="location">at line 164</div>
+        <code>    abstract                void
     <strong>download</strong>(string $file = null, string $type = null, string $file_name = null)</code>
     </h3>
     <div class="details">
-        <p>This method must process a browser file download in <code>$type</code> content-type if defined</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>This method must process a browser file download in <code>$type</code> content-type if defined</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$file</td>
@@ -570,7 +594,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -583,19 +607,20 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
-                <h3 id="method_flush">
-        <div class="location">at line 160</div>
-        <code>    abstract        public            void
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">at line 173</div>
+        <code>    abstract                void
     <strong>flush</strong>(string $file_content = null, string $type = null)</code>
     </h3>
     <div class="details">
-        <p>This method must render a raw file content in <code>$type</code> content-type if defined</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>This method must render a raw file content in <code>$type</code> content-type if defined</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
                 <td>$file_content</td>
@@ -613,7 +638,7 @@ or display a raw file content and make a redirection to a new URL.</p>
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
             <td>void</td>
             <td>
@@ -626,10 +651,17 @@ or display a raw file content and make a redirection to a new URL.</p>
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>

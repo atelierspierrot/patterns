@@ -1,63 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>Index | </title>
-                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-                            </head>
-        <body id="overview">
-            <div class="header">
-        <ul>
-            <li><a href="classes.html">Classes</a></li>
-                            <li><a href="namespaces.html">Namespaces</a></li>
-                        <li><a href="interfaces.html">Interfaces</a></li>
-            <li><a href="traits.html">Traits</a></li>
-            <li><a href="doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Index | Patterns</title>
 
-        <div id="title"></div>
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+    
+    
+    </head>
 
-            <div class="type">Index</div>
+    <body id="doc-index" data-name="" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
 
-                        <a href="#letterA">A</a>
-                                <a href="#letterB">B</a>
-                                <a href="#letterC">C</a>
-                                <a href="#letterD">D</a>
-                                <a href="#letterE">E</a>
-                                <a href="#letterF">F</a>
-                                <a href="#letterG">G</a>
-                                H
-                                <a href="#letterI">I</a>
-                                J
-                                <a href="#letterK">K</a>
-                                <a href="#letterL">L</a>
-                                M
-                                N
-                                <a href="#letterO">O</a>
-                                <a href="#letterP">P</a>
-                                Q
-                                <a href="#letterR">R</a>
-                                <a href="#letterS">S</a>
-                                <a href="#letterT">T</a>
-                                <a href="#letterU">U</a>
-                                <a href="#letterV">V</a>
-                                W
-                                X
-                                Y
-                                Z
-                </div>
-        <div class="content">
-                <h2 id="letterA">A</h2>
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Patterns</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Index</h1>
+    </div>
+
+    <ul class="pagination">
+                                    <li><a href="#letterA">A</a></li>
+                                                <li><a href="#letterB">B</a></li>
+                                                <li><a href="#letterC">C</a></li>
+                                                <li><a href="#letterD">D</a></li>
+                                                <li><a href="#letterE">E</a></li>
+                                                <li><a href="#letterF">F</a></li>
+                                                <li><a href="#letterG">G</a></li>
+                                                <li class="disabled"><a href="#letterH">H</a></li>
+                                                <li><a href="#letterI">I</a></li>
+                                                <li class="disabled"><a href="#letterJ">J</a></li>
+                                                <li><a href="#letterK">K</a></li>
+                                                <li><a href="#letterL">L</a></li>
+                                                <li class="disabled"><a href="#letterM">M</a></li>
+                                                <li class="disabled"><a href="#letterN">N</a></li>
+                                                <li><a href="#letterO">O</a></li>
+                                                <li><a href="#letterP">P</a></li>
+                                                <li class="disabled"><a href="#letterQ">Q</a></li>
+                                                <li><a href="#letterR">R</a></li>
+                                                <li><a href="#letterS">S</a></li>
+                                                <li><a href="#letterT">T</a></li>
+                                                <li><a href="#letterU">U</a></li>
+                                                <li><a href="#letterV">V</a></li>
+                                                <li class="disabled"><a href="#letterW">W</a></li>
+                                                <li class="disabled"><a href="#letterX">X</a></li>
+                                                <li class="disabled"><a href="#letterY">Y</a></li>
+                                                <li class="disabled"><a href="#letterZ">Z</a></li>
+                        </ul>
+
+    <h2 id="letterA">A</h2>
         <dl id="index"><dt><a href="Patterns/Abstracts/AbstractAccessible.html"><abbr title="Patterns\Abstracts\AbstractAccessible">AbstractAccessible</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
-                    <dd>Magic properties accessors  This abstract class defines commons magic methods to directly access (set, unset, check or get) object properties.</dd><dt><a href="Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">AbstractOptionable</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
-                    <dd>A simple object options manager  This class is a helper to create an object that may handle a set of options.</dd><dt><a href="Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
-                    <dd>Global HTML response class  This class defines a very simple HTML response pattern with a content and a set of headers.</dd><dt><a href="Patterns/Abstracts/AbstractResponse.html#method_addHeader"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr>::addHeader</a>() &mdash; <em>Method in class <a href="Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a></em></dt>
+                    <dd>Magic properties accessors</dd><dt><a href="Patterns/Abstracts/AbstractOptionable.html"><abbr title="Patterns\Abstracts\AbstractOptionable">AbstractOptionable</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
+                    <dd>A simple object options manager</dd><dt><a href="Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
+                    <dd>Global HTML response class</dd><dt><a href="Patterns/Abstracts/AbstractResponse.html#method_addHeader"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr>::addHeader</a>() &mdash; <em>Method in class <a href="Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a></em></dt>
                     <dd>
 </dd><dt><a href="Patterns/Abstracts/AbstractSingleton.html"><abbr title="Patterns\Abstracts\AbstractSingleton">AbstractSingleton</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
                     <dd>A singleton abstract class</dd><dt><a href="Patterns/Abstracts/AbstractStaticCreator.html"><abbr title="Patterns\Abstracts\AbstractStaticCreator">AbstractStaticCreator</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
-                    <dd>This class allows to create objects that can be statically created "on-the-fly" to allow method chaining constructing them like:</dd><dt><a href="Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
+                    <dd>This class allows to create objects that can be statically created "on-the-fly" to allow
+method chaining constructing them like:</dd><dt><a href="Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Abstracts.html">Patterns\Abstracts</a></em></dt>
                     <dd>
 </dd><dt><a href="Patterns/Abstracts/AbstractView.html#method_appendOutput"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr>::appendOutput</a>() &mdash; <em>Method in class <a href="Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></em></dt>
                     <dd>Append the output content to the existing content</dd><dt><a href="Patterns/Abstracts/AbstractView.html#method_addParam"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr>::addParam</a>() &mdash; <em>Method in class <a href="Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></em></dt>
@@ -79,7 +123,7 @@
                     <dd>Collection manager : allows to set, get, loop and seek in an array collection</dd><dt><a href="Patterns/Commons/Collection.html#method_current"><abbr title="Patterns\Commons\Collection">Collection</abbr>::current</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Gets the value of the collection at current index</dd><dt><a href="Patterns/Commons/Collection.html#method_count"><abbr title="Patterns\Commons\Collection">Collection</abbr>::count</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Counts the number of entries in the collection</dd><dt><a href="Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Commons.html">Patterns\Commons</a></em></dt>
-                    <dd>A manager for a configuration registry as an array with a depth of 2  This class handles a simple and classic registry of values (stored in an array as <code>key=&gt;value</code> pairs) except that it accepts and manages the first depth keys of the array like a <code>scope</code> and permits to access values within scopes directly.</dd><dt><a href="Patterns/Interfaces/ArrayInterface.html#method_count"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr>::count</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/ArrayInterface.html"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr></a></em></dt>
+                    <dd>A manager for a configuration registry as an array with a depth of 2</dd><dt><a href="Patterns/Interfaces/ArrayInterface.html#method_count"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr>::count</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/ArrayInterface.html"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr></a></em></dt>
                     <dd>Counts the number of entries in the collection</dd><dt><a href="Patterns/Interfaces/CachableInterface.html"><abbr title="Patterns\Interfaces\CachableInterface">CachableInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
                     <dd>Manage a cachable item object</dd><dt><a href="Patterns/Interfaces/CollectionInterface.html"><abbr title="Patterns\Interfaces\CollectionInterface">CollectionInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
                     <dd>Collection interface</dd><dt><a href="Patterns/Interfaces/CrudInterface.html"><abbr title="Patterns\Interfaces\CrudInterface">CrudInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
@@ -178,7 +222,9 @@
                     <dd>Get the page menu</dd><dt><a href="Patterns/Interfaces/WebPageInterface.html#method_getTitle"><abbr title="Patterns\Interfaces\WebPageInterface">WebPageInterface</abbr>::getTitle</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/WebPageInterface.html"><abbr title="Patterns\Interfaces\WebPageInterface">WebPageInterface</abbr></a></em></dt>
                     <dd>Get the page title</dd><dt><a href="Patterns/Interfaces/WebPageInterface.html#method_getMetas"><abbr title="Patterns\Interfaces\WebPageInterface">WebPageInterface</abbr>::getMetas</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/WebPageInterface.html"><abbr title="Patterns\Interfaces\WebPageInterface">WebPageInterface</abbr></a></em></dt>
                     <dd>Get the page metas</dd><dt><a href="Patterns/Interfaces/WebPageInterface.html#method_getMeta"><abbr title="Patterns\Interfaces\WebPageInterface">WebPageInterface</abbr>::getMeta</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/WebPageInterface.html"><abbr title="Patterns\Interfaces\WebPageInterface">WebPageInterface</abbr></a></em></dt>
-                    <dd>Get one page meta</dd>        </dl><h2 id="letterH">H</h2>
+                    <dd>Get one page meta</dd><dt><a href="Patterns/Traits/Optionable.html#method_getOptions"><abbr title="Patterns\Traits\Optionable">Optionable</abbr>::getOptions</a>() &mdash; <em>Method in class <a href="Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a></em></dt>
+                    <dd>Get the array of options</dd><dt><a href="Patterns/Traits/Optionable.html#method_getOption"><abbr title="Patterns\Traits\Optionable">Optionable</abbr>::getOption</a>() &mdash; <em>Method in class <a href="Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a></em></dt>
+                    <dd>Get the value of a specific option</dd>        </dl><h2 id="letterH">H</h2>
         <dl id="index"><dt><a href="Patterns/Abstracts/AbstractResponse.html#method_hasHeader"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr>::hasHeader</a>() &mdash; <em>Method in class <a href="Patterns/Abstracts/AbstractResponse.html"><abbr title="Patterns\Abstracts\AbstractResponse">AbstractResponse</abbr></a></em></dt>
                     <dd>
 </dd>        </dl><h2 id="letterI">I</h2>
@@ -218,7 +264,8 @@
                     <dd>Check if a collection entry exists</dd><dt><a href="Patterns/Commons/Collection.html#method_offsetUnset"><abbr title="Patterns\Commons\Collection">Collection</abbr>::offsetUnset</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Unset a collection entry</dd><dt><a href="Patterns/Commons/Collection.html#method_offsetGet"><abbr title="Patterns\Commons\Collection">Collection</abbr>::offsetGet</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Get a collection entry</dd><dt><a href="Patterns/Interfaces/OptionableInterface.html"><abbr title="Patterns\Interfaces\OptionableInterface">OptionableInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
-                    <dd>A simple interface to manage a set of options</dd>        </dl><h2 id="letterP">P</h2>
+                    <dd>A simple interface to manage a set of options</dd><dt><a href="Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Traits.html">Patterns\Traits</a></em></dt>
+                    <dd>This trait is the exact copy of the <code>\Patterns\Abstracts\AbstractOptionable</code> class.</dd>        </dl><h2 id="letterP">P</h2>
         <dl id="index"><dt><a href="Patterns/Abstracts/AbstractView.html#method_prependOutput"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr>::prependOutput</a>() &mdash; <em>Method in class <a href="Patterns/Abstracts/AbstractView.html"><abbr title="Patterns\Abstracts\AbstractView">AbstractView</abbr></a></em></dt>
                     <dd>Prepend the output content to the existing content</dd><dt><a href="Patterns/Commons/Collection.html#method_prev"><abbr title="Patterns\Commons\Collection">Collection</abbr>::prev</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Decrease the current index</dd><dt><a href="Patterns/Commons/Collection.html#method_pos"><abbr title="Patterns\Commons\Collection">Collection</abbr>::pos</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
@@ -227,7 +274,8 @@
                     <dd>Deletes a value at the end of the collection</dd><dt><a href="Patterns/Interfaces/ArrayInterface.html#method_pop"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr>::pop</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/ArrayInterface.html"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr></a></em></dt>
                     <dd>Deletes a value at the end of the collection</dd><dt><a href="Patterns/Interfaces/ArrayInterface.html#method_push"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr>::push</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/ArrayInterface.html"><abbr title="Patterns\Interfaces\ArrayInterface">ArrayInterface</abbr></a></em></dt>
                     <dd>Pushes a new value at the end of the collection, with no specific index</dd><dt><a href="Patterns/Interfaces/IteratorInterface.html#method_pos"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr>::pos</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/IteratorInterface.html"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr></a></em></dt>
-                    <dd>Get the current index This must be an alias of \Iterator::current()</dd><dt><a href="Patterns/Interfaces/IteratorInterface.html#method_prev"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr>::prev</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/IteratorInterface.html"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr></a></em></dt>
+                    <dd>Get the current index
+This must be an alias of \Iterator::current()</dd><dt><a href="Patterns/Interfaces/IteratorInterface.html#method_prev"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr>::prev</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/IteratorInterface.html"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr></a></em></dt>
                     <dd>Decrease the current index</dd><dt><a href="Patterns/Interfaces/TranslatableInterface.html#method_pluralize"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr>::pluralize</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/TranslatableInterface.html"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr></a></em></dt>
                     <dd>
 </dd>        </dl><h2 id="letterR">R</h2>
@@ -239,10 +287,11 @@
                     <dd>Building of a view content including a view file passing it parameters</dd><dt><a href="Patterns/Commons/Collection.html#method_rewind"><abbr title="Patterns\Commons\Collection">Collection</abbr>::rewind</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Put the index value at the beginning of the collection array</dd><dt><a href="Patterns/Commons/Collection.html#method_reset"><abbr title="Patterns\Commons\Collection">Collection</abbr>::reset</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></em></dt>
                     <dd>Alias of self::rewind()</dd><dt><a href="Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Commons.html">Patterns\Commons</a></em></dt>
-                    <dd>A classic registry manager  This class handles a set of registries (array of <code>key=&gt;value</code> pairs) distinguishing current working registry from old ones or others.</dd><dt><a href="Patterns/Interfaces/CrudInterface.html#method_read"><abbr title="Patterns\Interfaces\CrudInterface">CrudInterface</abbr>::read</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/CrudInterface.html"><abbr title="Patterns\Interfaces\CrudInterface">CrudInterface</abbr></a></em></dt>
+                    <dd>A classic registry manager</dd><dt><a href="Patterns/Interfaces/CrudInterface.html#method_read"><abbr title="Patterns\Interfaces\CrudInterface">CrudInterface</abbr>::read</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/CrudInterface.html"><abbr title="Patterns\Interfaces\CrudInterface">CrudInterface</abbr></a></em></dt>
                     <dd>
 </dd><dt><a href="Patterns/Interfaces/IteratorInterface.html#method_reset"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr>::reset</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/IteratorInterface.html"><abbr title="Patterns\Interfaces\IteratorInterface">IteratorInterface</abbr></a></em></dt>
-                    <dd>Put the index value at 0 This must be an alias of \Iterator::rewind()</dd><dt><a href="Patterns/Interfaces/RepositoryInterface.html"><abbr title="Patterns\Interfaces\RepositoryInterface">RepositoryInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
+                    <dd>Put the index value at 0
+This must be an alias of \Iterator::rewind()</dd><dt><a href="Patterns/Interfaces/RepositoryInterface.html"><abbr title="Patterns\Interfaces\RepositoryInterface">RepositoryInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
                     <dd>
 </dd><dt><a href="Patterns/Interfaces/RequestInterface.html"><abbr title="Patterns\Interfaces\RequestInterface">RequestInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
                     <dd>Interface for classic request handling</dd><dt><a href="Patterns/Interfaces/ResponseInterface.html"><abbr title="Patterns\Interfaces\ResponseInterface">ResponseInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
@@ -283,7 +332,8 @@
                     <dd>Set the value of a specific option</dd><dt><a href="Patterns/Interfaces/ResponseInterface.html#method_send"><abbr title="Patterns\Interfaces\ResponseInterface">ResponseInterface</abbr>::send</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/ResponseInterface.html"><abbr title="Patterns\Interfaces\ResponseInterface">ResponseInterface</abbr></a></em></dt>
                     <dd>Send the response to the device</dd><dt><a href="Patterns/Interfaces/RouterInterface.html#method_setRoutes"><abbr title="Patterns\Interfaces\RouterInterface">RouterInterface</abbr>::setRoutes</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/RouterInterface.html"><abbr title="Patterns\Interfaces\RouterInterface">RouterInterface</abbr></a></em></dt>
                     <dd>Set the routes collection</dd><dt><a href="Patterns/Interfaces/StaticCreatorInterface.html"><abbr title="Patterns\Interfaces\StaticCreatorInterface">StaticCreatorInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
-                    <dd>This interface allows to create objects that can be statically created "on-the-fly" to allow method chaining constructing them like:</dd><dt><a href="Patterns/Interfaces/StaticOptionableInterface.html"><abbr title="Patterns\Interfaces\StaticOptionableInterface">StaticOptionableInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
+                    <dd>This interface allows to create objects that can be statically created "on-the-fly" to allow
+method chaining constructing them like:</dd><dt><a href="Patterns/Interfaces/StaticOptionableInterface.html"><abbr title="Patterns\Interfaces\StaticOptionableInterface">StaticOptionableInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
                     <dd>A simple interface to manage a set of options statically</dd><dt><a href="Patterns/Interfaces/StaticOptionableInterface.html#method_setOptions"><abbr title="Patterns\Interfaces\StaticOptionableInterface">StaticOptionableInterface</abbr>::setOptions</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/StaticOptionableInterface.html"><abbr title="Patterns\Interfaces\StaticOptionableInterface">StaticOptionableInterface</abbr></a></em></dt>
                     <dd>Set an array of options</dd><dt><a href="Patterns/Interfaces/StaticOptionableInterface.html#method_setOption"><abbr title="Patterns\Interfaces\StaticOptionableInterface">StaticOptionableInterface</abbr>::setOption</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/StaticOptionableInterface.html"><abbr title="Patterns\Interfaces\StaticOptionableInterface">StaticOptionableInterface</abbr></a></em></dt>
                     <dd>Set the value of a specific option</dd><dt><a href="Patterns/Interfaces/TranslatableInterface.html#method_setLanguage"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr>::setLanguage</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/TranslatableInterface.html"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr></a></em></dt>
@@ -292,7 +342,9 @@
                     <dd>
 </dd><dt><a href="Patterns/Interfaces/UserInterface.html#method_setUserInfos"><abbr title="Patterns\Interfaces\UserInterface">UserInterface</abbr>::setUserInfos</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/UserInterface.html"><abbr title="Patterns\Interfaces\UserInterface">UserInterface</abbr></a></em></dt>
                     <dd>
-</dd>        </dl><h2 id="letterT">T</h2>
+</dd><dt><a href="Patterns/Traits/Optionable.html#method_setOptions"><abbr title="Patterns\Traits\Optionable">Optionable</abbr>::setOptions</a>() &mdash; <em>Method in class <a href="Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a></em></dt>
+                    <dd>Set an array of options</dd><dt><a href="Patterns/Traits/Optionable.html#method_setOption"><abbr title="Patterns\Traits\Optionable">Optionable</abbr>::setOption</a>() &mdash; <em>Method in class <a href="Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a></em></dt>
+                    <dd>Set the value of a specific option</dd>        </dl><h2 id="letterT">T</h2>
         <dl id="index"><dt><a href="Patterns/Interfaces/TranslatableInterface.html"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr></a> &mdash; <em>Class in namespace <a href="Patterns/Interfaces.html">Patterns\Interfaces</a></em></dt>
                     <dd>This work is BETA (not fully tested)</dd><dt><a href="Patterns/Interfaces/TranslatableInterface.html#method_translate"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr>::translate</a>() &mdash; <em>Method in class <a href="Patterns/Interfaces/TranslatableInterface.html"><abbr title="Patterns\Interfaces\TranslatableInterface">TranslatableInterface</abbr></a></em></dt>
                     <dd>
@@ -322,9 +374,13 @@
                     <dd>Construction of a collection</dd><dt><a href="Patterns/Commons/ConfigurationRegistry.html#method___construct"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></em></dt>
                     <dd>Construction : initialization of the registry on an empty array</dd><dt><a href="Patterns/Commons/Registry.html#method___set"><abbr title="Patterns\Commons\Registry">Registry</abbr>::__set</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></em></dt>
                     <dd>Set an entry in the instance registry (magic setter)</dd><dt><a href="Patterns/Commons/Registry.html#method___get"><abbr title="Patterns\Commons\Registry">Registry</abbr>::__get</a>() &mdash; <em>Method in class <a href="Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></em></dt>
-                    <dd>Get an entry from the instance registry (magic getter)</dd>        </dl>        </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                    <dd>Get an entry from the instance registry (magic getter)</dd>        </dl>            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>
