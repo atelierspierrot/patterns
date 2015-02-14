@@ -23,6 +23,8 @@
 
 namespace Patterns\Abstracts;
 
+use \Patterns\Interfaces\ResponseInterface;
+
 /**
  * Global HTML response class
  * 
@@ -34,6 +36,7 @@ namespace Patterns\Abstracts;
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractResponse
+    implements ResponseInterface
 {
 
 // ------------------
@@ -118,7 +121,7 @@ abstract class AbstractResponse
      */
     public function hasHeader($name)
     {
-        return isset($this->headers[$name]) || isset($this->headers[strtolower($name)]);
+        return (bool) (isset($this->headers[$name]) || isset($this->headers[strtolower($name)]));
     }
 
     /**
@@ -126,8 +129,10 @@ abstract class AbstractResponse
      */
     public function renderHeaders()
     {
-        if (headers_sent()) return;
-        foreach($this->getHeaders() as $name=>$val) {
+        if (headers_sent()) {
+            return;
+        }
+        foreach ($this->getHeaders() as $name=>$val) {
             header(ucfirst($name).': '.$val);
         }
     }
@@ -155,7 +160,7 @@ abstract class AbstractResponse
     abstract public function send($content = null, $type = null);
 
     /**
-     * This method must process a browser file download in `$type` content-type if defined
+     * This method must process a browser file download named `$file_name` if defined and in `$type` content-type if defined
      *
      * @param   string  $file
      * @param   string  $type
