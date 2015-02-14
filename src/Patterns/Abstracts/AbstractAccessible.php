@@ -49,7 +49,7 @@ use \RuntimeException;
  * a method for accessing one of an object properties with a specific work on it, or let the class
  * use the default accessor feature.
  * 
- * NOTE - This class is abstract but doesn't declare any abstract method which should be described
+ * NOTE - This class is abstract but does not declare any abstract method which should be described
  * in the child class ; you can use it easily by extending it.
  *  
  * @author  Piero Wbmstr <me@e-piwi.fr>
@@ -60,6 +60,8 @@ abstract class AbstractAccessible
     /**
      * Set an object property, accessing it by "setVariable" if the method exists
      *
+     * Called when you write `$obj->property = value`
+     *
      * @param   string  $var    The property object to set
      * @param   string  $val    The property value to set
      * @return  self
@@ -69,7 +71,7 @@ abstract class AbstractAccessible
     {
         if (!property_exists($this, $var)) {
             throw new RuntimeException(
-                sprintf('Property "%s" doesn\'t exist in object "%s"!', $var, get_class($this))
+                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
         $accessor = 'set'.ucfirst($var);
@@ -84,6 +86,8 @@ abstract class AbstractAccessible
     /**
      * Get an object property, accessing it by "getVariable" if the method exists
      *
+     * Called when you write `$obj->property`
+     *
      * @param   string  $var    The property object to get
      * @return  mixed   Returns the result of the "getVariable" method, of the property otherwise
      * @throws  \RuntimeException if the property doesn't exist in the object
@@ -92,7 +96,7 @@ abstract class AbstractAccessible
     {
         if (!property_exists($this, $var)) {
             throw new RuntimeException(
-                sprintf('Property "%s" doesn\'t exist in object "%s"!', $var, get_class($this))
+                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
         $accessor = 'get'.ucfirst($var);
@@ -106,6 +110,8 @@ abstract class AbstractAccessible
     /**
      * Test if an object property has been set, using the "issetVariable" method if defined
      *
+     * Called when you write `isset($obj->property)` or `empty($obj->property)`
+     *
      * @param   string  $var    The property object to test
      * @return  bool    True if the property is already set
      * @throws  \RuntimeException if the property doesn't exist in the object
@@ -114,7 +120,7 @@ abstract class AbstractAccessible
     {
         if (!property_exists($this, $var)) {
             throw new RuntimeException(
-                sprintf('Property "%s" doesn\'t exist in object "%s"!', $var, get_class($this))
+                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
         $accessor = 'isset'.ucfirst($var);
@@ -128,6 +134,8 @@ abstract class AbstractAccessible
     /**
      * Test if an object property has been set, using the "unsetVariable" method if defined
      *
+     * Called when you write `unset($obj->property)`
+     *
      * @param   string  $var    The property object to unset
      * @return  self
      * @throws  \RuntimeException if the property doesn't exist in the object
@@ -136,7 +144,7 @@ abstract class AbstractAccessible
     {
         if (!property_exists($this, $var)) {
             throw new RuntimeException(
-                sprintf('Property "%s" doesn\'t exist in object "%s"!', $var, get_class($this))
+                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
         $accessor = 'unset'.ucfirst($var);
