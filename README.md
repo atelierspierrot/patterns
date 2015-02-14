@@ -1,8 +1,8 @@
 patterns - "Les patrons des Ateliers"
 ========
 
+[![documentation](http://img.ateliers-pierrot-static.fr/readthe-doc.png)](http://docs.ateliers-pierrot.fr/patterns/)
 A set of PHP classic interfaces or abstract classes patterns.
-
 
 ## How-to
 
