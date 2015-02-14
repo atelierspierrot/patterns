@@ -32,8 +32,8 @@ use \Patterns\Interfaces\StaticCreatorInterface;
  *     $obj = ObjectStaticCreator::create( arguments )
  *         ->method();
  *
- * This logic is implemented thru a required `init()` method in children class that will be called
- * on static creation (in non-static env) and by constructor.
+ * This logic is implemented through a required `init()` method in children class that will be called
+ * on static creation (in non-static environment) and by constructor.
  *
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
@@ -42,7 +42,7 @@ abstract class AbstractStaticCreator
 {
 
     /**
-     * Force any descendant to implement a special constructor `init()` as it will be called by the `create()`  static method
+     * Force any descendant to implement a special constructor `init()` as it will be called by the `create()` static method
      */
     abstract public function init();
     
