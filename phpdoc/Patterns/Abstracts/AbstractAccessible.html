@@ -99,7 +99,7 @@ method <code>getProperty</code> for the <code>__get</code> call of the variable 
 a method for accessing one of an object properties with a specific work on it, or let the class
 use the default accessor feature.</p>
 
-<p>NOTE - This class is abstract but doesn't declare any abstract method which should be described
+<p>NOTE - This class is abstract but does not declare any abstract method which should be described
 in the child class ; you can use it easily by extending it.</p>        </div>
     
     
@@ -152,13 +152,13 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___set">
-        <div class="location">at line 67</div>
+        <div class="location">at line 70</div>
         <code>                    <a href="../../Patterns/Abstracts/AbstractAccessible.html"><abbr title="Patterns\Abstracts\AbstractAccessible">AbstractAccessible</abbr></a>
     <strong>__set</strong>(string $var, string $val)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Set an object property, accessing it by "setVariable" if the method exists</p>                                </div>
+                                    <p>Set an object property, accessing it by "setVariable" if the method exists</p>                    <p>Called when you write <code>$obj-&gt;property = value</code></p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -203,13 +203,13 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">at line 90</div>
+        <div class="location">at line 95</div>
         <code>                    mixed
     <strong>__get</strong>(string $var)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Get an object property, accessing it by "getVariable" if the method exists</p>                                </div>
+                                    <p>Get an object property, accessing it by "getVariable" if the method exists</p>                    <p>Called when you write <code>$obj-&gt;property</code></p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -248,13 +248,13 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___isset">
-        <div class="location">at line 112</div>
+        <div class="location">at line 119</div>
         <code>                    bool
     <strong>__isset</strong>(string $var)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Test if an object property has been set, using the "issetVariable" method if defined</p>                                </div>
+                                    <p>Test if an object property has been set, using the "issetVariable" method if defined</p>                    <p>Called when you write <code>isset($obj-&gt;property)</code> or <code>empty($obj-&gt;property)</code></p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -293,13 +293,13 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___unset">
-        <div class="location">at line 134</div>
+        <div class="location">at line 143</div>
         <code>                    <a href="../../Patterns/Abstracts/AbstractAccessible.html"><abbr title="Patterns\Abstracts\AbstractAccessible">AbstractAccessible</abbr></a>
     <strong>__unset</strong>(string $var)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Test if an object property has been set, using the "unsetVariable" method if defined</p>                                </div>
+                                    <p>Test if an object property has been set, using the "unsetVariable" method if defined</p>                    <p>Called when you write <code>unset($obj-&gt;property)</code></p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
