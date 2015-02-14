@@ -78,7 +78,7 @@ trait Optionable
      *
      * @param   string  $name       The index of the option to get
      * @param   mixed   $default    The default value to return if the option is not defined
-     * @return  array   The current option's value if defined, `$default` otherwise
+     * @return  mixed   The current option's value if defined, `$default` otherwise
      */
     public function getOption($name, $default = null)
     {
