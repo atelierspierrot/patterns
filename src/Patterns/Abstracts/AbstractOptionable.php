@@ -46,7 +46,7 @@ abstract class AbstractOptionable
     /**
      * @var array
      */
-    protected $options = array();
+    protected $_options = array();
 
     /**
      * Set an array of options
@@ -56,7 +56,7 @@ abstract class AbstractOptionable
      */
     public function setOptions(array $options)
     {
-        $this->options = $options;
+        $this->_options = $options;
         return $this;
     }
 
@@ -69,7 +69,7 @@ abstract class AbstractOptionable
      */
     public function setOption($name, $value)
     {
-        $this->options[$name] = $value;
+        $this->_options[$name] = $value;
         return $this;
     }
 
@@ -80,7 +80,7 @@ abstract class AbstractOptionable
      */
     public function getOptions()
     {
-        return $this->options;
+        return $this->_options;
     }
 
     /**
@@ -92,7 +92,7 @@ abstract class AbstractOptionable
      */
     public function getOption($name, $default = null)
     {
-        return isset($this->options[$name]) ? $this->options[$name] : $default;
+        return isset($this->_options[$name]) ? $this->_options[$name] : $default;
     }
 
 }

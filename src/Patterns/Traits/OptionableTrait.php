@@ -30,13 +30,13 @@ namespace Patterns\Traits;
  * @see     \Patterns\Abstracts\AbstractOptionable
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
-trait Optionable
+trait OptionableTrait
 {
 
     /**
      * @var array
      */
-    protected $options = array();
+    protected $_options = array();
 
     /**
      * Set an array of options
@@ -46,7 +46,7 @@ trait Optionable
      */
     public function setOptions(array $options)
     {
-        $this->options = $options;
+        $this->_options = $options;
         return $this;
     }
 
@@ -59,7 +59,7 @@ trait Optionable
      */
     public function setOption($name, $value)
     {
-        $this->options[$name] = $value;
+        $this->_options[$name] = $value;
         return $this;
     }
 
@@ -70,7 +70,7 @@ trait Optionable
      */
     public function getOptions()
     {
-        return $this->options;
+        return $this->_options;
     }
 
     /**
@@ -82,7 +82,7 @@ trait Optionable
      */
     public function getOption($name, $default = null)
     {
-        return isset($this->options[$name]) ? $this->options[$name] : $default;
+        return isset($this->_options[$name]) ? $this->_options[$name] : $default;
     }
 
 }
