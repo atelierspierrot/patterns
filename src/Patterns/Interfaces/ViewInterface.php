@@ -24,8 +24,6 @@
 namespace Patterns\Interfaces;
 
 /**
- * This work is BETA (not fully tested)
- *
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface ViewInterface
