@@ -24,18 +24,43 @@
 namespace Patterns\Interfaces;
 
 /**
- * This work is BETA (not fully tested)
- *
  * A simple interface for translation objects
  *
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 interface TranslatableInterface
 {
-    public function setLanguage($lang, $throw_errors=true, $force_rebuild=false);
+
+    /**
+     * @param   string  $lang
+     * @param   bool    $throw_errors
+     * @param   bool    $force_rebuild
+     * @return  mixed
+     */
+    public function setLanguage($lang, $throw_errors = true, $force_rebuild = false);
+
+    /**
+     * @return mixed
+     */
     public function getLanguage();
+
+    /**
+     * @param   string  $index
+     * @param   array   $args
+     * @param   null    $lang
+     * @return  mixed
+     */
     public static function translate($index, array $args=array(), $lang=null);
+
+    /**
+     * @param   array   $indexes
+     * @param   int     $number
+     * @param   array   $args
+     * @param   null    $lang
+     * @return  mixed
+     */
     public static function pluralize(array $indexes=array(), $number=0, array $args=array(), $lang=null);
+
 }
 
 // Endfile
