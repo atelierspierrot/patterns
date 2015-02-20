@@ -27,6 +27,22 @@ use \ReflectionClass;
 use \Exception;
 
 /**
+ * Basic singleton object definition
+ *
+ * Usage
+ *
+ *      $instance = class::getInstance( $args )
+ *
+ * This trait defines an abstract `__construct` method forcing
+ * your implementations to define the hard constructor yourself
+ * choosing its visibility. The best practice is to make your
+ * constructor protected or private.
+ *
+ * If your constructor is not public and the `getInstance` received
+ * arguments, it will call a `init( $args )` method (if it is public)
+ * fetching it received arguments. This allows to build an instance
+ * with parameters.
+ *
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 trait SingletonTrait
@@ -47,22 +63,45 @@ trait SingletonTrait
     abstract function __construct();
 
     /**
+     * Over-write this method to emulate a public constructor as it will be called
+     * by the static construction fetching its arguments.
+     *
+     * @param   $args
+     * @return  void
+     */
+//    abstract public function init( $args );
+
+    /**
+     * This is the static constructor/getter of the singleton instance
+     *
+     * If the instance does not exist yet, it will create it fetching
+     * received arguments to the constructor if it is public, or to
+     * an `init()` method if it exists and is callable.
+     *
+     * If this method receives arguments but can not fetch them to
+     * the constructor or an `init` method, a E_USER_WARNING is triggered
+     * to inform user about the arguments loss.
+     *
      * @return self
      */
     public static function getInstance()
     {
         if (is_null(self::$_instance)) {
-            $_class = get_called_class();
+            $_class     = get_called_class();
             $reflection = new ReflectionClass($_class);
             if ($reflection->isInstantiable()) {
                 self::$_instance = $reflection->newInstanceArgs(func_get_args());
             } else {
                 self::$_instance = new $_class();
                 if (func_num_args()>0) {
-                    trigger_error(
-                        sprintf('Singleton of type "%s" has no public constructor, arguments will not be fetched to the instance!', $_class),
-                        E_USER_NOTICE
-                    );
+                    if ($reflection->hasMethod('init') && $reflection->getMethod('init')->isPublic()) {
+                        call_user_func_array(array(self::$_instance, 'init'), func_get_args());
+                    } else {
+                        trigger_error(
+                            sprintf('The singleton type "%s" has no public constructor or "init()" method, the arguments will not be passed to the instance!', $_class),
+                            E_USER_WARNING
+                        );
+                    }
                 }
             }
         }
