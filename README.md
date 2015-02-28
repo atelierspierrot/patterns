@@ -58,7 +58,7 @@ in your `composer.json`:
 
 ```json
 "require": {
-    ...
+    "your-dependencies": "*",
     "atelierspierrot/patterns": "dev-master"
 }
 ```
@@ -92,4 +92,4 @@ The latest version of this documentation is available online at <http://docs.ate
 
 >    Les Ateliers Pierrot - Paris, France
 
->    <www.ateliers-pierrot.fr> - <contact@ateliers-pierrot.fr>
+>    <http://www.ateliers-pierrot.fr/> - <contact@ateliers-pierrot.fr>
