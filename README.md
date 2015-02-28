@@ -47,18 +47,21 @@ from Github.
 Then, to use the package classes, you just need to register the `Patterns` namespace directory
 using the [SplClassLoader](https://gist.github.com/jwage/221634) or any other custom autoloader:
 
-    require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
-    $classLoader = new SplClassLoader('Patterns', '/path/to/package/src');
-    $classLoader->register();
+```php
+require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
+$classLoader = new SplClassLoader('Patterns', '/path/to/package/src');
+$classLoader->register();
+```
 
 If you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
 in your `composer.json`:
 
-    "require": {
-        ...
-        "atelierspierrot/patterns": "dev-master"
-    }
-
+```json
+"require": {
+    ...
+    "atelierspierrot/patterns": "dev-master"
+}
+```
 
 ## Development
 
