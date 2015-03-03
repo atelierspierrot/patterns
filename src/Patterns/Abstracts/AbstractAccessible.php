@@ -24,6 +24,7 @@
 namespace Patterns\Abstracts;
 
 use \RuntimeException;
+use \Patterns\Interfaces\AccessibleInterface;
 
 /**
  * Magic properties accessors
@@ -55,7 +56,37 @@ use \RuntimeException;
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
 abstract class AbstractAccessible
+    implements AccessibleInterface
 {
+
+    /**
+     * Validate and format an accessible property name
+     *
+     * @param   string  $var    Concerned object's property
+     * @return  mixed
+     * @throws  \RuntimeException if the property doesn't exist in the object
+     */
+    protected function validateAccessibleProperty($var)
+    {
+        if (!property_exists($this, $var)) {
+            throw new RuntimeException(
+                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
+            );
+        }
+        return $var;
+    }
+
+    /**
+     * Constructs the name of the method to access a property
+     *
+     * @param   string  $var        Concerned object's property
+     * @param   string  $prefix     Concerned access type in 'get', 'set', 'unset', 'isset'
+     * @return  string
+     */
+    protected function getAccessorName($var, $prefix)
+    {
+        return $prefix . ucfirst($var);
+    }
 
     /**
      * Set an object property, accessing it by "setVariable" if the method exists
@@ -74,11 +105,11 @@ abstract class AbstractAccessible
                 sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
-        $accessor = 'set'.ucfirst($var);
+        $accessor = $this->getAccessorName($var, 'set');
         if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            $this->$accessor($val);
+            call_user_func(array($this, $accessor), $val);
         } else {
-            $this->$var = $val;
+            $this->{$var} = $val;
         }
         return $this;
     }
@@ -99,11 +130,11 @@ abstract class AbstractAccessible
                 sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
-        $accessor = 'get'.ucfirst($var);
+        $accessor = $this->getAccessorName($var, 'get');
         if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            return $this->$accessor();
+            return call_user_func(array($this, $accessor));
         } else {
-            return $this->$var;
+            return $this->{$var};
         }
     }
 
@@ -123,11 +154,11 @@ abstract class AbstractAccessible
                 sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
-        $accessor = 'isset'.ucfirst($var);
+        $accessor = $this->getAccessorName($var, 'isset');
         if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            return $this->$accessor();
+            return call_user_func(array($this, $accessor));
         } else {
-            return isset($this->$var);
+            return isset($this->{$var});
         }
     }
 
@@ -147,11 +178,11 @@ abstract class AbstractAccessible
                 sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
             );
         }
-        $accessor = 'unset'.ucfirst($var);
+        $accessor = $this->getAccessorName($var, 'unset');
         if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            $this->$accessor();
+            call_user_func(array($this, $accessor));
         } else {
-            unset($this->$var);
+            unset($this->{$var});
         }
         return $this;
     }
