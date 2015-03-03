@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Patterns\Traits\Optionable | Patterns</title>
+    <title>Patterns\Traits\SingletonTrait | Patterns</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -16,7 +16,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Patterns_Traits_Optionable" data-root-path="../../">
+    <body id="class" data-name="class:Patterns_Traits_SingletonTrait" data-root-path="../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -63,20 +63,33 @@
                                                             <li><a href="../../Patterns.html">Patterns</a></li>
                                         <li><a href="../../Patterns/Traits.html">Traits</a></li>
     
-                <li>Optionable</li>
+                <li>SingletonTrait</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
-        <h1>Optionable</h1>
+        <h1>SingletonTrait</h1>
     </div>
 
     <p>    trait
-    <strong>Optionable</strong></p>
+    <strong>SingletonTrait</strong></p>
 
             <div class="description">
-            <p>This trait is the exact copy of the <code>\Patterns\Abstracts\AbstractOptionable</code> class.</p>            <p>It MUST be updated with it each time.</p>        </div>
+            <p>Basic singleton object definition</p>            <p>Usage</p>
+
+<pre><code> $instance = class::getInstance( $args )
+</code></pre>
+
+<p>This trait defines an abstract <code>__construct</code> method forcing
+your implementations to define the hard constructor yourself
+choosing its visibility. The best practice is to make your
+constructor protected or private.</p>
+
+<p>If your constructor is not public and the <code>getInstance</code> received
+arguments, it will call a <code>init( $args )</code> method (if it is public)
+fetching it received arguments. This allows to build an instance
+with parameters.</p>        </div>
     
     
     
@@ -86,38 +99,29 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a>
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setOptions">setOptions</a>(array $options)
-                                            <p>Set an array of options</p>                </div>
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Constructor : classic object constructor</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a>
+                    static&nbsp;<a href="../../Patterns/Traits/SingletonTrait.html"><abbr title="Patterns\Traits\SingletonTrait">SingletonTrait</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
-                                            <p>Set the value of a specific option</p>                </div>
+                    <a href="#method_getInstance">getInstance</a>()
+                                            <p>This is the static constructor/getter of the singleton instance</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getOptions">getOptions</a>()
-                                            <p>Get the array of options</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getOption">getOption</a>(string $name, mixed $default = null)
-                                            <p>Get the value of a specific option</p>                </div>
+                    <a href="#method___clone">__clone</a>()
+                                            <p>This must throw an error as cloning a singleton is forbidden</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -127,31 +131,46 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_setOptions">
-        <div class="location">at line 47</div>
-        <code>                    <a href="../../Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a>
-    <strong>setOptions</strong>(array $options)</code>
+                    <h3 id="method___construct">
+        <div class="location">at line 63</div>
+        <code>    abstract                
+    <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Set an array of options</p>                                </div>
+                                    <p>Constructor : classic object constructor</p>                    <p>The best practice is to define a <code>private</code> constructor to avoid object direct
+creation ; if the constructor is public, it will receive the arguments passed
+to the <code>getInstance</code> method.</p>            </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
+            
+            
+            
+                    </div>
+    </div>
 
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$options</td>
-                <td>A table of options to define, key=>value pairs</td>
-            </tr>
-            </table>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">at line 87</div>
+        <code>        static            <a href="../../Patterns/Traits/SingletonTrait.html"><abbr title="Patterns\Traits\SingletonTrait">SingletonTrait</abbr></a>
+    <strong>getInstance</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>This is the static constructor/getter of the singleton instance</p>                    <p>If the instance does not exist yet, it will create it fetching
+received arguments to the constructor if it is public, or to
+an <code>init()</code> method if it exists and is callable.</p>
 
+<p>If this method receives arguments but can not fetch them to
+the constructor or an <code>init</code> method, a E<em>USER</em>WARNING is triggered
+to inform user about the arguments loss.</p>            </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a></td>
+            <td><a href="../../Patterns/Traits/SingletonTrait.html"><abbr title="Patterns\Traits\SingletonTrait">SingletonTrait</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -164,109 +183,37 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setOption">
-        <div class="location">at line 60</div>
-        <code>                    <a href="../../Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a>
-    <strong>setOption</strong>(string $name, mixed $value)</code>
+                    <h3 id="method___clone">
+        <div class="location">at line 117</div>
+        <code>                    void
+    <strong>__clone</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Set the value of a specific option</p>                                </div>
+                                    <p>This must throw an error as cloning a singleton is forbidden</p>                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$name</td>
-                <td>The index of the option to define</td>
-            </tr>
-                    <tr>
-                <td>mixed</td>
-                <td>$value</td>
-                <td>The option value to define</td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Traits/Optionable.html"><abbr title="Patterns\Traits\Optionable">Optionable</abbr></a></td>
+            <td>void</td>
             <td>
 </td>
         </tr>
     </table>
 
             
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getOptions">
-        <div class="location">at line 71</div>
-        <code>                    array
-    <strong>getOptions</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Get the array of options</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td>The current options array</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getOption">
-        <div class="location">at line 83</div>
-        <code>                    mixed
-    <strong>getOption</strong>(string $name, mixed $default = null)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Get the value of a specific option</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
+                            <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$name</td>
-                <td>The index of the option to get</td>
-            </tr>
-                    <tr>
-                <td>mixed</td>
-                <td>$default</td>
-                <td>The default value to return if the option is not defined</td>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
             </tr>
             </table>
 
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td>The current option's value if defined, <code>$default</code> otherwise</td>
-        </tr>
-    </table>
-
-            
             
                     </div>
     </div>
