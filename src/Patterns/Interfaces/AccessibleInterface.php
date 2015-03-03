@@ -21,10 +21,7 @@
  * <http://github.com/atelierspierrot/patterns>.
  */
 
-namespace Patterns\Abstracts;
-
-use \RuntimeException;
-use \Patterns\Interfaces\AccessibleInterface;
+namespace Patterns\Interfaces;
 
 /**
  * Magic properties accessors
@@ -55,38 +52,8 @@ use \Patterns\Interfaces\AccessibleInterface;
  *  
  * @author  Piero Wbmstr <me@e-piwi.fr>
  */
-abstract class AbstractAccessible
-    implements AccessibleInterface
+interface AccessibleInterface
 {
-
-    /**
-     * Validate and format an accessible property name
-     *
-     * @param   string  $var    Concerned object's property
-     * @return  mixed
-     * @throws  \RuntimeException if the property doesn't exist in the object
-     */
-    protected function validateAccessibleProperty($var)
-    {
-        if (!property_exists($this, $var)) {
-            throw new RuntimeException(
-                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
-            );
-        }
-        return $var;
-    }
-
-    /**
-     * Constructs the name of the method to access a property
-     *
-     * @param   string  $var        Concerned object's property
-     * @param   string  $prefix     Concerned access type in 'get', 'set', 'unset', 'isset'
-     * @return  string
-     */
-    protected function getAccessorName($var, $prefix)
-    {
-        return $prefix . ucfirst($var);
-    }
 
     /**
      * Set an object property, accessing it by "setVariable" if the method exists
@@ -96,23 +63,8 @@ abstract class AbstractAccessible
      * @param   string  $var    The property object to set
      * @param   string  $val    The property value to set
      * @return  self
-     * @throws  \RuntimeException if the property doesn't exist in the object
      */
-    public function __set($var, $val)
-    {
-        if (!property_exists($this, $var)) {
-            throw new RuntimeException(
-                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
-            );
-        }
-        $accessor = $this->getAccessorName($var, 'set');
-        if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            call_user_func(array($this, $accessor), $val);
-        } else {
-            $this->{$var} = $val;
-        }
-        return $this;
-    }
+    public function __set($var, $val);
 
     /**
      * Get an object property, accessing it by "getVariable" if the method exists
@@ -121,22 +73,8 @@ abstract class AbstractAccessible
      *
      * @param   string  $var    The property object to get
      * @return  mixed   Returns the result of the "getVariable" method, of the property otherwise
-     * @throws  \RuntimeException if the property doesn't exist in the object
      */
-    public function __get($var)
-    {
-        if (!property_exists($this, $var)) {
-            throw new RuntimeException(
-                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
-            );
-        }
-        $accessor = $this->getAccessorName($var, 'get');
-        if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            return call_user_func(array($this, $accessor));
-        } else {
-            return $this->{$var};
-        }
-    }
+    public function __get($var);
 
     /**
      * Test if an object property has been set, using the "issetVariable" method if defined
@@ -145,22 +83,8 @@ abstract class AbstractAccessible
      *
      * @param   string  $var    The property object to test
      * @return  bool    True if the property is already set
-     * @throws  \RuntimeException if the property doesn't exist in the object
      */
-    public function __isset($var)
-    {
-        if (!property_exists($this, $var)) {
-            throw new RuntimeException(
-                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
-            );
-        }
-        $accessor = $this->getAccessorName($var, 'isset');
-        if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            return call_user_func(array($this, $accessor));
-        } else {
-            return isset($this->{$var});
-        }
-    }
+    public function __isset($var);
 
     /**
      * Test if an object property has been set, using the "unsetVariable" method if defined
@@ -169,23 +93,8 @@ abstract class AbstractAccessible
      *
      * @param   string  $var    The property object to unset
      * @return  self
-     * @throws  \RuntimeException if the property doesn't exist in the object
      */
-    public function __unset($var)
-    {
-        if (!property_exists($this, $var)) {
-            throw new RuntimeException(
-                sprintf('Property "%s" does not exist in object "%s"!', $var, get_class($this))
-            );
-        }
-        $accessor = $this->getAccessorName($var, 'unset');
-        if (method_exists($this, $accessor) && is_callable(array($this, $accessor))) {
-            call_user_func(array($this, $accessor));
-        } else {
-            unset($this->{$var});
-        }
-        return $this;
-    }
+    public function __unset($var);
 
 }
 
