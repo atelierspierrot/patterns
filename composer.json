@@ -1,7 +1,7 @@
 {
     "name": "atelierspierrot/patterns",
     "type": "library",
-    "description": "A set of PHP classic interfaces or abstract classes patterns.",
+    "description": "A set of PHP classic interfaces and abstract classes patterns.",
     "keywords": [ "php", "patterns", "design patterns" ],
     "homepage": "http://github.com/atelierspierrot/patterns",
     "license": "Apache-2.0",
@@ -21,7 +21,7 @@
     "autoload": { "psr-0": {  "Patterns": "src" } },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.1-dev"
         }
     }
 }
