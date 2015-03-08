@@ -4,14 +4,13 @@
     "description": "A set of PHP classic interfaces or abstract classes patterns.",
     "keywords": [ "php", "patterns", "design patterns" ],
     "homepage": "http://github.com/atelierspierrot/patterns",
-    "license": "GPL-3.0",
+    "license": "Apache-2.0",
     "authors": [{
         "name": "Les Ateliers Pierrot & contributors",
         "email": "contact@ateliers-pierrot.fr",
         "homepage": "http://www.ateliers-pierrot.fr/"
     },{
         "name": "Pierre Cassat",
-        "email": "me@e-piwi.fr",
         "homepage": "http://github.com/piwi"
     }],
     "require": { "php": ">=5.3.0" },
