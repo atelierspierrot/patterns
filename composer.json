@@ -4,7 +4,7 @@
     "description": "A set of PHP classic interfaces or abstract classes patterns.",
     "keywords": [ "php", "patterns", "design patterns" ],
     "homepage": "http://github.com/atelierspierrot/patterns",
-    "license": "GPL-3.0",
+    "license": "Apache-2.0",
     "authors": [{
         "name": "Les Ateliers Pierrot & contributors",
         "email": "contact@ateliers-pierrot.fr",
