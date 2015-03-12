@@ -29,7 +29,7 @@ namespace Patterns\Commons;
  * current working registry from old ones or others. Old ones or others are stored in 
  * a stack of registries and can be loaded as the current one (replacing it).
  * 
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class Registry 
 {

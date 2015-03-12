@@ -27,7 +27,7 @@ namespace Patterns\Traits;
  * It MUST be updated with it each time.
  *
  * @see     \Patterns\Abstracts\AbstractOptionable
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 trait OptionableTrait
 {

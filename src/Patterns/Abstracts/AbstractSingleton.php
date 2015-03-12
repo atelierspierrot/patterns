@@ -45,7 +45,7 @@ use \Exception;
  *       $class = new classname
  *       $class->init( arguments )
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 abstract class AbstractSingleton 
 {

@@ -25,7 +25,7 @@ namespace Patterns\Interfaces;
 /**
  * A simple interface for translation objects
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 interface TranslatableInterface
 {

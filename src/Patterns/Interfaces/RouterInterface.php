@@ -25,7 +25,7 @@ namespace Patterns\Interfaces;
 use \Patterns\Commons\Collection;
 
 /**
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 interface RouterInterface
 {

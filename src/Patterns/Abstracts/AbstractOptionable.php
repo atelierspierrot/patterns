@@ -36,7 +36,7 @@ use \Patterns\Interfaces\OptionableInterface;
  * It MUST be updated with it each time.
  *
  * @see     \Patterns\Traits\Optionable
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 abstract class AbstractOptionable
     implements OptionableInterface

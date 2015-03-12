@@ -23,7 +23,7 @@
 namespace Patterns\Interfaces;
 
 /**
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 interface ViewInterface
 {

@@ -23,7 +23,7 @@
 namespace Patterns\Abstracts;
 
 /**
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 abstract class AbstractView
 {

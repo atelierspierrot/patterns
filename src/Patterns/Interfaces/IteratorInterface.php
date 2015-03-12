@@ -29,7 +29,7 @@ use \SeekableIterator;
  *
  * This interface is just set for homogeneity in iterations and array walking.
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 interface IteratorInterface
     extends SeekableIterator

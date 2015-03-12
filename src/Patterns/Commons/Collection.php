@@ -27,7 +27,7 @@ use \Patterns\Interfaces\CollectionInterface;
 /**
  * Collection manager : allows to set, get, loop and seek in an array collection
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class Collection
     implements CollectionInterface

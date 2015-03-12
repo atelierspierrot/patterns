@@ -33,7 +33,7 @@ namespace Patterns\Commons;
  * `$obj->get(scope:property)` ; this is very useful for configuration entries, that
  * are often stored in complex arrays identified by a simple key.
  * 
- * @author    Piero Wbmstr <me@e-piwi.fr>
+ * @author    piwi <me@e-piwi.fr>
  */
 class ConfigurationRegistry
 {

@@ -29,6 +29,8 @@ namespace Patterns\Interfaces;
  *
  * Configuration like `cache_directory` or `max_cache_time` is not handled as it may depend
  * on your implementation.
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 interface CachableInterface
 {

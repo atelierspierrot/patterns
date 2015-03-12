@@ -42,7 +42,7 @@ use \Exception;
  * fetching it received arguments. This allows to build an instance
  * with parameters.
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 trait SingletonTrait
 {

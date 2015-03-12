@@ -30,6 +30,7 @@ namespace Patterns\Interfaces;
  *
  *      protected function __construct() {}
  *
+ * @author  piwi <me@e-piwi.fr>
  */
 interface SingletonInterface
 {

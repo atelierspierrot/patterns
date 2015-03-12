@@ -25,7 +25,7 @@ namespace Patterns\Interfaces;
 /**
  * An interface for a basic CRUD model
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 interface CrudInterface
 {

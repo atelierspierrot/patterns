@@ -40,6 +40,7 @@ namespace Patterns\Traits;
  *      // get object condition:
  *      $obj->getApi('name2');
  *
+ * @author  piwi <me@e-piwi.fr>
  */
 trait ApiManagerTrait
 {
