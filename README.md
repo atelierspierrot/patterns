@@ -10,14 +10,15 @@ Installation
 
 For a complete information about how to install this package and load its namespace, 
 please have a look at [our *USAGE* documentation](http://github.com/atelierspierrot/atelierspierrot/blob/master/USAGE.md).
-If you are a [Composer](http://getcomposer.org/) user, just add the package to your 
-requirements in your project's `composer.json` manifest file:
+
+If you are a [Composer](http://getcomposer.org/) user, just add the package to the 
+requirements of your project's `composer.json` manifest file:
 
 ```json
 "atelierspierrot/patterns": "dev-master"
 ```
 
-You can specify a specific release or the latest release of a major version using the appropriate
+You can use a specific release or the latest release of a major version using the appropriate
 [version constraint](http://getcomposer.org/doc/01-basic-usage.md#package-versions).
 
 
