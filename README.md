@@ -4,79 +4,55 @@ patterns - "Les patrons des Ateliers"
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/patterns/)
 A set of PHP classic interfaces and abstract classes patterns.
 
-## How-to
 
-This package is just a set of PHP abstract classes and interfaces to use as design patterns
-to help external developments. We try to fully document every class or interface in each file doc-block.
+Installation
+------------
 
-As for all our work, we try to follow the coding standards and naming rules most commonly in use:
+For a complete information about how to install this package and load its namespace, 
+please have a look at [our *USAGE* documentation](http://github.com/atelierspierrot/atelierspierrot/blob/master/USAGE.md).
+If you are a [Composer](http://getcomposer.org/) user, just add the package to your 
+requirements in your project's `composer.json` manifest file:
 
--   the [PEAR coding standards](http://pear.php.net/manual/en/standards.php)
--   the [PHP Framework Interoperability Group standards](https://github.com/php-fig/fig-standards).
+```json
+"atelierspierrot/patterns": "dev-master"
+```
 
-Knowing that, all classes are named and organized in an architecture to allow the use of the
-[standard SplClassLoader](https://gist.github.com/jwage/221634).
+You can specify a specific release or the latest release of a major version using the appropriate
+[version constraint](http://getcomposer.org/doc/01-basic-usage.md#package-versions).
 
-The whole package is embedded in the `Patterns` namespace.
+
+Usage
+-----
+
+The whole package is embedded in the `Patterns` namespace (in the `src/` directory).
 
 ### Abstract classes
 
 All abstract classes are embedded in the `Patterns\Abstracts` namespace and prefixed by `Abstract`.
+They mostly define some common "basic" objects often used in development (the *singleton* pattern, 
+an *optionable* base object etc).
 
 ### Interfaces
 
 All interfaces are embedded in the `Patterns\Interfaces` namespace and suffixed by `Interface`.
+We try here to define some common patterns you can use as a base to construct your objects. 
 
 ### Common classes
 
-All classes are embedded in the `Patterns\Commons` namespace.
+All "helper" classes are embedded in the `Patterns\Commons` namespace. They define some basic objects
+to use "as is" (or to extend) to manage common things like a *collection*, a *configuration* or a 
+*registry*.
+
+### Traits
+
+All traits are embedded in the `Patterns\Traits` namespace and suffixed by `Trait`. We define here
+some "hard copies" (for now) of the abstract classes defined in the `Patterns\Abstracts` namespace
+and other useful objects. We try to never introduce ambiguity when using these traits by using 
+specific variable names and meaningful method names.
 
 
-## Installation & usage
-
-You can use this package in your work in many ways.
-
-First, you can clone the [GitHub](https://github.com/atelierspierrot/patterns) repository
-and include it "as is" in your poject:
-
-    https://github.com/atelierspierrot/patterns
-
-You can also download an [archive](https://github.com/atelierspierrot/patterns/downloads)
-from Github.
-
-Then, to use the package classes, you just need to register the `Patterns` namespace directory
-using the [SplClassLoader](https://gist.github.com/jwage/221634) or any other custom autoloader:
-
-```php
-require_once '.../src/SplClassLoader.php'; // if required, a copy is proposed in the package
-$classLoader = new SplClassLoader('Patterns', '/path/to/package/src');
-$classLoader->register();
-```
-
-If you are a [Composer](http://getcomposer.org/) user, just add the package to your requirements
-in your `composer.json`:
-
-```json
-"require": {
-    "your-dependencies": "*",
-    "atelierspierrot/patterns": "dev-master"
-}
-```
-
-## Development
-
-To install all PHP packages for development, just run:
-
-    ~$ composer install --dev
-
-A documentation can be generated with [Sami](https://github.com/fabpot/Sami) running:
-
-    ~$ php vendor/sami/sami/sami.php render sami.config.php
-
-The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/patterns/>.
-
-
-## Author & License
+Author & License
+----------------
 
 >    Patterns
 
