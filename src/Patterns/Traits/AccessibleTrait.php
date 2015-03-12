@@ -51,6 +51,7 @@ use \RuntimeException;
  * NOTE - This class is abstract but does not declare any abstract method which should be described
  * in the child class ; you can use it easily by extending it.
  *  
+ * @TODO    review this to erase duplication (and variations) with \Patterns\Abstracts\AbstractAccessible
  * @author  piwi <me@e-piwi.fr>
  */
 trait AccessibleTrait
