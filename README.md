@@ -1,7 +1,9 @@
 patterns - "Les patrons des Ateliers"
 ========
 
+[![Code Climate](http://codeclimate.com/github/atelierspierrot/patterns/badges/gpa.svg)](http://codeclimate.com/github/atelierspierrot/patterns)
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/patterns/)
+
 A set of PHP classic interfaces and abstract classes patterns.
 
 
