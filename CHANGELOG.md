@@ -9,6 +9,24 @@ go to <https://github.com/atelierspierrot/patterns/commit/COMMIT_HASH>.
 
 * (upcoming release)
 
+    * 75965e8 - package fix (files & dirs mods) (piwi)
+    * da233e8 - new PSR4 loading + add CS Fixer tool (piwi)
+    * e5101df - CS fixer run (piwi)
+    * bf5d3ec - happy new year ;) (piwi)
+    * b508fe2 - clean master after merge of 'dev' (piwi)
+    * 9c4f0a4 - improvement of the README (piwi)
+    * 3e3cf98 - review of the installation in README (piwi)
+    * a95b59c - todo info in 'accessible' abstract & trait (piwi)
+    * a56b504 - review of authoring (piwi)
+    * 1716890 - new ApiManager trait object (piwi)
+    * d155af7 - new documentation generation (1.1.0) (piwi)
+    * cd7b6af - merge master (1.1.0) into 'dev' (piwi)
+
+* v1.1.0 (2015-03-08 - ecf3113)
+
+    * 88cb3fd - preparation of the 1.1 release (piwi)
+    * 808ecf8 - add a CONTRIBUTING info (piwi)
+    * f8208b8 - add the CHANGELOG (piwi)
     * 561f57b - review of the singleton trait (piwi)
     * 40dc73a - the TranslatableInterface is now live (piwi)
 
