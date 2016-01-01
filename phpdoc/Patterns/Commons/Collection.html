@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -74,7 +77,8 @@
 
     <p>    class
     <strong>Collection</strong>        implements
-        <a href="../../Patterns/Interfaces/CollectionInterface.html"><abbr title="Patterns\Interfaces\CollectionInterface">CollectionInterface</abbr></a></p>
+        <a href="../../Patterns/Interfaces/CollectionInterface.html"><abbr title="Patterns\Interfaces\CollectionInterface">CollectionInterface</abbr></a>
+</p>
 
             <div class="description">
             <p>Collection manager : allows to set, get, loop and seek in an array collection</p>                    </div>
@@ -88,24 +92,29 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array $content = array())
+                    <a href="#method___construct">__construct</a>(
+    array $content = array())
                                             <p>Construction of a collection</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setCollection">setCollection</a>(array $content)
+                    <a href="#method_setCollection">setCollection</a>(
+    array $content)
                                             <p>Set the collection content</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getCollection">getCollection</a>()
@@ -114,7 +123,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
+    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_rewind">rewind</a>()
@@ -123,7 +133,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_reset">reset</a>()
@@ -132,7 +143,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_end">end</a>()
@@ -141,7 +153,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
+    void
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_next">next</a>()
@@ -150,7 +163,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_prev">prev</a>()
@@ -159,7 +173,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_valid">valid</a>()
@@ -168,7 +183,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_current">current</a>()
@@ -177,7 +193,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_pos">pos</a>()
@@ -186,7 +203,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
+                    
+    int
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_key">key</a>()
@@ -195,16 +213,19 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_seek">seek</a>(int|string $index)
+                    <a href="#method_seek">seek</a>(
+    int|string $index)
                                             <p>Define the current index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_offsetSet">offsetSet</a>($offset, $value)
@@ -214,6 +235,7 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_offsetExists">offsetExists</a>($offset)
@@ -223,6 +245,7 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_offsetUnset">offsetUnset</a>($offset)
@@ -232,6 +255,7 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_offsetGet">offsetGet</a>($offset)
@@ -240,16 +264,19 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_push">push</a>(mixed $value)
+                    <a href="#method_push">push</a>(
+    mixed $value)
                                             <p>Pushes a new value at the end of the collection, with no specific index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    int
+                    
+    int
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_count">count</a>()
@@ -258,7 +285,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_shift">shift</a>()
@@ -267,7 +295,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_pop">pop</a>()
@@ -276,16 +305,19 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_unshift">unshift</a>(mixed $value)
+                    <a href="#method_unshift">unshift</a>(
+    mixed $value)
                                             <p>Pushes a new value at the beginning of the collection, with no specific index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_each">each</a>()
@@ -294,25 +326,30 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_in_array">in_array</a>(mixed $value)
+                    <a href="#method_in_array">in_array</a>(
+    mixed $value)
                                             <p>Search a value in the current array and returns true if so</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_key_exists">key_exists</a>(mixed $index)
+                    <a href="#method_key_exists">key_exists</a>(
+    mixed $index)
                                             <p>Search if an entry exists with this key</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
+    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_values">values</a>()
@@ -321,7 +358,8 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
+    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_keys">keys</a>()
@@ -330,25 +368,32 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getEntry">getEntry</a>(int|string $index, mixed $default = null)
+                    <a href="#method_getEntry">getEntry</a>(
+    int|string $index, 
+    mixed $default = null)
                                             <p>Gets a collection entry value by its index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setEntry">setEntry</a>(int|string|null $index = null, mixed $value)
+                    <a href="#method_setEntry">setEntry</a>(
+    int|string|null $index = null, 
+    mixed $value)
                                             <p>Sets a collection entry value by its index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_addEntry">addEntry</a>($index = null, $value)
@@ -357,19 +402,23 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_issetEntry">issetEntry</a>(int|string $index)
+                    <a href="#method_issetEntry">issetEntry</a>(
+    int|string $index)
                                             <p>Check if a collection entry exists by its index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+                    
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_unsetEntry">unsetEntry</a>(int|string $index)
+                    <a href="#method_unsetEntry">unsetEntry</a>(
+    int|string $index)
                                             <p>Deletes a collection entry by its index</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -383,7 +432,9 @@
                     <h3 id="method___construct">
         <div class="location">at line 51</div>
         <code>                    
-    <strong>__construct</strong>(array $content = array())</code>
+    
+    <strong>__construct</strong>(
+    array $content = array())</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -393,7 +444,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$content</td>
                 <td>The array of the collection content (optional)</td>
             </tr>
@@ -409,8 +461,10 @@
                     <div class="method-item">
                     <h3 id="method_setCollection">
         <div class="location">at line 62</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>setCollection</strong>(array $content)</code>
+        <code>                    
+    
+    <strong>setCollection</strong>(
+    array $content)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -420,23 +474,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$content</td>
                 <td>The array of the collection content</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -446,7 +491,8 @@
                     <div class="method-item">
                     <h3 id="method_getCollection">
         <div class="location">at line 73</div>
-        <code>                    array
+        <code>                    
+    
     <strong>getCollection</strong>()</code>
     </h3>
     <div class="details">
@@ -454,15 +500,6 @@
                                     <p>Get the collection content</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td>The whole collection content at this moment</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -472,7 +509,8 @@
                     <div class="method-item">
                     <h3 id="method_rewind">
         <div class="location">at line 87</div>
-        <code>final                    void
+        <code>final                    
+    void
     <strong>rewind</strong>()</code>
     </h3>
     <div class="details">
@@ -484,7 +522,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>
+    void</td>
             <td>
 </td>
         </tr>
@@ -499,7 +538,8 @@
                     <div class="method-item">
                     <h3 id="method_reset">
         <div class="location">at line 98</div>
-        <code>final                    void
+        <code>final                    
+    
     <strong>reset</strong>()</code>
     </h3>
     <div class="details">
@@ -507,16 +547,6 @@
                                     <p>Alias of self::rewind()</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -526,7 +556,8 @@
                     <div class="method-item">
                     <h3 id="method_end">
         <div class="location">at line 108</div>
-        <code>final                    void
+        <code>final                    
+    
     <strong>end</strong>()</code>
     </h3>
     <div class="details">
@@ -534,16 +565,6 @@
                                     <p>Put the index value at the last index</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -553,7 +574,8 @@
                     <div class="method-item">
                     <h3 id="method_next">
         <div class="location">at line 119</div>
-        <code>final                    void
+        <code>final                    
+    void
     <strong>next</strong>()</code>
     </h3>
     <div class="details">
@@ -565,7 +587,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>
+    void</td>
             <td>
 </td>
         </tr>
@@ -580,7 +603,8 @@
                     <div class="method-item">
                     <h3 id="method_prev">
         <div class="location">at line 130</div>
-        <code>final                    void
+        <code>final                    
+    
     <strong>prev</strong>()</code>
     </h3>
     <div class="details">
@@ -588,16 +612,6 @@
                                     <p>Decrease the current index</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -607,7 +621,8 @@
                     <div class="method-item">
                     <h3 id="method_valid">
         <div class="location">at line 141</div>
-        <code>final                    bool
+        <code>final                    
+    bool
     <strong>valid</strong>()</code>
     </h3>
     <div class="details">
@@ -619,7 +634,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>True if a collection value is set for the current index</td>
         </tr>
     </table>
@@ -633,7 +649,8 @@
                     <div class="method-item">
                     <h3 id="method_current">
         <div class="location">at line 151</div>
-        <code>final                    mixed
+        <code>final                    
+    mixed
     <strong>current</strong>()</code>
     </h3>
     <div class="details">
@@ -645,7 +662,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>Current value in the collection</td>
         </tr>
     </table>
@@ -659,7 +677,8 @@
                     <div class="method-item">
                     <h3 id="method_pos">
         <div class="location">at line 161</div>
-        <code>final                    mixed
+        <code>final                    
+    
     <strong>pos</strong>()</code>
     </h3>
     <div class="details">
@@ -667,15 +686,6 @@
                                     <p>Alias of self::current()</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td>The current value</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -685,7 +695,8 @@
                     <div class="method-item">
                     <h3 id="method_key">
         <div class="location">at line 171</div>
-        <code>final                    int
+        <code>final                    
+    int
     <strong>key</strong>()</code>
     </h3>
     <div class="details">
@@ -697,7 +708,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>int</td>
+            <td>
+    int</td>
             <td>The current index</td>
         </tr>
     </table>
@@ -711,8 +723,10 @@
                     <div class="method-item">
                     <h3 id="method_seek">
         <div class="location">at line 182</div>
-        <code>final                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>seek</strong>(int|string $index)</code>
+        <code>final                    
+    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+    <strong>seek</strong>(
+    int|string $index)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -722,7 +736,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int|string</td>
+                <td>
+    int|string</td>
                 <td>$index</td>
                 <td>
 </td>
@@ -734,7 +749,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -750,6 +766,7 @@
                     <h3 id="method_offsetSet">
         <div class="location">at line 199</div>
         <code>final                    
+    
     <strong>offsetSet</strong>($offset, $value)</code>
     </h3>
     <div class="details">
@@ -793,6 +810,7 @@
                     <h3 id="method_offsetExists">
         <div class="location">at line 209</div>
         <code>final                    
+    
     <strong>offsetExists</strong>($offset)</code>
     </h3>
     <div class="details">
@@ -830,6 +848,7 @@
                     <h3 id="method_offsetUnset">
         <div class="location">at line 219</div>
         <code>final                    
+    
     <strong>offsetUnset</strong>($offset)</code>
     </h3>
     <div class="details">
@@ -867,6 +886,7 @@
                     <h3 id="method_offsetGet">
         <div class="location">at line 229</div>
         <code>final                    
+    
     <strong>offsetGet</strong>($offset)</code>
     </h3>
     <div class="details">
@@ -903,8 +923,10 @@
                     <div class="method-item">
                     <h3 id="method_push">
         <div class="location">at line 244</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>push</strong>(mixed $value)</code>
+        <code>                    
+    
+    <strong>push</strong>(
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -914,23 +936,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>The new value to add in the collection</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -940,7 +953,8 @@
                     <div class="method-item">
                     <h3 id="method_count">
         <div class="location">at line 255</div>
-        <code>                    int
+        <code>                    
+    int
     <strong>count</strong>()</code>
     </h3>
     <div class="details">
@@ -952,8 +966,10 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>int</td>
-            <td>The number of collection entries</td>
+            <td>
+    int</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -966,7 +982,8 @@
                     <div class="method-item">
                     <h3 id="method_shift">
         <div class="location">at line 265</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+        <code>                    
+    
     <strong>shift</strong>()</code>
     </h3>
     <div class="details">
@@ -974,16 +991,6 @@
                                     <p>Deletes a value at the beginning of the collection</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -993,7 +1000,8 @@
                     <div class="method-item">
                     <h3 id="method_pop">
         <div class="location">at line 276</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
+        <code>                    
+    
     <strong>pop</strong>()</code>
     </h3>
     <div class="details">
@@ -1001,16 +1009,6 @@
                                     <p>Deletes a value at the end of the collection</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1020,8 +1018,10 @@
                     <div class="method-item">
                     <h3 id="method_unshift">
         <div class="location">at line 288</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>unshift</strong>(mixed $value)</code>
+        <code>                    
+    
+    <strong>unshift</strong>(
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1031,23 +1031,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>The new value to add in the collection</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1057,7 +1048,8 @@
                     <div class="method-item">
                     <h3 id="method_each">
         <div class="location">at line 299</div>
-        <code>                    array
+        <code>                    
+    
     <strong>each</strong>()</code>
     </h3>
     <div class="details">
@@ -1065,15 +1057,6 @@
                                     <p>Returns the current key=>value pair and put increase the index</p>                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td>The result of the "each()" PHP standard method on collection</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1083,8 +1066,10 @@
                     <div class="method-item">
                     <h3 id="method_in_array">
         <div class="location">at line 312</div>
-        <code>                    bool
-    <strong>in_array</strong>(mixed $value)</code>
+        <code>                    
+    bool
+    <strong>in_array</strong>(
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1094,7 +1079,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>The value to test</td>
             </tr>
@@ -1105,8 +1091,10 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
-            <td>The result of the test</td>
+            <td>
+    bool</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -1119,8 +1107,10 @@
                     <div class="method-item">
                     <h3 id="method_key_exists">
         <div class="location">at line 323</div>
-        <code>                    bool
-    <strong>key_exists</strong>(mixed $index)</code>
+        <code>                    
+    bool
+    <strong>key_exists</strong>(
+    mixed $index)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1130,7 +1120,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$index</td>
                 <td>The index to test</td>
             </tr>
@@ -1141,8 +1132,10 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
-            <td>The result of the test</td>
+            <td>
+    bool</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -1155,7 +1148,8 @@
                     <div class="method-item">
                     <h3 id="method_values">
         <div class="location">at line 333</div>
-        <code>                    array
+        <code>                    
+    array
     <strong>values</strong>()</code>
     </h3>
     <div class="details">
@@ -1167,8 +1161,10 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
-            <td>An array of the collection values</td>
+            <td>
+    array</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -1181,7 +1177,8 @@
                     <div class="method-item">
                     <h3 id="method_keys">
         <div class="location">at line 343</div>
-        <code>                    array
+        <code>                    
+    array
     <strong>keys</strong>()</code>
     </h3>
     <div class="details">
@@ -1193,8 +1190,10 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
-            <td>An array of the collection keys</td>
+            <td>
+    array</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -1207,8 +1206,11 @@
                     <div class="method-item">
                     <h3 id="method_getEntry">
         <div class="location">at line 359</div>
-        <code>                    mixed
-    <strong>getEntry</strong>(int|string $index, mixed $default = null)</code>
+        <code>                    
+    
+    <strong>getEntry</strong>(
+    int|string $index, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1218,27 +1220,20 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int|string</td>
+                <td>
+    int|string</td>
                 <td>$index</td>
                 <td>The index of the entry to get</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value returned if the original entry is not set (default is NULL)</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td>The found value for the searched index, $default if nothing has been found</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1248,8 +1243,11 @@
                     <div class="method-item">
                     <h3 id="method_setEntry">
         <div class="location">at line 374</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>setEntry</strong>(int|string|null $index = null, mixed $value)</code>
+        <code>                    
+    
+    <strong>setEntry</strong>(
+    int|string|null $index = null, 
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1259,28 +1257,20 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int|string|null</td>
+                <td>
+    int|string|null</td>
                 <td>$index</td>
                 <td>The index of the entry to set</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>The value to set</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                             <h4>See also</h4>
@@ -1300,6 +1290,7 @@
                     <h3 id="method_addEntry">
         <div class="location">at line 388</div>
         <code>                    
+    
     <strong>addEntry</strong>($index = null, $value)</code>
     </h3>
     <div class="details">
@@ -1342,8 +1333,10 @@
                     <div class="method-item">
                     <h3 id="method_issetEntry">
         <div class="location">at line 399</div>
-        <code>                    bool
-    <strong>issetEntry</strong>(int|string $index)</code>
+        <code>                    
+    
+    <strong>issetEntry</strong>(
+    int|string $index)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1353,23 +1346,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int|string</td>
+                <td>
+    int|string</td>
                 <td>$index</td>
                 <td>The index of the entry to check</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -1379,8 +1363,10 @@
                     <div class="method-item">
                     <h3 id="method_unsetEntry">
         <div class="location">at line 410</div>
-        <code>                    <a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a>
-    <strong>unsetEntry</strong>(int|string $index)</code>
+        <code>                    
+    
+    <strong>unsetEntry</strong>(
+    int|string $index)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1390,23 +1376,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int|string</td>
+                <td>
+    int|string</td>
                 <td>$index</td>
                 <td>The index of the entry to delete</td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Patterns/Commons/Collection.html"><abbr title="Patterns\Commons\Collection">Collection</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
             
                     </div>

@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
     </div>
 
     <p>    interface
-    <strong>CrudInterface</strong></p>
+    <strong>CrudInterface</strong>
+</p>
 
             <div class="description">
             <p>An interface for a basic CRUD model</p>                    </div>
@@ -86,40 +90,49 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_create">create</a>(array $data)
+                    <a href="#method_create">create</a>(
+    array $data)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_read">read</a>(int $id)
+                    <a href="#method_read">read</a>(
+    int $id)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_update">update</a>(int $id, array $data)
+                    <a href="#method_update">update</a>(
+    int $id, 
+    array $data)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_delete">delete</a>(int $id)
+                    <a href="#method_delete">delete</a>(
+    int $id)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -133,8 +146,10 @@
                     <div class="method-item">
                     <h3 id="method_create">
         <div class="location">at line 37</div>
-        <code>                    bool
-    <strong>create</strong>(array $data)</code>
+        <code>                    
+    bool
+    <strong>create</strong>(
+    array $data)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -142,7 +157,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$data</td>
                 <td>
 </td>
@@ -154,7 +170,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -169,8 +186,10 @@
                     <div class="method-item">
                     <h3 id="method_read">
         <div class="location">at line 43</div>
-        <code>                    mixed
-    <strong>read</strong>(int $id)</code>
+        <code>                    
+    mixed
+    <strong>read</strong>(
+    int $id)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -178,7 +197,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$id</td>
                 <td>
 </td>
@@ -190,7 +210,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
@@ -205,8 +226,11 @@
                     <div class="method-item">
                     <h3 id="method_update">
         <div class="location">at line 50</div>
-        <code>                    bool
-    <strong>update</strong>(int $id, array $data)</code>
+        <code>                    
+    bool
+    <strong>update</strong>(
+    int $id, 
+    array $data)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -214,13 +238,15 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$id</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$data</td>
                 <td>
 </td>
@@ -232,7 +258,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -247,8 +274,10 @@
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">at line 56</div>
-        <code>                    bool
-    <strong>delete</strong>(int $id)</code>
+        <code>                    
+    bool
+    <strong>delete</strong>(
+    int $id)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -256,7 +285,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$id</td>
                 <td>
 </td>
@@ -268,7 +298,8 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>

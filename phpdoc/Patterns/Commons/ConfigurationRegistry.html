@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
     </div>
 
     <p>    class
-    <strong>ConfigurationRegistry</strong></p>
+    <strong>ConfigurationRegistry</strong>
+</p>
 
             <div class="description">
             <p>A manager for a configuration registry as an array with a depth of 2</p>            <p>This class handles a simple and classic registry of values (stored in an array
@@ -93,6 +97,7 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>()
@@ -101,43 +106,59 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_set">set</a>(string $name, mixed $value, string $scope = null)
+                    <a href="#method_set">set</a>(
+    string $name, 
+    mixed $value, 
+    string $scope = null)
                                             <p>Set the value of a specific option with depth</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_get">get</a>(string $name, mixed $default = null, string $scope = null)
+                    <a href="#method_get">get</a>(
+    string $name, 
+    mixed $default = null, 
+    string $scope = null)
                                             <p>Get the value of a specific option with depth</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setConfigs">setConfigs</a>(array $options, string $scope = null)
+                    <a href="#method_setConfigs">setConfigs</a>(
+    array $options, 
+    string $scope = null)
                                             <p>Set an array of options</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setConfig">setConfig</a>(string $name, mixed $value, string $scope = null)
+                    <a href="#method_setConfig">setConfig</a>(
+    string $name, 
+    mixed $value, 
+    string $scope = null)
                                             <p>Set the value of a specific option (no scope notation allowed here)</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_addConfig">addConfig</a>($name, $value, $scope = null)
@@ -146,19 +167,26 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array|mixed|null
+                    
+    array|mixed|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getConfigs">getConfigs</a>(mixed $default = null, string $scope = null)
+                    <a href="#method_getConfigs">getConfigs</a>(
+    mixed $default = null, 
+    string $scope = null)
                                             <p>Get the array of options (from a specific scope if so)</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getConfig">getConfig</a>(string $name, mixed $default = null, string $scope = null)
+                    <a href="#method_getConfig">getConfig</a>(
+    string $name, 
+    mixed $default = null, 
+    string $scope = null)
                                             <p>Get the value of a specific option (no scope notation allowed here)</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -172,6 +200,7 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <h3 id="method___construct">
         <div class="location">at line 49</div>
         <code>                    
+    
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
@@ -188,8 +217,12 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="method-item">
                     <h3 id="method_set">
         <div class="location">at line 62</div>
-        <code>                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
-    <strong>set</strong>(string $name, mixed $value, string $scope = null)</code>
+        <code>                    
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+    <strong>set</strong>(
+    string $name, 
+    mixed $value, 
+    string $scope = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -199,17 +232,20 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$name</td>
                 <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>The value to set for $name</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$scope</td>
                 <td>The scope to use in the configuration registry if it is not defined in the <code>$name</code> parameter</td>
             </tr>
@@ -220,7 +256,8 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -235,8 +272,12 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="method-item">
                     <h3 id="method_get">
         <div class="location">at line 82</div>
-        <code>                    mixed
-    <strong>get</strong>(string $name, mixed $default = null, string $scope = null)</code>
+        <code>                    
+    mixed
+    <strong>get</strong>(
+    string $name, 
+    mixed $default = null, 
+    string $scope = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -246,17 +287,20 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$name</td>
                 <td>The index of the configuration value to get, with a scope using notation <code>index:name</code></td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if so (<code>null</code> by default)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$scope</td>
                 <td>The scope to use in the configuration registry if it is not defined in the <code>$name</code> parameter</td>
             </tr>
@@ -267,7 +311,8 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>The value retrieved in the registry or the default value otherwise</td>
         </tr>
     </table>
@@ -281,8 +326,11 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="method-item">
                     <h3 id="method_setConfigs">
         <div class="location">at line 100</div>
-        <code>                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
-    <strong>setConfigs</strong>(array $options, string $scope = null)</code>
+        <code>                    
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+    <strong>setConfigs</strong>(
+    array $options, 
+    string $scope = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -292,12 +340,14 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$options</td>
                 <td>The array of values to set for the configuration entry</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$scope</td>
                 <td>The scope to use in the configuration registry (optional)</td>
             </tr>
@@ -308,7 +358,8 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -323,8 +374,12 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="method-item">
                     <h3 id="method_setConfig">
         <div class="location">at line 119</div>
-        <code>                    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
-    <strong>setConfig</strong>(string $name, mixed $value, string $scope = null)</code>
+        <code>                    
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a>
+    <strong>setConfig</strong>(
+    string $name, 
+    mixed $value, 
+    string $scope = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -334,17 +389,20 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$name</td>
                 <td>The index of the configuration value</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$value</td>
                 <td>The value to set for the configuration entry</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$scope</td>
                 <td>The scope to use in the configuration registry (optional)</td>
             </tr>
@@ -355,7 +413,8 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/ConfigurationRegistry.html"><abbr title="Patterns\Commons\ConfigurationRegistry">ConfigurationRegistry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -371,6 +430,7 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <h3 id="method_addConfig">
         <div class="location">at line 138</div>
         <code>                    
+    
     <strong>addConfig</strong>($name, $value, $scope = null)</code>
     </h3>
     <div class="details">
@@ -419,8 +479,11 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="method-item">
                     <h3 id="method_getConfigs">
         <div class="location">at line 150</div>
-        <code>                    array|mixed|null
-    <strong>getConfigs</strong>(mixed $default = null, string $scope = null)</code>
+        <code>                    
+    array|mixed|null
+    <strong>getConfigs</strong>(
+    mixed $default = null, 
+    string $scope = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -430,12 +493,14 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if so (<code>null</code> by default)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$scope</td>
                 <td>The scope to use in the configuration registry (optional)</td>
             </tr>
@@ -446,7 +511,8 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>array|mixed|null</td>
+            <td>
+    array|mixed|null</td>
             <td>
 </td>
         </tr>
@@ -461,8 +527,12 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
                     <div class="method-item">
                     <h3 id="method_getConfig">
         <div class="location">at line 166</div>
-        <code>                    mixed
-    <strong>getConfig</strong>(string $name, mixed $default = null, string $scope = null)</code>
+        <code>                    
+    mixed
+    <strong>getConfig</strong>(
+    string $name, 
+    mixed $default = null, 
+    string $scope = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -472,17 +542,20 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$name</td>
                 <td>The index of the configuration value to get</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if so (<code>null</code> by default)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$scope</td>
                 <td>The scope to use in the configuration registry (optional)</td>
             </tr>
@@ -493,7 +566,8 @@ are often stored in complex arrays identified by a simple key.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>

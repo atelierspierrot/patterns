@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
     </div>
 
     <p>    interface
-    <strong>CachableInterface</strong></p>
+    <strong>CachableInterface</strong>
+</p>
 
             <div class="description">
             <p>Manage a cachable item object</p>            <p>This interface is designed to handle a single item at once but it can be used with any
@@ -90,7 +94,8 @@ on your implementation.</p>        </div>
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
+    string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getCacheKey">getCacheKey</a>()
@@ -99,7 +104,8 @@ on your implementation.</p>        </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_isCached">isCached</a>()
@@ -108,7 +114,8 @@ on your implementation.</p>        </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getCache">getCache</a>()
@@ -117,16 +124,19 @@ on your implementation.</p>        </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setCache">setCache</a>(mixed $content)
+                    <a href="#method_setCache">setCache</a>(
+    mixed $content)
                                             <p>Set a cache content for an item</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_invalidateCache">invalidateCache</a>()
@@ -141,8 +151,9 @@ on your implementation.</p>        </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getCacheKey">
-        <div class="location">at line 43</div>
-        <code>                    string
+        <div class="location">at line 45</div>
+        <code>                    
+    string
     <strong>getCacheKey</strong>()</code>
     </h3>
     <div class="details">
@@ -154,7 +165,8 @@ on your implementation.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -168,8 +180,9 @@ on your implementation.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isCached">
-        <div class="location">at line 55</div>
-        <code>                    bool
+        <div class="location">at line 57</div>
+        <code>                    
+    bool
     <strong>isCached</strong>()</code>
     </h3>
     <div class="details">
@@ -184,7 +197,8 @@ source if it is possible.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -198,8 +212,9 @@ source if it is possible.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getCache">
-        <div class="location">at line 64</div>
-        <code>                    mixed
+        <div class="location">at line 66</div>
+        <code>                    
+    mixed
     <strong>getCache</strong>()</code>
     </h3>
     <div class="details">
@@ -211,7 +226,8 @@ source if it is possible.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
@@ -225,9 +241,11 @@ source if it is possible.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setCache">
-        <div class="location">at line 75</div>
-        <code>                    bool
-    <strong>setCache</strong>(mixed $content)</code>
+        <div class="location">at line 77</div>
+        <code>                    
+    bool
+    <strong>setCache</strong>(
+    mixed $content)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -238,7 +256,8 @@ return a boolean indicates if the caching process succeeded.</p>            </di
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$content</td>
                 <td>
 </td>
@@ -250,7 +269,8 @@ return a boolean indicates if the caching process succeeded.</p>            </di
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -264,8 +284,9 @@ return a boolean indicates if the caching process succeeded.</p>            </di
             </div>
                     <div class="method-item">
                     <h3 id="method_invalidateCache">
-        <div class="location">at line 85</div>
-        <code>                    bool
+        <div class="location">at line 87</div>
+        <code>                    
+    bool
     <strong>invalidateCache</strong>()</code>
     </h3>
     <div class="details">
@@ -278,7 +299,8 @@ return a boolean indicates if the deletion process succeeded.</p>            </d
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>

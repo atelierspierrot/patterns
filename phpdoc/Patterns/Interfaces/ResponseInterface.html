@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
     </div>
 
     <p>    interface
-    <strong>ResponseInterface</strong></p>
+    <strong>ResponseInterface</strong>
+</p>
 
             <div class="description">
             <p>Interface for classic response handling</p>                    </div>
@@ -87,36 +91,49 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_redirect">redirect</a>(string $url, bool $permanent = false)
+                    <a href="#method_redirect">redirect</a>(
+    string $url, 
+    bool $permanent = false)
                                             <p>Make a redirection by headers</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_send">send</a>(string $content = null, string $type = null)
+                    <a href="#method_send">send</a>(
+    string $content = null, 
+    string $type = null)
                                             <p>Send the response to the device</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_download">download</a>(string $file = null, string $type = null, string $file_name = null)
+                    <a href="#method_download">download</a>(
+    string $file = null, 
+    string $type = null, 
+    string $file_name = null)
                                             <p>Force device to download a file</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_flush">flush</a>(string $file_content = null, string $type = null)
+                    <a href="#method_flush">flush</a>(
+    string $file_content = null, 
+    string $type = null)
                                             <p>Flush (display) a file content</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -130,7 +147,10 @@
                     <h3 id="method_redirect">
         <div class="location">at line 39</div>
         <code>                    
-    <strong>redirect</strong>(string $url, bool $permanent = false)</code>
+    
+    <strong>redirect</strong>(
+    string $url, 
+    bool $permanent = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -140,12 +160,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$url</td>
                 <td>The URL to redirect to</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$permanent</td>
                 <td>Is it a permanent redirection ? (default is false)</td>
             </tr>
@@ -162,7 +184,10 @@
                     <h3 id="method_send">
         <div class="location">at line 47</div>
         <code>                    
-    <strong>send</strong>(string $content = null, string $type = null)</code>
+    
+    <strong>send</strong>(
+    string $content = null, 
+    string $type = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -172,12 +197,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$content</td>
                 <td>The body of the response to send</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$type</td>
                 <td>A content type to handle</td>
             </tr>
@@ -194,7 +221,11 @@
                     <h3 id="method_download">
         <div class="location">at line 56</div>
         <code>                    
-    <strong>download</strong>(string $file = null, string $type = null, string $file_name = null)</code>
+    
+    <strong>download</strong>(
+    string $file = null, 
+    string $type = null, 
+    string $file_name = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -204,17 +235,20 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$file</td>
                 <td>The path to the file to download</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$type</td>
                 <td>The file type to build headers</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$file_name</td>
                 <td>A specific filename to define for download</td>
             </tr>
@@ -231,7 +265,10 @@
                     <h3 id="method_flush">
         <div class="location">at line 64</div>
         <code>                    
-    <strong>flush</strong>(string $file_content = null, string $type = null)</code>
+    
+    <strong>flush</strong>(
+    string $file_content = null, 
+    string $type = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -241,12 +278,14 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$file_content</td>
                 <td>The plain text content to display</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$type</td>
                 <td>The content type to build headers</td>
             </tr>

@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
     </div>
 
     <p>    trait
-    <strong>AccessibleTrait</strong></p>
+    <strong>AccessibleTrait</strong>
+</p>
 
             <div class="description">
             <p>Magic properties accessors</p>            <p>This abstract class defines commons magic methods to directly access (set, unset, check or get)
@@ -110,37 +114,46 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
+                    
+    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___set">__set</a>(string $var, string $val)
+                    <a href="#method___set">__set</a>(
+    string $var, 
+    string $val)
                                             <p>Set an object property, accessing it by "setVariable" if the method exists</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___get">__get</a>(string $var)
+                    <a href="#method___get">__get</a>(
+    string $var)
                                             <p>Get an object property, accessing it by "getVariable" if the method exists</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___isset">__isset</a>(string $var)
+                    <a href="#method___isset">__isset</a>(
+    string $var)
                                             <p>Test if an object property has been set, using the "issetVariable" method if defined</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
+                    
+    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___unset">__unset</a>(string $var)
+                    <a href="#method___unset">__unset</a>(
+    string $var)
                                             <p>Test if an object property has been set, using the "unsetVariable" method if defined</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -152,9 +165,12 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___set">
-        <div class="location">at line 98</div>
-        <code>                    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
-    <strong>__set</strong>(string $var, string $val)</code>
+        <div class="location">at line 99</div>
+        <code>                    
+    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
+    <strong>__set</strong>(
+    string $var, 
+    string $val)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -164,12 +180,14 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The property object to set</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$val</td>
                 <td>The property value to set</td>
             </tr>
@@ -180,7 +198,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -191,7 +210,7 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
                 <td>if the property doesn't exist in the object</td>
             </tr>
             </table>
@@ -203,9 +222,11 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">at line 123</div>
-        <code>                    mixed
-    <strong>__get</strong>(string $var)</code>
+        <div class="location">at line 124</div>
+        <code>                    
+    mixed
+    <strong>__get</strong>(
+    string $var)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -215,7 +236,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The property object to get</td>
             </tr>
@@ -226,7 +248,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>Returns the result of the "getVariable" method, of the property otherwise</td>
         </tr>
     </table>
@@ -236,7 +259,7 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
                 <td>if the property doesn't exist in the object</td>
             </tr>
             </table>
@@ -248,9 +271,11 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___isset">
-        <div class="location">at line 147</div>
-        <code>                    bool
-    <strong>__isset</strong>(string $var)</code>
+        <div class="location">at line 148</div>
+        <code>                    
+    bool
+    <strong>__isset</strong>(
+    string $var)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -260,7 +285,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The property object to test</td>
             </tr>
@@ -271,7 +297,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>True if the property is already set</td>
         </tr>
     </table>
@@ -281,7 +308,7 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
                 <td>if the property doesn't exist in the object</td>
             </tr>
             </table>
@@ -293,9 +320,11 @@ in the child class ; you can use it easily by extending it.</p>        </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___unset">
-        <div class="location">at line 171</div>
-        <code>                    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
-    <strong>__unset</strong>(string $var)</code>
+        <div class="location">at line 172</div>
+        <code>                    
+    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a>
+    <strong>__unset</strong>(
+    string $var)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -305,7 +334,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The property object to unset</td>
             </tr>
@@ -316,7 +346,8 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Traits/AccessibleTrait.html"><abbr title="Patterns\Traits\AccessibleTrait">AccessibleTrait</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -327,7 +358,7 @@ in the child class ; you can use it easily by extending it.</p>        </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
                 <td>if the property doesn't exist in the object</td>
             </tr>
             </table>

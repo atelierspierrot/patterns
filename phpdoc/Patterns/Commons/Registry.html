@@ -12,6 +12,9 @@
         <script src="../../js/bootstrap.min.js"></script>
         <script src="../../js/typeahead.min.js"></script>
         <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     
     
     </head>
@@ -73,7 +76,8 @@
     </div>
 
     <p>    class
-    <strong>Registry</strong></p>
+    <strong>Registry</strong>
+</p>
 
             <div class="description">
             <p>A classic registry manager</p>            <p>This class handles a set of registries (array of <code>key=&gt;value</code> pairs) distinguishing
@@ -88,7 +92,8 @@ a stack of registries and can be loaded as the current one (replacing it).</p>  
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
+    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_dump">dump</a>()
@@ -97,118 +102,161 @@ a stack of registries and can be loaded as the current one (replacing it).</p>  
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
+    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___set">__set</a>(string $var = null, mixed $val = null)
+                    <a href="#method___set">__set</a>(
+    string $var = null, 
+    mixed $val = null)
                                             <p>Set an entry in the instance registry (magic setter)</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___get">__get</a>(string $var = null)
+                    <a href="#method___get">__get</a>(
+    string $var = null)
                                             <p>Get an entry from the instance registry (magic getter)</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setEntry">setEntry</a>(null|string $var = null, null|mixed $val = null, <abbr title="Patterns\Commons\false">false</abbr>|string $section = false)
+                    <a href="#method_setEntry">setEntry</a>(
+    null|string $var = null, 
+    null|mixed $val = null, 
+    <abbr title="Patterns\Commons\false">false</abbr>|string $section = false)
                                             <p>Set an entry in the instance registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addEntry">addEntry</a>(mixed $val = null, string $section = false)
+                    <a href="#method_addEntry">addEntry</a>(
+    mixed $val = null, 
+    string $section = false)
                                             <p>Add an entry in a section of the instance registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getEntry">getEntry</a>(string $var = null, string $section = false, mixed $default = null)
+                    <a href="#method_getEntry">getEntry</a>(
+    string $var = null, 
+    string $section = false, 
+    mixed $default = null)
                                             <p>Get an entry from the instance registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isEntry">isEntry</a>(string $var = null, string $section = false)
+                    <a href="#method_isEntry">isEntry</a>(
+    string $var = null, 
+    string $section = false)
                                             <p>Check if an entry exists in registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|null
+                    
+    string|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getKey">getKey</a>(mixed $val = null, string $var = null, string $section = false)
+                    <a href="#method_getKey">getKey</a>(
+    mixed $val = null, 
+    string $var = null, 
+    string $section = false)
                                             <p>Search a key in registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_dumpStack">dumpStack</a>(string $index = null, mixed $default = null)
+                    <a href="#method_dumpStack">dumpStack</a>(
+    string $index = null, 
+    mixed $default = null)
                                             <p>Get a full stack from registry stacks</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_saveStack">saveStack</a>(string $index = null, bool $and_clean = false)
+                    <a href="#method_saveStack">saveStack</a>(
+    string $index = null, 
+    bool $and_clean = false)
                                             <p>Save a stack of entries in registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
+    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_isStack">isStack</a>(string $index = null)
+                    <a href="#method_isStack">isStack</a>(
+    string $index = null)
                                             <p>Check if a stack exists in registry</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_loadStack">loadStack</a>(string $index = null)
+                    <a href="#method_loadStack">loadStack</a>(
+    string $index = null)
                                             <p>Load a stack in registry (actual registry is overwrites)</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getStackEntry">getStackEntry</a>(string $var = null, string $section = false, string $stack = null, mixed $default = null)
+                    <a href="#method_getStackEntry">getStackEntry</a>(
+    string $var = null, 
+    string $section = false, 
+    string $stack = null, 
+    mixed $default = null)
                                             <p>Get a stack entry of the registry stacks</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getStackKey">getStackKey</a>(string $val = null, string $section = false, string $stack = null, mixed $default = null)
+                    <a href="#method_getStackKey">getStackKey</a>(
+    string $val = null, 
+    string $section = false, 
+    string $stack = null, 
+    mixed $default = null)
                                             <p>Get the key of a stack entry of the registry stacks</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -221,7 +269,8 @@ a stack of registries and can be loaded as the current one (replacing it).</p>  
                     <div class="method-item">
                     <h3 id="method_dump">
         <div class="location">at line 56</div>
-        <code>                    array
+        <code>                    
+    array
     <strong>dump</strong>()</code>
     </h3>
     <div class="details">
@@ -233,7 +282,8 @@ a stack of registries and can be loaded as the current one (replacing it).</p>  
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>
+    array</td>
             <td>
 </td>
         </tr>
@@ -248,8 +298,11 @@ a stack of registries and can be loaded as the current one (replacing it).</p>  
                     <div class="method-item">
                     <h3 id="method___set">
         <div class="location">at line 73</div>
-        <code>                    void
-    <strong>__set</strong>(string $var = null, mixed $val = null)</code>
+        <code>                    
+    void
+    <strong>__set</strong>(
+    string $var = null, 
+    mixed $val = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -261,12 +314,14 @@ added to the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The variable name to set</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$val</td>
                 <td>The variable value to set</td>
             </tr>
@@ -277,7 +332,8 @@ added to the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>
+    void</td>
             <td>
 </td>
         </tr>
@@ -301,8 +357,10 @@ added to the registry.</p>            </div>
                     <div class="method-item">
                     <h3 id="method___get">
         <div class="location">at line 89</div>
-        <code>                    mixed
-    <strong>__get</strong>(string $var = null)</code>
+        <code>                    
+    mixed
+    <strong>__get</strong>(
+    string $var = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -314,7 +372,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The variable name to get</td>
             </tr>
@@ -325,7 +384,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
@@ -349,8 +409,12 @@ exists in the registry.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_setEntry">
         <div class="location">at line 102</div>
-        <code>                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
-    <strong>setEntry</strong>(null|string $var = null, null|mixed $val = null, <abbr title="Patterns\Commons\false">false</abbr>|string $section = false)</code>
+        <code>                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>setEntry</strong>(
+    null|string $var = null, 
+    null|mixed $val = null, 
+    <abbr title="Patterns\Commons\false">false</abbr>|string $section = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -360,17 +424,20 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>null|string</td>
+                <td>
+    null|string</td>
                 <td>$var</td>
                 <td>The variable name to set</td>
             </tr>
                     <tr>
-                <td>null|mixed</td>
+                <td>
+    null|mixed</td>
                 <td>$val</td>
                 <td>The variable value to set</td>
             </tr>
                     <tr>
-                <td><abbr title="Patterns\Commons\false">false</abbr>|string</td>
+                <td>
+    <abbr title="Patterns\Commons\false">false</abbr>|string</td>
                 <td>$section</td>
                 <td>A section name in the registry (default is FALSE)</td>
             </tr>
@@ -381,7 +448,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -396,8 +464,11 @@ exists in the registry.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_addEntry">
         <div class="location">at line 124</div>
-        <code>                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
-    <strong>addEntry</strong>(mixed $val = null, string $section = false)</code>
+        <code>                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>addEntry</strong>(
+    mixed $val = null, 
+    string $section = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -407,12 +478,14 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$val</td>
                 <td>The variable value to set</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$section</td>
                 <td>A section name in the registry</td>
             </tr>
@@ -423,7 +496,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -438,8 +512,12 @@ exists in the registry.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_getEntry">
         <div class="location">at line 143</div>
-        <code>                    mixed
-    <strong>getEntry</strong>(string $var = null, string $section = false, mixed $default = null)</code>
+        <code>                    
+    mixed
+    <strong>getEntry</strong>(
+    string $var = null, 
+    string $section = false, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -449,17 +527,20 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The variable name to get</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$section</td>
                 <td>A section name in the registry (default is FALSE)</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if it is not in registry (default is NULL)</td>
             </tr>
@@ -470,7 +551,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>The value found or $default</td>
         </tr>
     </table>
@@ -484,8 +566,11 @@ exists in the registry.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_isEntry">
         <div class="location">at line 162</div>
-        <code>                    bool
-    <strong>isEntry</strong>(string $var = null, string $section = false)</code>
+        <code>                    
+    bool
+    <strong>isEntry</strong>(
+    string $var = null, 
+    string $section = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -495,12 +580,14 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The variable name to check</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$section</td>
                 <td>A section name in the registry (default is FALSE)</td>
             </tr>
@@ -511,7 +598,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -526,8 +614,12 @@ exists in the registry.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_getKey">
         <div class="location">at line 180</div>
-        <code>                    string|null
-    <strong>getKey</strong>(mixed $val = null, string $var = null, string $section = false)</code>
+        <code>                    
+    string|null
+    <strong>getKey</strong>(
+    mixed $val = null, 
+    string $var = null, 
+    string $section = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -537,17 +629,20 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$val</td>
                 <td>The variable value to find</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The variable name to search in (in case of array)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$section</td>
                 <td>A section name in the registry (default is FALSE)</td>
             </tr>
@@ -558,7 +653,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>
+    string|null</td>
             <td>The key found in the registry</td>
         </tr>
     </table>
@@ -571,9 +667,12 @@ exists in the registry.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_dumpStack">
-        <div class="location">at line 207</div>
-        <code>                    mixed
-    <strong>dumpStack</strong>(string $index = null, mixed $default = null)</code>
+        <div class="location">at line 208</div>
+        <code>                    
+    mixed
+    <strong>dumpStack</strong>(
+    string $index = null, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -583,12 +682,14 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$index</td>
                 <td>The stack index</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if it is not in registry (default is NULL)</td>
             </tr>
@@ -599,7 +700,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>The requested stack entry if so</td>
         </tr>
     </table>
@@ -612,9 +714,12 @@ exists in the registry.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_saveStack">
-        <div class="location">at line 222</div>
-        <code>                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
-    <strong>saveStack</strong>(string $index = null, bool $and_clean = false)</code>
+        <div class="location">at line 223</div>
+        <code>                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>saveStack</strong>(
+    string $index = null, 
+    bool $and_clean = false)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -624,12 +729,14 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$index</td>
                 <td>The stack index</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$and_clean</td>
                 <td>Clean the actual registry after recorded the stack (default is FALSE)</td>
             </tr>
@@ -640,7 +747,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -654,9 +762,11 @@ exists in the registry.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isStack">
-        <div class="location">at line 235</div>
-        <code>                    bool
-    <strong>isStack</strong>(string $index = null)</code>
+        <div class="location">at line 238</div>
+        <code>                    
+    bool
+    <strong>isStack</strong>(
+    string $index = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -666,7 +776,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$index</td>
                 <td>The stack index</td>
             </tr>
@@ -677,7 +788,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -691,9 +803,11 @@ exists in the registry.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_loadStack">
-        <div class="location">at line 246</div>
-        <code>                    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
-    <strong>loadStack</strong>(string $index = null)</code>
+        <div class="location">at line 249</div>
+        <code>                    
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a>
+    <strong>loadStack</strong>(
+    string $index = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -703,7 +817,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$index</td>
                 <td>The stack index</td>
             </tr>
@@ -714,7 +829,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
+            <td>
+    <a href="../../Patterns/Commons/Registry.html"><abbr title="Patterns\Commons\Registry">Registry</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -728,9 +844,14 @@ exists in the registry.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getStackEntry">
-        <div class="location">at line 261</div>
-        <code>                    mixed
-    <strong>getStackEntry</strong>(string $var = null, string $section = false, string $stack = null, mixed $default = null)</code>
+        <div class="location">at line 264</div>
+        <code>                    
+    mixed
+    <strong>getStackEntry</strong>(
+    string $var = null, 
+    string $section = false, 
+    string $stack = null, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -740,22 +861,26 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$var</td>
                 <td>The variable name to search</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$section</td>
                 <td>A section name in the registry (default is FALSE)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$stack</td>
                 <td>The stack name to search in</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if it is not in registry (default is NULL)</td>
             </tr>
@@ -766,7 +891,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>The value found or $default</td>
         </tr>
     </table>
@@ -779,9 +905,14 @@ exists in the registry.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getStackKey">
-        <div class="location">at line 284</div>
-        <code>                    mixed
-    <strong>getStackKey</strong>(string $val = null, string $section = false, string $stack = null, mixed $default = null)</code>
+        <div class="location">at line 287</div>
+        <code>                    
+    mixed
+    <strong>getStackKey</strong>(
+    string $val = null, 
+    string $section = false, 
+    string $stack = null, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -791,22 +922,26 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$val</td>
                 <td>The variable value to search</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$section</td>
                 <td>A section name in the registry (default is FALSE)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$stack</td>
                 <td>The stack name to search in</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value to return if it is not in registry (default is NULL)</td>
             </tr>
@@ -817,7 +952,8 @@ exists in the registry.</p>            </div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>The key found or $default</td>
         </tr>
     </table>
