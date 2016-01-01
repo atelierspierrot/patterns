@@ -2,7 +2,7 @@
 /**
  * This file is part of the Patterns package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ use \Exception;
  * fetching it received arguments. This allows to build an instance
  * with parameters.
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 trait SingletonTrait
 {
@@ -59,7 +59,7 @@ trait SingletonTrait
      * creation ; if the constructor is public, it will receive the arguments passed
      * to the `getInstance` method.
      */
-    abstract function __construct();
+    abstract public function __construct();
 
     /**
      * Over-write this method to emulate a public constructor as it will be called
@@ -119,7 +119,4 @@ trait SingletonTrait
             sprintf('Cloning a "%s" instance is not allowed!', get_called_class())
         );
     }
-
 }
-
-// Endfile
