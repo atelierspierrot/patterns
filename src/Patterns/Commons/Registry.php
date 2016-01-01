@@ -2,7 +2,7 @@
 /**
  * This file is part of the Patterns package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ namespace Patterns\Commons;
  * 
  * @author  piwi <me@e-piwi.fr>
  */
-class Registry 
+class Registry
 {
 
     /**
@@ -72,7 +72,7 @@ class Registry
      */
     public function __set($var = null, $val = null)
     {
-        self::setEntry($var,$val);
+        self::setEntry($var, $val);
     }
 
     /**
@@ -102,7 +102,7 @@ class Registry
     public function setEntry($var = null, $val = null, $section = false)
     {
         if (!empty($var)) {
-            if ($section)  {
+            if ($section) {
                 if (!isset($this->registry[$section])) {
                     $this->registry[$section] = array();
                 }
@@ -162,8 +162,8 @@ class Registry
     public function isEntry($var = null, $section = false)
     {
         return (
-            !empty($var) AND (
-                (!empty($section) && isset($this->registry[$section]) && isset($this->registry[$section][$var])) OR
+            !empty($var) and (
+                (!empty($section) && isset($this->registry[$section]) && isset($this->registry[$section][$var])) or
                 isset($this->registry[$var])
             )
         );
@@ -181,9 +181,10 @@ class Registry
     {
         if (!empty($val)) {
             if (!empty($var)) {
-                foreach($this->registry as $_sct=>$_data) {
-                    if ($ok=array_search($val, $_data) && $ok==$var)
+                foreach ($this->registry as $_sct=>$_data) {
+                    if ($ok=array_search($val, $_data) && $ok==$var) {
                         return $_sct;
+                    }
                 }
             } elseif (!empty($section) && isset($this->registry[$section])) {
                 return array_search($val, $this->registry[$section]);
@@ -222,7 +223,9 @@ class Registry
     public function saveStack($index = null, $and_clean = false)
     {
         $this->registry_stacks[$index] = $this->registry;
-        if ($and_clean===true) $this->registry=array();
+        if ($and_clean===true) {
+            $this->registry=array();
+        }
         return $this;
     }
 
@@ -294,7 +297,4 @@ class Registry
             return $this->getKey($val, $section, $default);
         }
     }
-
 }
-
-// Endfile
