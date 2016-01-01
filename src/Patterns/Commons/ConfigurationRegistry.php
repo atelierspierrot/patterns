@@ -2,7 +2,7 @@
 /**
  * This file is part of the Patterns package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ namespace Patterns\Commons;
  * `$obj->get(scope:property)` ; this is very useful for configuration entries, that
  * are often stored in complex arrays identified by a simple key.
  * 
- * @author    Piero Wbmstr <me@e-piwi.fr>
+ * @author    piwi <me@e-piwi.fr>
  */
 class ConfigurationRegistry
 {
@@ -68,7 +68,7 @@ class ConfigurationRegistry
             return $this->setConfig($entry, $cfg, $scope);
         } else {
             return $this->setConfig($name, $value, $scope);
-        }        
+        }
     }
 
     /**
@@ -87,7 +87,7 @@ class ConfigurationRegistry
             return isset($cfg[$name]) ? $cfg[$name] : $default;
         } else {
             return $this->getConfig($name, $default, $scope);
-        }        
+        }
     }
 
     /**
@@ -134,7 +134,7 @@ class ConfigurationRegistry
      * Alias of the `setConfig` method
      *
      * @see self::setConfig()
-     */    
+     */
     public function addConfig($name, $value, $scope = null)
     {
         return $this->setConfig($name, $value, $scope);
@@ -170,7 +170,4 @@ class ConfigurationRegistry
         }
         return isset($this->registry[$name]) ? $this->registry[$name] : $default;
     }
-
 }
-
-// Endfile

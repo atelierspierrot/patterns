@@ -2,7 +2,7 @@
 /**
  * This file is part of the Patterns package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ namespace Patterns\Interfaces;
 /**
  * A simple interface to manage a debuggable object
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 interface DebuggableInterface
 {
@@ -45,5 +45,3 @@ interface DebuggableInterface
      */
     public static function isDebug();
 }
-
-// Endfile

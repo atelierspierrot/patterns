@@ -2,7 +2,7 @@
 /**
  * This file is part of the Patterns package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,7 +51,8 @@ use \RuntimeException;
  * NOTE - This class is abstract but does not declare any abstract method which should be described
  * in the child class ; you can use it easily by extending it.
  *  
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @TODO    review this to erase duplication (and variations) with \Patterns\Abstracts\AbstractAccessible
+ * @author  piwi <me@e-piwi.fr>
  */
 trait AccessibleTrait
 {
@@ -183,7 +184,4 @@ trait AccessibleTrait
         }
         return $this;
     }
-
 }
-
-// Endfile
