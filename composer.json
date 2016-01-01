@@ -15,10 +15,16 @@
     }],
     "require": { "php": ">=5.3.0" },
     "require-dev": { 
-        "sami/sami": "dev-master",
-        "phpmd/phpmd" : "1.4.*"
+        "sami/sami": "@stable",
+        "phpmd/phpmd" : "@stable",
+        "fabpot/php-cs-fixer": "@stable"
     },
-    "autoload": { "psr-0": {  "Patterns": "src" } },
+    "autoload": { "psr-4": {  "Patterns\\": "src/Patterns/" } },
+    "scripts": {
+        "build-doc": "php vendor/bin/sami.php update .sami.php",
+        "update-doc": "php vendor/bin/sami.php update .sami.php",
+        "cs-fixer": "php vendor/bin/php-cs-fixer fix -v"
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.1-dev"

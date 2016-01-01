@@ -2,7 +2,7 @@
 /**
  * This file is part of the Patterns package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,9 +45,9 @@ use \Exception;
  *       $class = new classname
  *       $class->init( arguments )
  *
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
-abstract class AbstractSingleton 
+abstract class AbstractSingleton
 {
 
     /**
@@ -62,7 +62,9 @@ abstract class AbstractSingleton
      * creation ; if the constructor is public, it will receive the arguments passed
      * to the `getInstance` method.
      */
-    private function __construct(){}
+    private function __construct()
+    {
+    }
 
     /**
      * Initializer : this method is called after any instance creation
@@ -83,9 +85,9 @@ abstract class AbstractSingleton
      *                  the `__construct` or `init` methods
      * @return  object  This may return an instance of an object
      */
-    public static function &getInstance() 
+    public static function &getInstance()
     {
-        $classname = get_called_class(); 
+        $classname = get_called_class();
         if (!isset(self::$_instances[ $classname ])) {
             self::createInstance($classname, func_get_args());
         }
@@ -101,7 +103,7 @@ abstract class AbstractSingleton
      *                  the `__construct` or `init` methods
      * @return  object  This may return an instance of an object
      */
-    public static function &getInstanceByClassname($classname) 
+    public static function &getInstanceByClassname($classname)
     {
         $arguments = func_get_args();
         array_shift($arguments);
@@ -152,7 +154,4 @@ abstract class AbstractSingleton
             sprintf('Cloning a "%s" instance is not allowed!', get_called_class())
         );
     }
-
 }
-
-// Endfile
