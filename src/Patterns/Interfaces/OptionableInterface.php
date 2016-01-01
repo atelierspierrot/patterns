@@ -56,7 +56,4 @@ interface OptionableInterface
      * @return  mixed
      */
     public function getOption($name, $default = null);
-
 }
-
-// Endfile

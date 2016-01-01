@@ -94,7 +94,4 @@ interface AccessibleInterface
      * @return  self
      */
     public function __unset($var);
-
 }
-
-// Endfile

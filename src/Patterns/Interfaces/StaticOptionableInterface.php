@@ -49,7 +49,4 @@ interface StaticOptionableInterface
      * Get the value of a specific option
      */
     public static function getOption($name, $default = null);
-
 }
-
-// Endfile

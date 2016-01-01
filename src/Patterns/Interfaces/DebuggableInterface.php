@@ -45,5 +45,3 @@ interface DebuggableInterface
      */
     public static function isDebug();
 }
-
-// Endfile

@@ -92,7 +92,4 @@ interface RouterInterface
      * @param   string  $hash       A hash tag to add to the generated URL
      */
     public function redirect($pathinfo, $hash = null);
-
 }
-
-// Endfile

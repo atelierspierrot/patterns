@@ -56,7 +56,4 @@ interface IteratorInterface
      * Decrease the current index
      */
     public function prev();
-
 }
-
-// Endfile

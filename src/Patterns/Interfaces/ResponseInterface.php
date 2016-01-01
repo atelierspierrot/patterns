@@ -62,7 +62,4 @@ interface ResponseInterface
      * @param   string  $type           The content type to build headers
      */
     public function flush($file_content = null, $type = null);
-
 }
-
-// Endfile

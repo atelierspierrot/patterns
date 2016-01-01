@@ -68,7 +68,7 @@ class ConfigurationRegistry
             return $this->setConfig($entry, $cfg, $scope);
         } else {
             return $this->setConfig($name, $value, $scope);
-        }        
+        }
     }
 
     /**
@@ -87,7 +87,7 @@ class ConfigurationRegistry
             return isset($cfg[$name]) ? $cfg[$name] : $default;
         } else {
             return $this->getConfig($name, $default, $scope);
-        }        
+        }
     }
 
     /**
@@ -134,7 +134,7 @@ class ConfigurationRegistry
      * Alias of the `setConfig` method
      *
      * @see self::setConfig()
-     */    
+     */
     public function addConfig($name, $value, $scope = null)
     {
         return $this->setConfig($name, $value, $scope);
@@ -170,7 +170,4 @@ class ConfigurationRegistry
         }
         return isset($this->registry[$name]) ? $this->registry[$name] : $default;
     }
-
 }
-
-// Endfile

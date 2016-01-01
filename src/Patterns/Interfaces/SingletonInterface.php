@@ -49,7 +49,4 @@ interface SingletonInterface
      * @throws \ErrorException
      */
     public function __clone();
-
 }
-
-// Endfile

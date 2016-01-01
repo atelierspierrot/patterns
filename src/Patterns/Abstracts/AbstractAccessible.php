@@ -186,7 +186,4 @@ abstract class AbstractAccessible
         }
         return $this;
     }
-
 }
-
-// Endfile

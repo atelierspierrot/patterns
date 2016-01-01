@@ -79,7 +79,4 @@ interface RequestInterface
      * @return array|string|null
      */
     public function getAuthentication();
-
 }
-
-// Endfile

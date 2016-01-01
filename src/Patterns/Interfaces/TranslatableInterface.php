@@ -59,7 +59,4 @@ interface TranslatableInterface
      * @return  mixed
      */
     public static function pluralize(array $indexes=array(), $number=0, array $args=array(), $lang=null);
-
 }
-
-// Endfile

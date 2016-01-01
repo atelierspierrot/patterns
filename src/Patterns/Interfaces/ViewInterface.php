@@ -42,7 +42,4 @@ interface ViewInterface
      * Get a template file path (relative to `option['templates_dir']`)
      */
     public function getTemplate($name);
-
 }
-
-// Endfile

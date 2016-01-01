@@ -184,7 +184,4 @@ trait AccessibleTrait
         }
         return $this;
     }
-
 }
-
-// Endfile

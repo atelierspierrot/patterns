@@ -47,13 +47,13 @@ interface ArrayInterface
      * Pushes a new value at the beginning of the collection, with no specific index
      * @param mixed $value The new value to add in the collection
      */
-    public function unshift( $value );
+    public function unshift($value);
 
     /**
      * Pushes a new value at the end of the collection, with no specific index
      * @param mixed $value The new value to add in the collection
      */
-    public function push( $value );
+    public function push($value);
 
     /**
      * Counts the number of entries in the collection
@@ -71,14 +71,14 @@ interface ArrayInterface
      * @param   mixed $value The value to test
      * @return  bool
      */
-    public function in_array( $value );
+    public function in_array($value);
 
     /**
      * Search if an entry exists with this key
      * @param   mixed $index The index to test
      * @return  bool
      */
-    public function key_exists( $index );
+    public function key_exists($index);
 
     /**
      * Returns an array with all values of the original array
@@ -91,7 +91,4 @@ interface ArrayInterface
      * @return  array
      */
     public function keys();
-
 }
-
-// Endfile

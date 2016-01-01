@@ -213,7 +213,4 @@ abstract class AbstractView
      * @return  string  The path of the file found
      */
     abstract public function getTemplate($name);
-
 }
-
-// Endfile

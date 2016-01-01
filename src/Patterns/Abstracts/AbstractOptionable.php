@@ -93,7 +93,4 @@ abstract class AbstractOptionable
     {
         return isset($this->_options[$name]) ? $this->_options[$name] : $default;
     }
-
 }
-
-// Endfile

@@ -59,7 +59,7 @@ trait SingletonTrait
      * creation ; if the constructor is public, it will receive the arguments passed
      * to the `getInstance` method.
      */
-    abstract function __construct();
+    abstract public function __construct();
 
     /**
      * Over-write this method to emulate a public constructor as it will be called
@@ -119,7 +119,4 @@ trait SingletonTrait
             sprintf('Cloning a "%s" instance is not allowed!', get_called_class())
         );
     }
-
 }
-
-// Endfile

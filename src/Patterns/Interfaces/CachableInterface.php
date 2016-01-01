@@ -42,7 +42,7 @@ interface CachableInterface
      *
      * @return string
      */
-    function getCacheKey();
+    public function getCacheKey();
 
     /**
      * Test if an item is already cached and if its cache is still valid
@@ -54,7 +54,7 @@ interface CachableInterface
      *
      * @return bool
      */
-    function isCached();
+    public function isCached();
 
     /**
      * Get a cache content for an item
@@ -63,7 +63,7 @@ interface CachableInterface
      *
      * @return mixed
      */
-    function getCache();
+    public function getCache();
 
     /**
      * Set a cache content for an item
@@ -74,7 +74,7 @@ interface CachableInterface
      * @param mixed $content
      * @return bool
      */
-    function setCache($content);
+    public function setCache($content);
 
     /**
      * Clear a cache content for an item
@@ -84,8 +84,5 @@ interface CachableInterface
      *
      * @return bool
      */
-    function invalidateCache();
-
+    public function invalidateCache();
 }
-
-// Endfile

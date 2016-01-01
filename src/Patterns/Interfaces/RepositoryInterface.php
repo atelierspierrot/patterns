@@ -48,7 +48,4 @@ interface RepositoryInterface
      * @return  bool
      */
     public function exists($prop_name, $value);
-
 }
-
-// Endfile

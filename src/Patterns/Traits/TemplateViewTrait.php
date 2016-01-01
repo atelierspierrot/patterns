@@ -217,7 +217,4 @@ trait TemplateViewTrait
      * @return  string  The path of the file found
      */
     abstract public function getTemplate($name);
-
 }
-
-// Endfile

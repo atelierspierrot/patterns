@@ -77,7 +77,4 @@ interface CollectionInterface
      * @param   int|string  $index  The index of the entry to delete
      */
     public function unsetEntry($index);
-
 }
-
-// Endfile

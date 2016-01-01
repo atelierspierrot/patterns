@@ -47,7 +47,7 @@ use \Exception;
  *
  * @author  piwi <me@e-piwi.fr>
  */
-abstract class AbstractSingleton 
+abstract class AbstractSingleton
 {
 
     /**
@@ -62,7 +62,9 @@ abstract class AbstractSingleton
      * creation ; if the constructor is public, it will receive the arguments passed
      * to the `getInstance` method.
      */
-    private function __construct(){}
+    private function __construct()
+    {
+    }
 
     /**
      * Initializer : this method is called after any instance creation
@@ -83,9 +85,9 @@ abstract class AbstractSingleton
      *                  the `__construct` or `init` methods
      * @return  object  This may return an instance of an object
      */
-    public static function &getInstance() 
+    public static function &getInstance()
     {
-        $classname = get_called_class(); 
+        $classname = get_called_class();
         if (!isset(self::$_instances[ $classname ])) {
             self::createInstance($classname, func_get_args());
         }
@@ -101,7 +103,7 @@ abstract class AbstractSingleton
      *                  the `__construct` or `init` methods
      * @return  object  This may return an instance of an object
      */
-    public static function &getInstanceByClassname($classname) 
+    public static function &getInstanceByClassname($classname)
     {
         $arguments = func_get_args();
         array_shift($arguments);
@@ -152,7 +154,4 @@ abstract class AbstractSingleton
             sprintf('Cloning a "%s" instance is not allowed!', get_called_class())
         );
     }
-
 }
-
-// Endfile

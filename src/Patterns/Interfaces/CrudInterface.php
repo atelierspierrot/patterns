@@ -54,7 +54,4 @@ interface CrudInterface
      * @return  bool
      */
     public function delete($id);
-
 }
-
-// Endfile

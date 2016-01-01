@@ -50,7 +50,7 @@ class Collection
      */
     public function __construct(array $content = array())
     {
-        $this->setCollection( $content );
+        $this->setCollection($content);
     }
 
     /**
@@ -374,7 +374,7 @@ class Collection
     public function setEntry($index = null, $value)
     {
         if (is_null($index)) {
-            return $this->push( $value );
+            return $this->push($value);
         }
         $this->_collection[$index] = $value;
         return $this;
@@ -398,7 +398,7 @@ class Collection
      */
     public function issetEntry($index)
     {
-        return isset( $this->_collection[$index] );
+        return isset($this->_collection[$index]);
     }
 
     /**
@@ -409,10 +409,7 @@ class Collection
      */
     public function unsetEntry($index)
     {
-        unset( $this->_collection[$index] );
+        unset($this->_collection[$index]);
         return $this;
     }
-
 }
-
-// Endfile

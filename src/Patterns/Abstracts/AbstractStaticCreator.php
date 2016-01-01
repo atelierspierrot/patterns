@@ -69,7 +69,4 @@ abstract class AbstractStaticCreator
         call_user_func_array(array($_obj, 'init'), func_get_args());
         return $_obj;
     }
-    
 }
-
-// Endfile
